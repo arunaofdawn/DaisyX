@@ -66,7 +66,7 @@ async def tg_lock(message, permissions: list, perm: str, lock: bool):
 @pbot.on_message(filters.command(["locktypes", "chatlocks"]) & ~filters.private)
 async def wew(_, message):
     lol = """
- **Locktypes available for this chat:  ** 
+ **Jenis kunci yang tersedia untuk obrolan ini:  ** 
   
 - all
 - messages
@@ -81,7 +81,7 @@ async def wew(_, message):
 - info 
 - invite
 
-*Note: For locking url try
+*Catatan: Untuk mengunci url coba
      `/urllock [on|off]`
 """
     await message.reply(lol)
