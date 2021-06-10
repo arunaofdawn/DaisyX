@@ -164,17 +164,17 @@ STRINGS:
     cant_promote_yourself: "No puedes promoverte a ti mismo."
     emoji_not_allowed: "Lo siento, pero los roles de administrador no pueden contener emojis 😞"
   pm_menu:
-    start_hi_group: '¡Hola! Mi nombre es Sophie'
-    start_hi: "¡Hola! ¡Mi nombre es <b>Daisy</b>, te ayudo a gestionar tu grupo de una manera eficiente!"
-    btn_source: "📜 Código fuente"
+    start_hi_group: '¡Hola! Mi nombre es Rosi'
+    start_hi: "¡Hola! ¡Mi nombre es <b>Rosi</b>, te ayudo a gestionar tu grupo de una manera eficiente!"
+    btn_source: "👨‍🎨 dueño"
     btn_help: "❔ Ayuda"
     btn_lang: "es Idioma"
-    btn_channel: "📡 Noticias de Daisy"
-    btn_group: "👥 Daisy Support"
-    btn_group_help: "Click me for help!"
+    btn_channel: "📡 aprobación"
+    btn_group: "👥 grupo"
+    btn_group_help: "presiona para que te ayude!"
     back: Atrás
     #/help
-    help_header: "¡Oye! Mi nombre es <b>Daisy</b>. Soy un robot de gestión de grupos, ¡estoy aquí para ayudarte a moverte y mantener el orden en tus grupos!\nTengo muchas funciones útiles, como control de flood, un sistema de advertencia, un sistema de notas e incluso respuestas predeterminadas a ciertas palabras clave."
+    help_header: "¡Oye! Mi nombre es <b>Rosi</b>. Soy un robot de gestión de grupos, ¡estoy aquí para ayudarte a moverte y mantener el orden en tus grupos!\nTengo muchas funciones útiles, como control de flood, un sistema de advertencia, un sistema de notas e incluso respuestas predeterminadas a ciertas palabras clave."
     click_btn: Haz clic aquí
   disable:
     #/disableable
