@@ -19,25 +19,25 @@
 __mod_name__ = "Auto Filters"
 __help__ = """
 <b> AUTO FILTERS </b>
-Daisy Can filter content of a given channel automatically
-Currently support:
-     - Videos
+Bot akan memfilter konten chanel tertentu secara otomatis
+Saat ini mendukung:
+     - Video
      - Media
-     - Documents
-     - Music
+     - Dokumen
+     - Musik
 
-<b> Setting up </b>
-1) Add @DaisyXBot to your channel
-2) Make bot admin with full permissions
-2) Go back to your group
+<b> Pengaturan </b>
+1) Tambahkan @RosoManage_bot ke chanel Anda
+2) Jadikan bot sebagai admin dengan izin penuh
+3) Silahkan coba teruskan pesan apa saja ke chanel
 
 <b> Commands </b>
-- /autofilter [Channel Username] : Add given channel to autofiltering
-- /autofilterdel [Channel Username] : Remove given channel from auto filtering
-- /autofilterdelall : Remove all channels from automatic filtering
-- /autofiltersettings : Show settings panel about auto filtering channels
+- /autofilter [Chanel Username] : Tambahkan chanel yang diberikan ke pemfilteran otomatis
+- /autofilterdel [Chanel Username] : Hapus chanel yang diberikan dari pemfilteran otomatis
+- /autofilterdelall : Hapus semua chanel dari pemfilteran otomatis
+- /autofiltersettings : Tampilkan panel pengaturan tentang chanel pemfilteran otomatis
 
-<i> Inspired by https://github.com/AlbertEinsteinTG/Adv-Auto-Filter-Bot-V2 </i>
-Original work is done by @CrazyBotsz
+<i> Terinspirasi oleh https://github.com/AlbertEinsteinTG/Adv-Auto-Filter-Bot-V2 </i>
+Karya asli dilakukan oleh @CrazyBotsz
 
 """
