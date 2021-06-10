@@ -153,6 +153,7 @@ Make it easy to admins for manage users and groups with the admin module!
 - /setdescription: Menetapkan deskripsi grup
 - /setsticker: Setel stiker grup
 
-*Catatan:
+*catatan:
 Terkadang, Anda mempromosikan atau menurunkan seorang admin secara manual, dan Bot tidak segera menyadarinya. Ini karena untuk menghindari spamming server telegram, status admin di-cache secara lokal.
-Ini berarti bahwa
+Ini berarti Anda terkadang harus menunggu beberapa menit untuk memperbarui hak admin. Jika Anda ingin segera memperbaruinya, Anda dapat menggunakan perintah `/admincache`; itu akan memaksa Bot untuk memeriksa siapa admin lagi.
+"""
