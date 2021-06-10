@@ -203,17 +203,17 @@ async def _(event):
 
 
 __help__ = """
-<b> Daisy's filters are the blacklist too </b>
- - /addfilter [trigger] Select action: blacklists the trigger
- - /delfilter [trigger] : stop blacklisting a certain blacklist trigger
- - /filters: list all active blacklist filters
+<b> Blacklist/daftar hitam</b>
+ - /addfilter [kata pemicu] Pilih kata pemicunya
+ - /delfilter [kata pemicu] : berhenti/menghapus kata pemicu pada blacklist
+ - /filters: daftar semua filter dalam blacklist
  
 <b> Url Blacklist </B>
- - /geturl: View the current blacklisted urls
- - /addurl [urls]: Add a domain to the blacklist. The bot will automatically parse the url.
- - /delurl [urls]: Remove urls from the blacklist.
-<b> Example:</b>
- - /addblacklist the admins suck: This will remove "the admins suck" everytime some non-admin types it
- - /addurl bit.ly: This would delete any message containing url "bit.ly"
+ - /geturl: Lihat url daftar hitam saat ini
+ - /addurl [url/link]: Tambahkan domain ke daftar hitam. Bot akan secara otomatis mem-parsing url.
+ - /delurl [url/link]: Hapus url dari daftar hitam.
+<b> Contoh:</b>
+ - /addblacklist adminnya ngeselin: Ini akan menghapus kata "adminnya ngeselin" setiap kali anggota grup(kecuali admin) mengetiknya
+ - /addurl bit.ly: Ini akan menghapus pesan apa pun yang berisi url "bit.ly"
 """
 __mod_name__ = "Blacklist"
