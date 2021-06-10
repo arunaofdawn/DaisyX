@@ -454,7 +454,8 @@ Kamu juga dapat menggunakan regex dan tombol untuk filter. Periksa /buttonshelp 
 
 Kamu ingin mengetahui semua filter obrolan/obrolan yang Anda ikuti? Gunakan perintah ini. Ini akan mencantumkan semua filter bersama dengan tindakan yang ditentukan!
 
-<b> TEXT FILTERS </b>Filter teks untuk balasan singkat dan teks
+<b> TEXT FILTERS </b>
+Filter teks untuk balasan singkat dan teks
 <i> Perintah tersedia </i>
 - /filter [kata kunci] [balas ke pesan] : Filter pesan yang dibalas dengan kata kunci yang diberikan.
 - /stop [kata kunci] : Menghentikan filter yang diberikan.
