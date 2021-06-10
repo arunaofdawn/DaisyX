@@ -265,18 +265,18 @@ async def connect_anon_admins(event: CallbackQuery):
 __mod_name__ = "Connections"
 
 __help__ = """
-Sometimes you need change something in your chat, like notes, but you don't want to spam in it, try connections, this allow you change chat settings and manage chat's content in personal message with Daisy.
+Terkadang Anda perlu mengubah sesuatu dalam obrolan Anda, seperti catatan, tetapi Anda tidak ingin melakukan spam di dalamnya, cobalah `Connections`, ini memungkinkan Anda mengubah pengaturan obrolan dan mengelola konten obrolan dalam pesan pribadi dengan Bot.
 
-<b>Available commands are:</b>
-<b>Avaible only in PM:</b>
-- /connect: Show last connected chats button for fast connection
-- /connect (chat ID or chat nickname): Connect to chat by argument which you provided
-- /reconnect: Connect to last connected chat before
-- /disconnect: Disconnect from
+<b>Perintah yang tersedia adalah:</b>
+<b>Hanya tersedia di PM:</b>
+- /connect: Tampilkan tombol obrolan terakhir yang terhubung untuk koneksi cepat
+- /connect (ID grup atau username grup): Terhubung ke obrolan dengan argumen yang Anda berikan
+- /reconnect: Hubungkan ke obrolan/grup terakhir yang terhubung sebelumnya
+- /disconnect: Putuskan sambungan dari grup
 
-<b>Avaible only in groups:</b>
-- /connect: Direct connect to this group
+<b>Hanya tersedia dalam grup:</b>
+- /connect: Sambungkan langsung ke grup ini
 
-<b>Other commands:</b>
-- /allowusersconnect (on/off enable/disable): Enable or disable connection feature for regular users, for admins connections will be works always
+<b>Perintah lainnya:</b>
+- /allowusersconnect (on/off enable/disable): Aktifkan atau nonaktifkan fitur connections untuk pengguna biasa, untuk koneksi admin akan selalu berfungsi
 """
