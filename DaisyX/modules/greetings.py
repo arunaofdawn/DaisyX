@@ -1103,37 +1103,37 @@ async def __import__(chat_id, data):
 __mod_name__ = "Greetings"
 
 __help__ = """
-<b>Available commands:</b>
+<b>Perintah yang tersedia:</b>
 <b>General:</b>
-- /setwelcome or /savewelcome: Set welcome
-- /setwelcome (on/off): Disable/enabled welcomes in your chat
-- /welcome: Shows current welcomes settings and welcome text
-- /resetwelcome: Reset welcomes settings
-<b>Welcome security:</b>
+- /setwelcome atau /savewelcome: Membuat pesan sambutan/selamat datang
+- /setwelcome (on/off): Nonaktifkan/aktifkan sambutan di grup Anda
+- /welcome: Menampilkan pengaturan sambutan saat ini dan teks sambutan
+- /resetwelcome: Setel ulang pengaturan sambutan
+<b>Welcome Security:</b>
 - /welcomesecurity (level)
-Turns on welcome security with specified level, either button or captcha.
-Setting up welcome security will give you a choice to customize join expiration time aka minimum time given to user to verify themselves not a bot, users who do not verify within this time would be kicked!
-- /welcomesecurity (off/no/0): Disable welcome security
-- /setsecuritynote: Customise the "Please press button below to verify themself as human!" text
-- /delsecuritynote: Reset security text to defaults
-<b>Available levels:</b>
-- <code>button</code>: Ask user to press "I'm not a bot" button
-- <code>math</code>: Asking to solve simple math query, few buttons with answers will be provided, only one will have right answer
-- <code>captcha</code>: Ask user to enter captcha
+Mengaktifkan keamanan selamat datang dengan level tertentu, baik tombol atau captcha.
+Menyiapkan keamanan selamat datang akan memberi Anda pilihan untuk menyesuaikan waktu kedaluwarsa bergabung alias waktu minimum yang diberikan kepada pengguna untuk memverifikasi diri mereka sendiri bukan bot, pengguna yang tidak memverifikasi dalam waktu ini akan ditendang!
+- /welcomesecurity (off/no/0): Nonaktifkan keamanan selamat datang
+- /setsecuritynote: Membuat Custom teks, jika tidak akan tampil default seperti ini "Please press the button below to verify themselves as human!"
+- /delsecuritynote: Setel ulang teks keamanan ke default
+<b>Level yang tersedia:</b>
+- <code>button</code>: Minta pengguna untuk menekan tombol "I'm not a bot" 
+- <code>math</code>: Meminta pengguna untuk menyelesaikan pertanyaan matematika sederhana, beberapa tombol dengan jawaban akan disediakan, hanya satu yang akan memiliki jawaban yang benar
+- <code>captcha</code>: Meminta pengguna untuk memasukkan captcha
 <b>Welcome mutes:</b>
-- /welcomemute (time): Set welcome mute (no media) for X time
-- /welcomemute (off/no): Disable welcome mute
+- /welcomemute (waktu): Melarang pengguna yang baru bergabung untuk mengirim media dalam waktu yang anda tentukan)
+- /welcomemute (off/no): Nonaktifkan pembisuan(media) selamat datang
 <b>Purges:</b>
-- /cleanwelcome (on/off): Deletes old welcome messages and last one after 45 mintes
-- /cleanservice (on/off): Cleans service messages (user X joined)
-If welcome security is enabled, user will be welcomed with security text, if user successfully verify self as user, he/she will be welcomed also with welcome text in his PM (to prevent spamming in chat).
-If user didn't verified self for 24 hours he/she will be kicked from chat.
-<b>Addings buttons and variables to welcomes or security text:</b>
-Buttons and variables syntax is same as notes buttons and variables.
-Send /buttonshelp and /variableshelp to get started with using it.
-<b>Settings images, gifs, videos or stickers as welcome:</b>
-Saving attachments on welcome is same as saving notes with it, read the notes help about it. But keep in mind what you have to replace /save to /setwelcome
-<b>Examples:</b>
-<code>- Get the welcome message without any formatting
+- /cleanwelcome (on/off): Menghapus pesan selamat datang lama dan yang terakhir setelah 45 menit
+- /cleanservice (on/off): Membersihkan pesan layanan (pengguna X bergabung)
+Jika Welcome Security diaktifkan, pengguna akan disambut dengan teks keamanan, jika pengguna berhasil memverifikasi diri sebagai pengguna, dia akan disambut juga dengan teks selamat datang di PM-nya (untuk mencegah spamming dalam obrolan).
+Jika pengguna tidak memverifikasi diri selama 24 jam, dia akan dikeluarkan dari obrolan.
+<b>Menambahkan tombol dan variabel ke teks sambutan atau keamanan:</b>
+Sintaks tombol dan variabel sama dengan button dan variabel notes.
+Kirim /buttonshelp dan /variableshelp untuk mulai menggunakannya.
+<b>Atur gambar, gif, video, atau stiker sebagai pesan selamat datang:</b>
+Menyimpan lampiran saat selamat datang sama dengan menyimpan catatan/notes dengannya, baca bantuan notes tentangnya. Tapi perlu diingat apa yang harus Anda ganti /save ke /setwelcome
+<b>Contoh:</b>
+<code>- Dapatkan pesan selamat datang tanpa pemformatan apa pun
 -> /welcome raw</code>
 """
