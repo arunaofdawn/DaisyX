@@ -216,18 +216,18 @@ def config(client, message):
 
 __help__ = """
 <b>ForceSubscribe:</b>
-- Daisy can mute members who are not subscribed your channel until they subscribe
-- When enabled I will mute unsubscribed members and show them a unmute button. When they pressed the button I will unmute them
+- Bot akan membisukan anggota yang tidak berlangganan chanel Anda sampai mereka berlangganan
+- Saat diaktifkan, saya akan membisukan anggota yang tidak berlangganan dan menunjukkan kepada mereka tombol suarakan(unmute). Ketika mereka menekan tombol, baru saya akan membunyikan mereka
 <b>Setup</b>
-1) First of all add me in the group as admin with ban users permission and in the channel as admin.
-Note: Only creator of the group can setup me and i will not allow force subscribe again if not done so.
+1) Pertama-tama tambahkan saya di grup sebagai admin dengan izin larangan pengguna dan di chanel sebagai admin.
+Catatan: Hanya pembuat grup yang dapat mengatur saya dan saya tidak akan mengizinkan paksa berlangganan lagi jika tidak melakukannya.
  
 <b>Commmands</b>
- - /forcesubscribe - To get the current settings.
- - /forcesubscribe no/off/disable - To turn of ForceSubscribe.
- - /forcesubscribe {channel username} - To turn on and setup the channel.
- - /forcesubscribe clear - To unmute all members who muted by me.
-Note: /forcesub is an alias of /forcesubscribe
+ - /forcesubscribe - Untuk mendapatkan pengaturan saat ini.
+ - /forcesubscribe no/off/disable - Untuk mematikan ForceSubscribe.
+ - /forcesubscribe {channel username} - Untuk mengaktifkan dan mengatur chanel.
+ - /forcesubscribe clear - Untuk membunyikan semua anggota yang dibisukan oleh saya.
+Catatan: /forcesub adalah alias dari /forcesubscribe
  
 """
 __mod_name__ = "Force Subscribe "
