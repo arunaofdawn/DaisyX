@@ -375,33 +375,32 @@ async def __import__(chat_id: int, data: dict):  # noqa
 __mod_name__ = "AntiFlood"
 
 __help__ = """
-You know how sometimes, people join, send 100 messages, and ruin your chat? With antiflood, that happens no more!
+Anda tau bagaimana terkadang, orang bergabung, mengirim 100 pesan atau spam, dan merusak obrolan Anda? Dengan antiflood, itu tidak terjadi lagi!
 
-Antiflood allows you to take action on users that send more than x messages in a row.
+Antiflood memungkinkan Anda untuk mengambil tindakan pada pengguna yang mengirim lebih dari x pesan berturut-turut.
 
-<b>Admins only:</b>
-- /antiflood: Gives you current configuration of antiflood in the chat
-- /antiflood off: Disables Antiflood
-- /setflood (limit): Sets flood limit
+<b>Khusus Admin Grup:</b>
+- /antiflood: Memberi Anda konfigurasi antiflood saat ini dalam obrolan
+- /antiflood off: Nonaktifkan Antiflood
+- /setflood (batas/limit): Tetapkan batas flood
 
-Replace (limit) with any integer, should be less than 200. When setting up, Daisy would ask you to send expiration time, if you dont understand what this expiration time for? User who sends specified limit of messages consecutively within this TIME, would be kicked, banned whatever the action is. if you dont want this TIME, wants to take action against those who exceeds specified limit without mattering TIME INTERVAL between the messages. you can reply to question with 0
-
-<b>Configuring the time:</b>
-<code>2m</code> = 2 minutes
-<code>2h</code> = 2 hours
-<code>2d</code> = 2 days
+Ganti (batas/limit) dengan bilangan bulat apa saja (harus kurang dari 200). Saat mengatur, Bot akan meminta Anda untuk mengirim waktu kedaluwarsa, jika Anda tidak mengerti untuk apa waktu kedaluwarsa ini? Pengguna yang mengirimkan batas pesan tertentu secara berurutan dalam WAKTU ini, akan ditendang, dilarang apa pun tindakannya. jika Anda tidak menginginkan WAKTU ini, ingin mengambil tindakan terhadap mereka yang melebihi batas yang ditentukan tanpa mempedulikan INTERVAL WAKTU antara pesan. Anda dapat membalas pertanyaan dengan 0
+ 
+<b>Mengonfigurasi waktu:</b>
+<code>2m</code> = 2 minutes(menit)
+<code>2h</code> = 2 hours(jam)
+<code>2d</code> = 2 days(hari)
 
 <b>Example:</b>
-Me: <code>/setflood 10</code>
-Daisy: <code>Please send expiration time [...]</code>
-Me: <code>5m</code> (5 minutes)
-DONE!
+Saya: <code>/setflood 10</code>
+Roso: <code>Silakan kirim waktu kedaluwarsa [...]</code>
+Saya: <code>5m</code> (5 minutes)
+SELESAI!
 
-- /setfloodaction (action): Sets the action to taken when user exceeds flood limit
+- /setfloodaction (tindakan): Mengatur tindakan, diambil ketika pengguna melebihi batas flood
 
-<b>Currently supported actions:</b>
+<b>Tindakan yang saat ini didukung:</b>
 <code>ban</code>
 <code>mute</code>
 <code>kick</code>
-<i>More soon™</i>
 """
