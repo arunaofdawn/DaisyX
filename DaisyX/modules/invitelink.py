@@ -22,16 +22,16 @@ from DaisyX.function.pluginhelpers import admins_only
 from DaisyX.services.pyrogram import pbot
 
 __HELP__ = """
-Classic filters are just like marie's filter system. If you still like that kind of filter system
-**Admin Only**
- - /cfilter <word> <message>: Every time someone says "word", the bot will reply with "message"
-You can also include buttons in filters, example send `/savefilter google` in reply to `Click Here To Open Google | [Button.url('Google', 'google.com')]`
- - /stopcfilter <word>: Stop that filter.
- - /stopallcfilters: Delete all filters in the current chat.
+Filter klasik sama seperti sistem filter marie. Jika Anda masih menyukai sistem filter semacam itu lakukan ini:
+**Khusus Admin**
+ - /cfilter <kata> <pesan>: Setiap kali seseorang mengatakan "kata", bot akan membalas dengan "pesan"
+Anda juga dapat memasukkan button(tombol) dalam filter, misalnya kirim `/savefilter google` sebagai balasannya `Click Here To Open Google | [Button.url('Google', 'google.com')]`
+ - /stopcfilter <filter>: Menghentikan filter tersebut.
+ - /stopallcfilters: Menghapus semua filter dalam obrolan saat ini.
 **Admin+Non-Admin**
- - /cfilters: List all active filters in the chat
+ - /cfilters: Daftar semua filter aktif dalam obrolan
  
- **Please note classic filters can be unstable. We recommend you to use /addfilter**
+ **Harap dicatat filter klasik bisa tidak stabil. Kami menyarankan Anda untuk menggunakan /addfilter**
 """
 
 
