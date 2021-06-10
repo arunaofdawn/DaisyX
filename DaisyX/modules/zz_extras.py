@@ -2,7 +2,7 @@ __mod_name__ = "🛠 Extras"
 __help__ = """
 Modul yang berisi alat tambahan yang membantu Anda melakukan banyak hal keren.
 
-<b> Available Commands </b>
+<b> Perintah yang tersedia </b>
 
 <b> AFK </b>
 - /afk (alasan) : tandai diri Anda sebagai AFK (tidak ada/sedang off)
