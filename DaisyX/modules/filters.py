@@ -430,50 +430,49 @@ __mod_name__ = "Filters"
 
 __help__ = """
 <b> GENERAL FILTERS </b>
-Filter module is great for everything! filter in here is used to filter words or sentences in your chat - send notes, warn, ban those!
+Modul filter sangat bagus untuk semuanya! filter di sini digunakan untuk menyaring kata atau kalimat dalam obrolan Anda - mengirim catatan, memperingatkan, melarang ini itu!
 <i> General (Admins):</i>
-- /addfilter (word/sentence): This is used to add filters.
-- /delfilter (word/sentence): Use this command to remove a specific filter.
-- /delallfilters: As in command this is used to remove all filters of group.
+- /addfilter (kata/kalimat): Ini digunakan untuk menambahkan filter.
+- /delfilter (kata/kalimat): Gunakan perintah ini untuk menghapus filter tertentu.
+- /delallfilters: Seperti nama perintah ini, digunakan untuk menghapus semua filter grup.
 
-<i> As of now, there is 6 actions that you can do: </i>
-- <code>Send a note</code>
-- <code>Warn the user</code>
-- <code>Ban the user</code>
-- <code>Mute the user</code>
-- <code>tBan the user</code>
-- <code>tMute the user</code>
+<i> Sampai sekarang, ada 6 tindakan yang dapat Anda lakukan: </i>
+- <code>Kirim catatan</code>
+- <code>Peringatkan pengguna</code>
+- <code>Ban/larang pengguna</code>
+- <code>Mute/bisukan pengguna</code>
+- <code>tBan(seperti ban) penggunaa</code>
+- <code>tMute(seperti mute) pengguna</code>
 
-<i> A filter can support multiple actions ! </i>
+<i> Filter dapat mendukung banyak tindakan! </i>
 
-Ah if you don't understand what this actions are for? Actions says bot what to do when the given <code>word/sentence</code> is triggered.
-You can also use regex and buttons for filters. Check /buttonshelp to know more.
+Ah jika Anda tidak mengerti untuk apa tindakan ini? Tindakan mengatakan bot apa yang harus dilakukan ketika <code>kata/kalimat</code> yang diberikan dipicu.
+Kamu juga dapat menggunakan regex dan tombol untuk filter. Periksa /buttonshelp untuk mengetahui lebih lanjut.
 
-<i> Available for all users:</i>
+<i>Tersedia untuk semua pengguna:</i>
 - /filters or /listfilters
 
-You want to know all filter of your chat/ chat you joined? Use this command. It will list all filters along with specified actions !
+Kamu ingin mengetahui semua filter obrolan/obrolan yang Anda ikuti? Gunakan perintah ini. Ini akan mencantumkan semua filter bersama dengan tindakan yang ditentukan!
 
-<b> TEXT FILTERS </b>
-Text filters are for short and text replies
-<i> Commands available </i>
-- /filter [KEYWORD] [REPLY TO MESSAGE] : Filters the replied message with given keyword.
-- /stop [KEYWORD] : Stops the given filter.
+<b> TEXT FILTERS </b>Filter teks untuk balasan singkat dan teks
+<i> Perintah tersedia </i>
+- /filter [kata kunci] [balas ke pesan] : Filter pesan yang dibalas dengan kata kunci yang diberikan.
+- /stop [kata kunci] : Menghentikan filter yang diberikan.
 
 
-<i> Difference between text filter and filter</i>
-* If you filtered word "hi" with /addfilter it filters all words including hi. 
-  Future explained:
-    - When a filter added to hi as "hello" when user sent a message like "It was a hit" bot replies as "Hello" as word contain hi
-    ** You can use regex to remove this if you like
+<i> Perbedaan antara filter teks dan filter</i>
+* Jika Anda memfilter kata "hai" dengan /addfilter, itu akan menyaring semua kata termasuk hai. 
+  Masa depan dijelaskan:
+    - Ketika filter ditambahkan ke hi sebagai "halo" ketika pengguna mengirim pesan seperti "ikan hiu makan permen", bot akan membalas sebagai "Halo" karena kata mengandung hi
+    ** Anda dapat menggunakan regex untuk menghapus ini jika Anda suka
 <i> Text filters won't reply like that. It only replies if word = "hi" (According to example taken) </i>
-Text filters can filter
-- <code>A single word</code>
-- <code>A sentence</code>
-- <code>A sticker</code>
+Filter teks dapat memfilter:
+- <code>Satu kata</code>
+- <code>Satu kalimat</code>
+- <code>Satu stiker</code>
 
 <b> CLASSIC FILTERS </b>
-Classic filters are just like marie's filter system. If you still like that kind of filter system. Use /cfilterhelp to know more
+Filter klasik sama seperti sistem filter marie. Jika Anda masih menyukai sistem filter semacam itu. Gunakan /cfilterhelp untuk mengetahui lebih lanjut
 
-⚠️ READ FROM TOP
+⚠️ BACA DARI ATAS
 """
