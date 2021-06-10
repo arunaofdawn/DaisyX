@@ -1,58 +1,58 @@
 __mod_name__ = "🛠 Extras"
 __help__ = """
-The module that contains extra tools that help you to do many cool stuff.
+Modul yang berisi alat tambahan yang membantu Anda melakukan banyak hal keren.
 
 <b> Available Commands </b>
 
 <b> AFK </b>
-- /afk reason : mark yourself as AFK(Away From Keyboard)
+- /afk (alasan) : tandai diri Anda sebagai AFK (tidak ada/sedang off)
   
 <b> URL LOCK </b> 
- Block links sent by users in your group 
-- /urllock [on/off]: Enable/Disable URL Lock
+ Blokir tautan(link) yang dikirim oleh pengguna di grup Anda 
+- /urllock [on/off]: Aktifkan/Nonaktifkan Kunci URL
 
 <b> DATE TIME </b>
-- /datetime [timezone]: Get the present date and time information
-You can check out this [link](https://timezonedb.com/time-zones) for the available timezones
+- /datetime [timezone]: Dapatkan informasi tanggal dan waktu saat ini
+Anda bisa cek link [ini](https://timezonedb.com/time-zones) untuk zona waktu yang tersedia
 
 <b> PASTE </b>
 - /paste [reply]
-Usage: Create a paste or a shortened url using nekobin (https://nekobin.com)
+Penggunaan: Untuk tempel/paste url singkat menggunakan nekobin (https://nekobin.com)
 
 <b> TELEGRAPH </b>
-- /telegraph media : To Make Link of Any Image Or MP4 video. 
-- /telegraph text : To make Link of Any Text Written. 
+- /telegraph media : Untuk Membuat Tautan dari Setiap Gambar Atau video MP4. 
+- /telegraph text : Untuk membuat Tautan dari Setiap Teks Tertulis. 
 
 <b> TORRENT </b>
-- /torrent [QUERY]: Search for torrent links
+- /torrent [pertanyaan]: Cari tautan torrent
 
 <b> TEXT TO SPEECH </b>
-- /tts: Reply to any message to get text to speech output
-- /stt: Type in reply to a voice message(english only) to extract text from it.
+- /tts: Balas/reply pesan apa pun untuk mendapatkan output dari teks ke ucapan
+- /stt: Balas/reply pesan suara untuk mengekstrak teks darinya(khusus bhs Inggris).
 
 <b> VIRUS SCAN </b>
-- /scanit: Scan a file for virus (MAX SIZE = 3MB)
+- /scanit: Pindai file dari virus (MAX SIZE = 3MB)
  
 <b>COUNTRY</b>
-- /country [country name]*:* Gathering info about given country
+- /country [nama negara]*:* Mengumpulkan info tentang negara tertentu
 
 <b>COVID</b>              
-- /covid - To Get Global Stats of Covid.
-- /covid [COUNTRY] - To Get Stats of A Single Country.
+- /covid - Untuk Mendapatkan Statistik Global tentang Covid.
+- /covid [negara] - Untuk Mendapatkan Statistik Satu Negara.
   
 <b>MATCH INFO</b>     
-- /cs - Gathers match information (globally)
+- /cs - Mengumpulkan informasi pertandingan secara global.
 
 <b>QR CODE</b>     
-- /getqr - Get text in qr.
-- /makeqr - Make a qr code.
+- /getqr - Dapatkan teks di qr.
+- /makeqr - Buat kode qr.
   
 <b> KARMA </b>
-[UPVOTE] - Use upvote keywords like "+", "+1", "thanks" etc to upvote a message.
-[DOWNVOTE] - Use downvote keywords like "-", "-1", etc to downvote a message.
+[UPVOTE] - Gunakan kata kunci upvote seperti "+", "+1", "terimakasih" dll untuk upvote pesan.
+[DOWNVOTE] - Gunakan kata kunci downvote seperti "-", "-1", dll untuk downvote pesan.
 
-- /karma [ON/OFF]: Enable/Disable karma in group. 
-- /karma [Reply to a message]: Check user's karma
-- /karma: Chek karma list of top 10 users
+- /karma [ON/OFF]: Aktifkan/Nonaktifkan karma dalam grup. 
+- /karma [balas ke pesan]: Periksa karma pengguna
+- /karma: Periksa daftar karma dari 10 pengguna teratas
         
 """
