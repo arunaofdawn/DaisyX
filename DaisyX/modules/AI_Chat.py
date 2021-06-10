@@ -385,15 +385,15 @@ async def inuka(client, message):
 
 __help__ = """
 <b> Chatbot </b>
-DAISY AI 3.0 IS THE ONLY AI SYSTEM WHICH CAN DETECT & REPLY UPTO 200 LANGUAGES
+DAISY AI 3.0 ADALAH SATU-SATUNYA SISTEM AI YANG DAPAT MENDETEKSI & MEMBALAS HINGGA 200 BAHASA
 
- - /chatbot [ON/OFF]: Enables and disables AI Chat mode (EXCLUSIVE)
- - /chatbot EN : Enables English only chatbot
+ - /chatbot [ON/OFF]: Mengaktifkan dan menonaktifkan mode Obrolan AI (EKSKLUSIF)
+ - /chatbot EN : Mengaktifkan chatbot khusus bahasa Inggris
  
  
 <b> Assistant </b>
- - /ask [question]: Ask question from daisy
- - /ask [reply to voice note]: Get voice reply
+ - /ask [question]: Ajukan pertanyaan ke bot
+ - /ask [reply to voice note]: Dapatkan balasan suara
  
 """
 
