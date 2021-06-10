@@ -182,19 +182,19 @@ async def __import__(chat_id, data):
 __mod_name__ = "Disabling"
 
 __help__ = """
-Disabling module is allow you to disable certain commands from be executed by users.
+Menonaktifkan modul memungkinkan Anda untuk menonaktifkan perintah tertentu agar tidak dieksekusi/dipakai oleh pengguna.
 
-<b>Available commands:</b>
-- /disableable: Shows commands which can be disabled
-- /disabled: Shows the all disabled commands of the chat
-- /disable (command name): Disables the command. Command should be disable-able
-- /enable (command name): Enables the disabled command back.
-- /enableall: Enables all disabled commands
+<b>Perintah yang tersedia:</b>
+- /disableable: Menampilkan perintah yang dapat dinonaktifkan
+- /disabled: Menampilkan semua perintah obrolan yang dinonaktifkan
+- /disable (command name): Menonaktifkan perintah. Perintah harus dapat dinonaktifkan
+- /enable (command name): Mengaktifkan kembali perintah yang dinonaktifkan.
+- /enableall: Mengaktifkan semua perintah yang dinonaktifkan
 
-<b>Examples:</b>
+<b>Contoh:</b>
 <code>/disable help</code>
-It would disable usauge of <code>/help</code> command in the chat!
+Itu akan menonaktifkan penggunaan perintah<code>/help</code> dalam obrolan!
 
 <code>/enable help</code>
-This enables previously disable command <code>/help</code>.
+Itu akan mengaktifkan perintah nonaktifkan sebelumnya <code>/help</code>.
 """
