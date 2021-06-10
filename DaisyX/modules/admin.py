@@ -106,54 +106,53 @@ Make it easy to admins for manage users and groups with the admin module!
 <b>Available commands:</b>
 
 <b> Admin List </b>
-- /adminlist: Shows all admins of the chat.*
-- /admincache: Update the admin cache, to take into account new admins/admin permissions.*
+- /adminlist: Menampilkan semua admin obrolan.*
+- /admincache: Perbarui cache admin, untuk memperhitungkan izin admins/admin baru.*
 
 <b> Mutes </b>
-- /mute: mute a user
-- /unmute: unmutes a user
-- /tmute [entity] : temporarily mutes a user for the time interval.
-- /unmuteall: Unmute all muted members
+- /mute: bisukan pengguna
+- /unmute: bunyikan pengguna
+- /tmute [waktu] : membisukan sementara pengguna untuk interval waktu
+- /unmuteall: Bunyikan semua anggota yang dibisukan
 
 <b> Bans & Kicks </b>
-- /ban: bans a user
-- /tban [entity] : temporarily bans a user for the time interval.
-- /unban: unbans a user
-- /unbanall: Unban all banned members
-- /banme: Bans you
-- /kick: kicks a user
-- /kickme: Kicks you
+- /ban: ban/larang pengguna
+- /tban [waktu] : ban sementara pengguna untuk interval waktu.
+- /unban: membatalkan pemblokiran pengguna
+- /unbanall: Buka blokir semua anggota yang diblokir
+- /banme: Melarang Anda dari grup
+- /kick: menendang pengguna dari grup
+- /kickme: Mengeluarkanmu dari grup
 
 <b> Promotes & Demotes</b>
-- /promote (user) (?admin's title): Promotes the user to admin.*
-- /demote (user): Demotes the user from admin.*
-- /lowpromote: Promote a member with low rights*
-- /midpromote: Promote a member with mid rights*
-- /highpromote: Promote a member with max rights*
-- /lowdemote: Demote an admin to low permissions*
-- /middemote: Demote an admin to mid permissions*
+- /promote (user) (title admin): Mempromosikan pengguna menjadi admin.*
+- /demote (user): Menurunkan jabatan pengguna dari admin.*
+- /lowpromote: Promosikan anggota dengan hak rendah*
+- /midpromote: Promosikan anggota dengan hak menengah*
+- /highpromote: Promosikan anggota dengan hak maksimal*
+- /lowdemote: Turunkan admin ke izin rendah*
+- /middemote: Turunkan admin ke izin pertengahan*
 
 <b> Cleaner/Purges </b>
-- /purge: deletes all messages from the message you replied to
-- /del: deletes the message replied to
-- /zombies: counts the number of deleted account in your group
-- /kickthefools: Kick inactive members from group (one week)
+- /purge: menghapus semua pesan dari pesan yang Anda balas
+- /del: menghapus pesan yang dibalas
+- /zombies: menghitung jumlah akun yang dihapus di grup Anda
+- /kickthefools: Keluarkan anggota yang tidak aktif dari grup(selama satu minggu)
 
 <b> User Info </b>
-- /info: Get user's info
-- /users: Get users list of group
-- /spwinfo : Check user's spam info from intellivoid's Spamprotection service
-- /whois : Gives user's info like pyrogram
+- /info: Dapatkan info pengguna
+- /users: Dapatkan daftar pengguna grup
+- /spwinfo : Periksa info spam pengguna dari layanan perlindungan Spam intellivoid
+- /whois : Memberikan info pengguna seperti pyrogram
 
 <b> Other </b>
-- /invitelink: Get chat's invitr link
-- /settitle [entity] [title]: sets a custom title for an admin. If no [title] provided defaults to "Admin"
-- /setgrouptitle [text] set group title
-- /setgrouppic: reply to an image to set as group photo
-- /setdescription: Set group description
-- /setsticker: Set group sticker
+- /invitelink: Dapatkan tautan undangan obrolan grup
+- /settitle [entity] [title]: menetapkan judul khusus untuk admin. Jika tidak ada [judul] yang diberikan, maka secara default ke "Admin"
+- /setgrouptitle [teks] tentukan judul grup group
+- /setgrouppic: balas/reply gambar untuk ditetapkan sebagai foto grup
+- /setdescription: Menetapkan deskripsi grup
+- /setsticker: Setel stiker grup
 
-*Note:
-Sometimes, you promote or demote an admin manually, and Daisy doesn't realise it immediately. This is because to avoid spamming telegram servers, admin status is cached locally.
-This means that you sometimes have to wait a few minutes for admin rights to update. If you want to update them immediately, you can use the /admincache command; that'll force Daisy to check who the admins are again.
-"""
+*Catatan:
+Terkadang, Anda mempromosikan atau menurunkan seorang admin secara manual, dan Bot tidak segera menyadarinya. Ini karena untuk menghindari spamming server telegram, status admin di-cache secara lokal.
+Ini berarti bahwa
