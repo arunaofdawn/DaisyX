@@ -32,7 +32,7 @@ async def msg(event):
     try:
         a = country.info()
     except:
-        await event.reply("Country Not Avaiable Currently")
+        await event.reply("Negara Tidak Tersedia Saat Ini")
     name = a.get("name")
     bb = a.get("altSpellings")
     hu = ""
@@ -91,27 +91,27 @@ async def msg(event):
 
     wiki = a.get("wiki")
 
-    caption = f"""<b><u>Information Gathered Successfully</b></u>
+    caption = f"""<b><u>Informasi Berhasil Dikumpulkan</b></u>
 <b>
-Country Name:- {name}
-Alternative Spellings:- {hu}
-Country Area:- {area} square kilometers
+Nama negara:- {name}
+Ejaan Alternatif:- {hu}
+Wilayah Negara:- {area} square kilometers
 Borders:- {borders}
-Calling Codes:- {call}
-Country's Capital:- {capital}
-Country's currency:- {currencies}
+Kode Panggilan:- {call}
+Ibukota Negara:- {capital}
+Mata uang negara:- {currencies}
 Demonym:- {HmM}
-Country Type:- {EsCoBaR}
-ISO Names:- {iso}
-Languages:- {lMAO}
-Native Name:- {nonive}
-population:- {waste}
-Region:- {reg}
-Sub Region:- {sub}
-Time Zones:- {tom}
-Top Level Domain:- {lanester}
+Tipe Negara:- {EsCoBaR}
+Nama ISO:- {iso}
+Bahasa:- {lMAO}
+Nama Asli:- {nonive}
+populasi:- {waste}
+Wilayah:- {reg}
+Sub Wilayah:- {sub}
+Zona waktu:- {tom}
+Domain Tingkat Atas:- {lanester}
 wikipedia:- {wiki}</b>
-Gathered By Daisy X.</b>
+Dikumpulkan oleh Roso.</b>
 """
 
     await borg.send_message(
