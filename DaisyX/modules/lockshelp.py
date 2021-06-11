@@ -1,14 +1,14 @@
 __mod_name__ = "Locks"
 
 __help__ = """
-Use this feature to block users from sending specific message types to your group!
+Gunakan fitur ini untuk memblokir pengguna agar tidak mengirim jenis pesan tertentu ke grup Anda!
 
 <b> Basic Locks</b>
 
-Comands:
-- /locks or /locktypes: Use this command to know current state of your locks in your group!
-- /lock (locktype): Locks a type of messages
-- /unlock (locktype): Unlocks a type of message
+Perintah:
+- /locks atau /locktypes: Gunakan perintah ini untuk mengetahui status penguncian Anda saat ini di grup Anda!
+- /lock (locktype): Mengunci jenis pesan X
+- /unlock (locktype): Membuka jenis pesan X
 
 Locktypes:
 - all
@@ -26,9 +26,9 @@ Locktypes:
 
 
 <b> Url Lock </b>
-Block links sent by users in your group
+Blokir tautan yang dikirim oleh pengguna di grup Anda
 
-Commands:
-- /urllock [on/off]: Enable/Disable URL Lock
+Perintah:
+- /urllock [on/off]: Aktifkan/Nonaktifkan Kunci URL
 
 """
