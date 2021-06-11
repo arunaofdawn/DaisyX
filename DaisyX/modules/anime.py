@@ -327,13 +327,13 @@ __help__ = """
 Get information about anime, manga or anime characters.
 
 <b>Available commands:</b>
-- /anime (anime): returns information about the anime.
-- /character (character): returns information about the character.
-- /manga (manga): returns information about the manga.
-- /airing (anime): returns anime airing info.
-- /kaizoku (anime): search an anime on animekaizoku.com
-- /kayo (anime): search an anime on animekayo.com
-- /ganime (anime): search an anime on gogoanime.so
-- /upcoming: returns a list of new anime in the upcoming seasons.
-- /aq : get anime random quote
+- /anime (anime): mengembalikan informasi terkait anime.
+- /character (character): mengembalikan informasi tentang karakter.
+- /manga (manga): mengembalikan informasi tentang manga.
+- /airing (anime): mengembalikan info penayangan anime.
+- /kaizoku (anime): cari anime di animekaizoku.com
+- /kayo (anime): cari anime di  animekayo.com
+- /ganime (anime):cari anime di gogoanime.so
+- /upcoming: mengembalikan daftar anime baru di musim mendatang.
+- /aq : dapatkan kutipan/quote acak anime
 """
