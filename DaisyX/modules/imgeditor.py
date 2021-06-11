@@ -86,7 +86,7 @@ async def photo(client: Client, message: Message):
                     ],
                     [
                         InlineKeyboardButton(text="🟡 CIRCLE", callback_data="circle"),
-                        InlineKeyboardButton(text="🩸 BLUR", callback_data="blur"),
+                        InlineKeyboardButton(text="☁️ BLUR", callback_data="blur"),
                         InlineKeyboardButton(text="🌌 BORDER", callback_data="border"),
                     ],
                     [
@@ -99,7 +99,7 @@ async def photo(client: Client, message: Message):
                     [
                         InlineKeyboardButton(text="🌇 SEPIA", callback_data="sepia"),
                         InlineKeyboardButton(text="✏️ PENCIL", callback_data="pencil"),
-                        InlineKeyboardButton(text="🐶 CARTOON", callback_data="cartoon"),
+                        InlineKeyboardButton(text="🦄 CARTOON", callback_data="cartoon"),
                     ],
                     [
                         InlineKeyboardButton(text="🔄 INVERT", callback_data="inverted"),
@@ -109,7 +109,7 @@ async def photo(client: Client, message: Message):
                         ),
                     ],
                     [
-                        InlineKeyboardButton(text="❌ CLOSE", callback_data="close_e"),
+                        InlineKeyboardButton(text="❌ Tutup", callback_data="close_e"),
                     ],
                 ]
             ),
@@ -453,11 +453,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
 __mod_name__ = "Image Editor"
 __help__ = """
 <b> IMAGE EDITOR </b>
-Daisy have some advanced image editing tools inbuilt
-Bright, Circle, RemBG, Blur, Border, Flip, Glitch, Sticker maker and more
+Roso memiliki beberapa alat pengeditan gambar canggih bawaan
+Cerah, Lingkaran, Penghapus latar, Blur, Perbatasan, invert, Glitch, Pembuat stiker, dan lainnya
 
-- /edit [reply to image]: Open the image editor
-- /rmbg [REPLY]: Revove BG of replied image/sticker.
+- /edit [balas ke gambar]: Buka editor gambar
+- /rmbg [balas ke gambar]: Menghapus latar belakang dari gambar/stiker yang dibalas.
 
-<i> Special credits to TroJanzHEX </i>
+<i> Kredit khusus untuk TroJanzHEX </i>
 """
