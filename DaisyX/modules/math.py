@@ -157,26 +157,26 @@ async def _(message):
 
 
 __help__ = """
-Solves complex math problems using https://newton.now.sh and python math module
+Memecahkan masalah matematika yang kompleks menggunakan https://newton.now.sh dan modul matematika python
  - /simplify- Math /math 2^2+2(2)
  - /factor - Factor /factor x^2 + 2x
  - /derive - Derive /derive x^2+2x
- - /integrate - Integrate /integrate x^2+2x
- - /zeroes - Find 0's /zeroes x^2+2x
- - /tangent - Find Tangent /tangent 2lx^
- - /area - Area Under Curve /area 2:4lx^3`
- - /cos - Cosine /cos pi
- - /sin - Sine /sin 0
+ - /integrate - Mengintegrasikan /integrate x^2+2x
+ - /zeroes - Temukan 0's /zeroes x^2+2x
+ - /tangent - Temukan Tangent /tangent 2lx^
+ - /area - Area di Bawah Kurva /area 2:4lx^3`
+ - /cos - Cosinus /cos pi
+ - /sin - Sinus /sin 0
  - /tan - Tangent /tan 0
- - /arccos - Inverse Cosine /arccos 1
- - /arcsin - Inverse Sine /arcsin 0
+ - /arccos - Inverse Cosinus /arccos 1
+ - /arcsin - Inverse Sinus /arcsin 0
  - /arctan - Inverse Tangent /arctan 0
- - /abs - Absolute Value /abs -1
- - /log* - Logarithm /log 2l8
+ - /abs - Nilai mutlak /abs -1
+ - /log* - Logaritma /log 2l8
  
-Keep in mind, To find the tangent line of a function at a certain x value, send the request as c|f(x) where c is the given x value and f(x) is the function expression, the separator is a vertical bar '|'. See the table above for an example request.
-To find the area under a function, send the request as c:d|f(x) where c is the starting x value, d is the ending x value, and f(x) is the function under which you want the curve between the two x values.
-To compute fractions, enter expressions as numerator(over)denominator. For example, to process 2/4 you must send in your expression as 2(over)4. The result expression will be in standard math notation (1/2, 3/4).
+Perlu diingat, Untuk menemukan garis singgung suatu fungsi pada nilai x tertentu, kirim permintaan sebagai c|f(x) di mana c adalah nilai x yang diberikan dan f(x) adalah ekspresi fungsi, pemisahnya adalah vertikal batang '|'. Lihat tabel di atas untuk contoh permintaan.
+Untuk menemukan area di bawah suatu fungsi, kirim permintaan sebagai c:d|f(x) di mana c adalah nilai x awal, d adalah nilai x akhir, dan f(x) adalah fungsi di mana Anda ingin kurva antara dua nilai x.
+Untuk menghitung pecahan, masukkan ekspresi sebagai pembilang (lebih) penyebut. Misalnya, untuk memproses 2/4 Anda harus mengirimkan ekspresi Anda sebagai 2(over)4. Ekspresi hasil akan dalam notasi matematika standar (1/2, 3/4).
 """
 
 __mod_name__ = "Maths"
