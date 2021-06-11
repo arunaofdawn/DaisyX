@@ -18,44 +18,41 @@
 
 __mod_name__ = "Music Player"
 __help__ = """
-          <b>》** DAISYXMUSIC v2 ** 《</b>
+          <b>》** Roso-Music v2 ** 《</b>
             
- DAISYXMUSIC plays plays music in your group's voice chat
+ Bot ini dapat memutar musik di obrolan suara grup Anda
  
- Assistant name >> @DaisyXhelper
+ Assistant name >> @RosoAssistant
  
-<b> Setting up </b>
+<b> Pengaturan </b>
 
-1) Make bot admin
-2) Start a voice chat
-3) Try `/play [song name]` for the first time by an admin
-*) If userbot joined enjoy music, If not add @DaisyXhelper to your group and retry
+1) Jadikan bot sebagai admin
+2) Mulai obrolan suara
+3) Coba `/play [nama lagu]` untuk pertama kalinya lakukanlah oleh admin
+*) Jika Asisten bot bergabung selamat nikmati musik, Jika tidak..tambahkan @RosoAssistant ke grup Anda dan coba lagi
 
-<b> Commands </b>
+<b> Commands/Perintah </b>
 
-=>> Song Playing 🎧 
-
-  /play: Play song using youtube music
-  /play [yt url] : Play the given yt url
-  /dplay: Play song via deezer
-  /splay: Play song via jio saavn
+=>> Memutar Lagu 🎧
+  /play: Putar lagu menggunakan musik youtube
+  /play [yt url] : Memutar url/link yt yang diberikan
+  /dplay: Memutar lagu melalui deezer
+  /splay: Memutar lagu melalui jio saavn
   
-=>> Playback ⏯
+=>> Pemutaran ⏯
+  /player: Buka menu Pengaturan pemain
+  /skip: Melewati trek saat ini
+  /pause: Jeda trek lagu
+  /resume: Melanjutkan trek lagu yang dijeda
+  /end: Menghentikan pemutaran lagu
+  /current: Menunjukkan trek lagu yang di Putar saat ini
+  /playlist: Tampilkan daftar putar
 
-  /player: Open Settings menu of player
-  /skip: Skips the current track
-  /pause: Pause track
-  /resume: Resumes the paused track
-  /end: Stops media playback
-  /current: Shows the current Playing track
-  /playlist: Shows playlist
+=>> Pengaturan Tambahan 🧑‍🔧
+  /admincache: Memperbarui info admin grup Anda. Coba jika bot tidak mengenali admin
+  /userbotjoin: Undang @RosoAssistant ke dalam Obrolan
 
-=>> More tools 🧑‍🔧
+*cmd Player dan semua cmd lainnya kecuali /play, /current dan /playlist hanya untuk admin dengan izin kelola grup.
 
-  /admincache: Updates admin info of your group. Try if bot isn't recognize admin
-  /userbotjoin: Invite @DaisyXhelper Userbot to your chat
-
-*Player cmd and all other cmds except /play, /current  and /playlist  are only for admins with manage group
-
-<b> PLEASE NOTE THIS SERVICE IS UNSTABLE AND CAN BE STOPPED ANYTIME </b>
+<b> HARAP DICATAT LAYANAN INI TIDAK STABIL DAN DAPAT DIHENTIKAN KAPAN SAJA </b>
 """
