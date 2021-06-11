@@ -111,9 +111,12 @@ def resize_image(image):
 
 
 __mod_name__ = """
-<b> Telegraph text/video upload plugin </b>
- - /telegraph media <i>reply to image or video<i> : Upload image and video directly to telegraph.
- - /telegraph text <i>reply to text</i> : upload text directly to telegraph .
+<b> Plugin untuk unggah teks/media ke telegraph </b>
+ - /telegraph media <i>balas ke gambar atau video<i> : Unggah gambar dan video langsung ke telegraph.
+ - /telegraph text <i>balas ke teks</i> : unggah teks langsung ke telegraph.
+hasilnya:
+/telegraph media: https://telegra.ph/file/a56e24b715f3c14947276.jpg
+/telegraph text: https://telegra.ph/Roso-05-29
 """
 
 __mod_name__ = "Telegraph"
