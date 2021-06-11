@@ -395,6 +395,7 @@ BOT INI MEMPUNYAI SISTEM AI YANG DAPAT MENDETEKSI & MEMBALAS HINGGA 200 BAHASA
  - /ask [question]: Ajukan pertanyaan ke bot
  - /ask [reply to voice note]: Dapatkan balasan suara
  catatan: semakin sering anda memakainya semakin terkuras dyno saya:')
+
 """
 
 __mod_name__ = "AI Assistant"
