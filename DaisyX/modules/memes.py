@@ -1364,73 +1364,64 @@ async def _(event):
 
 
 SFW_STRINGS = (
-    "Owww ... Such a stupid idiot.",
-    "Don't drink and type.",
-    "I think you should go home or better a mental asylum.",
-    "Command not found. Just like your brain.",
-    "Do you realize you are making a fool of yourself? Apparently not.",
-    "You can type better than that.",
-    "Bot rule 544 section 9 prevents me from replying to stupid humans like you.",
-    "Sorry, we do not sell brains.",
-    "Believe me you are not normal.",
-    "I bet your brain feels as good as new, seeing that you never use it.",
-    "If I wanted to kill myself I'd climb your ego and jump to your IQ.",
-    "Zombies eat brains... you're safe.",
-    "You didn't evolve from apes, they evolved from you.",
-    "Come back and talk to me when your I.Q. exceeds your age.",
-    "I'm not saying you're stupid, I'm just saying you've got bad luck when it comes to thinking.",
-    "What language are you speaking? Cause it sounds like bullshit.",
-    "Stupidity is not a crime so you are free to go.",
-    "You are proof that evolution CAN go in reverse.",
-    "I would ask you how old you are but I know you can't count that high.",
-    "As an outsider, what do you think of the human race?",
-    "Brains aren't everything. In your case they're nothing.",
-    "Ordinarily people live and learn. You just live.",
-    "I don't know what makes you so stupid, but it really works.",
-    "Keep talking, someday you'll say something intelligent! (I doubt it though)",
-    "Shock me, say something intelligent.",
-    "Your IQ's lower than your shoe size.",
-    "Alas! Your neurotransmitters are no more working.",
-    "Are you crazy you fool.",
-    "Everyone has the right to be stupid but you are abusing the privilege.",
-    "I'm sorry I hurt your feelings when I called you stupid. I thought you already knew that.",
-    "You should try tasting cyanide.",
-    "Your enzymes are meant to digest rat poison.",
-    "You should try sleeping forever.",
-    "Pick up a gun and shoot yourself.",
-    "You could make a world record by jumping from a plane without parachute.",
-    "Stop talking BS and jump in front of a running bullet train.",
-    "Try bathing with Hydrochloric Acid instead of water.",
-    "Try this: if you hold your breath underwater for an hour, you can then hold it forever.",
-    "Go Green! Stop inhaling Oxygen.",
-    "God was searching for you. You should leave to meet him.",
-    "give your 100%. Now, go donate blood.",
-    "Try jumping from a hundred story building but you can do it only once.",
-    "You should donate your brain seeing that you never used it.",
-    "Volunteer for target in an firing range.",
-    "Head shots are fun. Get yourself one.",
-    "You should try swimming with great white sharks.",
-    "You should paint yourself red and run in a bull marathon.",
-    "You can stay underwater for the rest of your life without coming back up.",
-    "How about you stop breathing for like 1 day? That'll be great.",
-    "Try provoking a tiger while you both are in a cage.",
-    "Have you tried shooting yourself as high as 100m using a canon.",
-    "You should try holding TNT in your mouth and igniting it.",
-    "Try playing catch and throw with RDX its fun.",
-    "I heard phogine is poisonous but i guess you wont mind inhaling it for fun.",
-    "Launch yourself into outer space while forgetting oxygen on Earth.",
-    "You should try playing snake and ladders, with real snakes and no ladders.",
-    "Dance naked on a couple of HT wires.",
-    "Active Volcano is the best swimming pool for you.",
-    "You should try hot bath in a volcano.",
-    "Try to spend one day in a coffin and it will be yours forever.",
-    "Hit Uranium with a slow moving neutron in your presence. It will be a worthwhile experience.",
-    "You can be the first person to step on sun. Have a try.",
-    "People like you are the reason we have middle fingers.",
-    "When your mom dropped you off at the school, she got a ticket for littering.",
-    "You’re so ugly that when you cry, the tears roll down the back of your head…just to avoid your face.",
-    "If you’re talking behind my back then you’re in a perfect position to kiss my a**!.",
-    "Stupidity is not a crime so you are free to go.",
+        "Berhenti jadi anak alay sekarang juga!.",
+    "Jangan minum sambil mengetik.",
+    "Saya pikir Anda harus pulang atau lebih baik ke rumah sakit jiwa.",
+    "Apakah kamu sadar bahwa kamu membodohi dirimu sendiri? Rupanya tidak.",
+    "Anda bisa mengetik lebih baik dari itu.",
+    "Maaf, kami tidak menjual otak.",
+    "Percayalah kamu tidak normal.",
+    "Saya yakin otak Anda terasa seperti baru, karena Anda tidak pernah menggunakannya.",
+    "Jika saya ingin bunuh diri, saya akan meningkatkan ego Anda dan melompat ke IQ Anda.",
+    "Jika zombie hanya memakan otak ...kamu aman.",
+    "Kamu tidak berevolusi dari kera,... mereka yang berevolusi darimu.",
+    "Kembalilah dan bicara padaku ketika IQ mu melebihi umurmu.",
+    "Saya tidak mengatakan Anda bodoh, saya hanya mengatakan Anda tidak beruntung dalam hal berpikir.",
+    "Kamu berbicara seperti itu keren? Nyatanya kamu hanya kesepian dan ingin diperhatikan bukan.",
+    "Kebodohan bukanlah kejahatan jadi kamu bebas untuk pergi.",
+    "Anda adalah bukti bahwa evolusi BISA mundur.",
+    "Saya akan menanyakan berapa umur Anda tetapi saya tahu Anda tidak dapat menghitung setinggi itu.",
+    "Sebagai orang luar, apa pendapat Anda tentang umat manusia?",
+    "Otak bukanlah segalanya. Hanya dalam kasusmu mereka bukan apa-apa.",
+    "Biasanya orang hidup dan belajar. Kamu hanya hidup.",
+    "Aku tidak tahu apa yang kamu lakukan untuk menjadi bodoh, tapi itu benar-benar berhasil👏.",
+    "Teruslah bicara, suatu hari nanti kamu akan mengatakan sesuatu yang cerdas! Tapi aku ragu.",
+    "Shock saya, katakan sesuatu yang cerdas.",
+    "IQ Anda lebih rendah dari ukuran sepatu Anda.",
+    "Aduh! Neurotransmiter Anda tidak lagi bekerja.",
+    "Setiap orang berhak untuk menjadi bodoh tetapi Anda menyalahgunakan hak istimewa tersebut.",
+    "Maaf aku melukai perasaanmu saat menyebutmu bodoh. Kukira kamu sudah tahu itu.",
+    "Anda harus mencoba mencicipi sianida.",
+    "Enzim Anda dimaksudkan untuk mencerna racun tikus.",
+    "Kamu harus mencoba tidur selamanya.",
+    "Anda bisa membuat rekor dunia dengan melompat dari pesawat tanpa parasut.",
+    "Berhenti berbicara tentang BS dan melompat di depan kereta peluru yang sedang berjalan.",
+    "Cobalah mandi dengan Hydrochloric Acid daripada air.",
+    "Anda pasti harus mencoba ini: jika Anda menahan napas di bawah air selama satu jam, Anda dapat menahannya selamanya.",
+    "Bertindaklah Hijau! Hentikan menghirup Oksigen.",
+    "Tuhan sedang mencarimu. Maka kamu harus pergi untuk menemuinya.",
+    "Berikan 100% darahmu untuk donor darah, agar dirimu dapat bermanfaat.",
+    "Cobalah melompat dari gedung seratus lantai tetapi Anda hanya dapat melakukannya sekali.",
+    "Anda harus menyumbangkan otak Anda karena Anda tidak pernah menggunakannya.",
+    "Relawan untuk target dalam jarak tembak.",
+    "Tembak kepala itu menyenangkan. Dapatkan sendiri.",
+    "Anda harus mencoba berenang dengan hiu putih besar.",
+    "Anda harus mengecat diri Anda dengan warna merah dan berlari dalam maraton banteng.",
+    "Anda bisa tetap di bawah air selama sisa hidup Anda tanpa kembali lagi.",
+    "Bagaimana kalau kamu berhenti bernapas selama 1 hari? Sepertinya itu bagus.",
+    "Cobalah memprovokasi harimau saat kalian berdua berada di dalam sangkar.",
+    "Sudahkah Anda mencoba menembak diri Anda sendiri setinggi 100m menggunakan canon.",
+    "Anda harus mencoba menahan TNT di mulut Anda dan menyalakannya.",
+    "Coba mainkan tangkap dan lempar dengan RDX itu menyenangkan.",
+    "Saya dengar phogine beracun tapi saya rasa Anda tidak keberatan menghirupnya untuk bersenang-senang.",
+    "Luncurkan diri Anda ke luar angkasa sambil melupakan oksigen di Bumi.",
+    "Kamu harus mencoba bermain ular tangga, dengan ular sungguhan dan tanpa tangga.",
+    "Menari telanjang di beberapa kabel HT.",
+    "Gunung Berapi Aktif adalah kolam renang terbaik untuk Anda.",
+    "Anda harus mencoba mandi air panas di gunung berapi.",
+    "Cobalah untuk menghabiskan satu hari di peti mati dan itu akan menjadi milikmu selamanya.",
+    "Pukul Uranium dengan neutron yang bergerak lambat di hadapanmu. Ini akan menjadi pengalaman yang berharga.",
+    "Kebodohan bukanlah kejahatan jadi kamu bebas untuk pergi.",
 )
 
 
@@ -1756,42 +1747,42 @@ file_help = file_help.replace(".py", "")
 file_helpo = file_help.replace("_", " ")
 
 __help__ = """
-**Some memes command, find it all out yourself !**
+**Beberapa perintah meme, cari tahu sendiri!**
 
- - /owo: OWO de text
- - /stretch: STRETCH de text
- - /clapmoji: Type in reply to a message and see magic
- - /bmoji: Type in reply to a message and see magic
- - /copypasta: Type in reply to a message and see magic
+ - /owo: OWO de teks
+ - /stretch: STRETCH de teks
+ - /clapmoji: Ketik balasan pesan dan lihat keajaiban
+ - /bmoji: Ketik balasan pesan dan lihat keajaiban
+ - /copypasta: Ketik balasan pesan dan lihat keajaiban
  - /vapor: owo vapor dis
- - /shout <i>text</i>: Write anything that u want it to should
- - /zalgofy: reply to a message to glitch it out!
- - /table: get flip/unflip :v.
- - /decide: Randomly answers yes/no/maybe
- - /bluetext: Must type for fun
- - /toss: Tosses A coin
- - /abuse: Abuses the cunt
- - /insult: Insult the cunt
- - /slap: Slaps the cunt
- - /roll: Roll a dice.
- - /rlg: Join ears,nose,mouth and create an emo ;-;
- - /react: Check on your own
- - /rhappy: Check on your own
- - /rangry: Check on your own
- - /angrymoji: Check on your own
- - /crymoji: Check on your own
- - /cowsay, /tuxsay , /milksay , /kisssay , /wwwsay , /defaultsay , /bunnysay , /moosesay , /sheepsay , /rensay , /cheesesay , /ghostbusterssay , /skeletonsay <i>text</i>: Returns a stylish art text from the given text
- - /deepfry: Type this in reply to an image/sticker to roast the image/sticker
- - /figlet: Another Style art
- - /dice: Roll A dice
- - /dart: Throw a dart and try your luck
- - /basketball: Try your luck if you can enter the ball in the ring
- - /type <i>text</i>: Make the bot type something for you in a professional way
- - /carbon <i>text</i>: Beautifies your text and enwraps inside a terminal image [ENGLISH ONLY]
- - /sticklet <i>text</i>: Turn a text into a sticker
- - /fortune: gets a random fortune quote
- - /quotly: Type /quotly in reply to a message to make a sticker of that
- - /animate: Enwrap your text in a beautiful anime
+ - /shout <i>teks</i>: Tulis apa pun yang Anda inginkan
+ - /zalgofy: balas ke pesan untuk mengacaukannya!
+ - /table: dapatkan flip/unflip
+ - /decide: Secara acak menjawab yes/no/maybe
+ - /bluetext: Harus mengetik untuk bersenang-senang
+ - /toss: Melempar koin
+ - /abuse: Penyalahgunaan
+ - /insult: MeRoasting Anda
+ - /slap: Menampar Anda
+ - /roll: Melempar dadu.
+ - /rlg: Bergabunglah dengan telinga, hidung, mulut dan buat emot ;-;
+ - /react: Cek sendiri
+ - /rhappy: Cek sendiri
+ - /rangry: Cek sendiri
+ - /angrymoji: Cek sendiri
+ - /crymoji: Cek sendiri
+ - /cowsay, /tuxsay , /milksay , /kisssay , /wwwsay , /defaultsay , /bunnysay , /moosesay , /sheepsay , /rensay , /cheesesay , /ghostbusterssay , /skeletonsay <i>teks</i>: Mengembalikan teks seni bergaya dari teks yang diberikan
+ - /deepfry: Ketik ini sebagai balasan untuk gambar/stiker untuk memanggang gambar/stiker
+ - /figlet: Seni Gaya lain
+ - /dice: Gulung dadu
+ - /dart: Lempar anak panah dan coba keberuntunganmu
+ - /basketball: Coba keberuntungan Anda jika Anda bisa memasukkan bola ke dalam ring
+ - /type <i>teks</i>: Jadikan bot mengetik sesuatu untuk Anda secara profesional
+ - /carbon <i>teks</i>: Mempercantik teks Anda dan membungkus di dalam gambar terminal [Khusus Inggris/Latin]
+ - /sticklet <i>teks</i>: Ubah teks menjadi stiker
+ - /fortune: mendapat kutipan keberuntungan acak
+ - /quotly: Ketik /quotly dalam balas ke pesan untuk membuat stiker itu
+ - /animate: Bungkus teks Anda dalam anime yang indah
  
 """
 
