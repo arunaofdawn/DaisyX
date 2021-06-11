@@ -83,9 +83,9 @@ async def delmsg_btn(event, regexp=None, **kwargs):
 __mod_name__ = "Purges"
 
 __help__ = """
-Need to delete lots of messages? That's what purges are for!
+Perlu menghapus banyak pesan? Itulah gunanya purges!
 
-<b>Available commands:</b>
-- /purge: Deletes all messages from the message you replied to, to the current message.
-- /del: Deletes the message you replied to and your "<code>/del</code>" command message.
+<b>Perintah yang tersedia:</b>
+- /purge: Menghapus semua pesan dari pesan yang Anda balas, ke pesan saat ini.
+- /del: Menghapus pesan yang Anda balas dan pesan perintah "<code>/del</code>".
 """
