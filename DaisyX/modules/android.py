@@ -432,21 +432,21 @@ async def orangefox(message):
 __mod_name__ = "Android"
 
 __help__ = """
-Module specially made for Android users.
+Modul yang dibuat khusus untuk pengguna Android.
 
 <b>GSI</b>
-- /phh: Get the latest PHH AOSP GSIs.
-- /phhmagisk: Get the latest PHH Magisk.
+- /phh: Dapatkan PHH AOSP GSIs terbaru.
+- /phhmagisk: Dapatkan PHH Magisk terbaru.
 
 <b>Device firmware:</b>
-- /samcheck (model) (csc): Samsung only - shows the latest firmware info for the given device, taken from samsung servers.
-- /samget (model) (csc): Similar to the <code>/samcheck</code> command but having download buttons.
+- /samcheck (model) (csc): Khusus Samsung - menunjukkan info firmware terbaru untuk perangkat yang diberikan, diambil dari server samsung.
+- /samget (model) (csc): Mirip dengan perintah <code>/samcheck</code> tetapi memiliki tombol unduh.
 
 <b>Misc</b>
-- /magisk: Get latest Magisk releases.
-- /twrp (codename): Gets latest TWRP for the android device using the codename.
-- /ofox (codename): Gets latest OFRP for the android device using the codename.
-- /ofox devices: Sends the list of devices with stable releases supported by OFRP.
-- /models (codename): Search for Android device models using codename.
-- /whatis (codename): Find out which smartphone is using the codename.
+- /magisk: Dapatkan rilis Magisk terbaru.
+- /twrp (codename): Dapatkan TWRP terbaru untuk perangkat android menggunakan (codename).
+- /ofox (codename): Dapatkan OFRP terbaru untuk perangkat android menggunakan (codename).
+- /ofox devices: Mengirim daftar perangkat dengan rilis stabil yang didukung oleh OFRP.
+- /models (codename): Cari model perangkat Android menggunakan (codename).
+- /whatis (codename): Cari tahu smartphone mana yang menggunakan (codename).
 """
