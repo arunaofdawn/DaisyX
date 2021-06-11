@@ -153,6 +153,7 @@ __HELP__ = """
 - **pokedex [TEXT]** - __Pencarian Pokemon.__
 """
 
+
 @app.on_message(filters.command("inline"))
 async def inline_help(_, message):
     await app.send_message(message.chat.id, text=__HELP__)
