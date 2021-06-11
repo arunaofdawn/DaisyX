@@ -157,11 +157,11 @@ async def _(event):
             return
 
     if not event.is_reply:
-        await event.reply("Reply to any sticker to get it's pack info.")
+        await event.reply("Balas ke stiker apa pun untuk mendapatkan info paketnya.")
         return
     rep_msg = await event.get_reply_message()
     if not rep_msg.document:
-        await event.reply("Reply to any sticker to get it's pack info.")
+        await event.reply("Balas ke stiker apa pun untuk mendapatkan info paketnya.")
         return
     stickerset_attr_s = rep_msg.document.attributes
     stickerset_attr = find_instance(stickerset_attr_s, DocumentAttributeSticker)
@@ -213,7 +213,7 @@ async def get_sticker_emoji(event):
 @Daisy(pattern="^/kang ?(.*)")
 async def _(event):
     if not event.is_reply:
-        await event.reply("PLease, Reply To A Sticker / Image To Add It Your Pack")
+        await event.reply("Tolong, Balas ke Stiker/Gambar Untuk Menambahkan Paket Anda")
         return
     reply_message = await event.get_reply_message()
     sticker_emoji = await get_sticker_emoji(event)
@@ -386,9 +386,9 @@ async def _(event):
                 await silently_send_message(d_conv, response)
                 await silently_send_message(d_conv, sticker_emoji)
                 await silently_send_message(d_conv, "/done")
-    await kanga.edit("Inviting This Sticker To Your Pack 🚶")
+    await kanga.edit("Mengambil Stiker Ini Ke Paket Anda 🚶")
     await kanga.edit(
-        f"This Sticker Has Came To Your Pack.` \n**Check It Out** [Here](t.me/addstickers/{packshortname})"
+        f"Stiker Ini Telah Dimasukan Ke Paket Anda.` \n**Coba lihat** [Ini](t.me/addstickers/{packshortname})"
     )
     os.system("rm -rf  Stickers.png")
     os.system("rm -rf  AnimatedSticker.tgs")
@@ -441,11 +441,11 @@ async def _(event):
                 pass
             else:
                 await kanga.edit(
-                    "This sticker is already removed from your personal sticker pack."
+                    "Stiker ini sudah dihapus dari paket stiker pribadi Anda."
                 )
                 return
 
-        await kanga.edit("`Deleting ..`")
+        await kanga.edit("`Menghapus ..`")
 
         async with ubot.conversation("@Stickers") as bot_conv:
 
@@ -522,13 +522,13 @@ async def sticker_id(_, message):
 __mod_name__ = "Stickers"
 
 __help__ = """
-Stickers are the best way to show emotion.
+Stiker adalah cara terbaik untuk menunjukkan emosi.
 
-<b>Available commands:</b>
-- /searchsticker: Search stickers for given query.
-- /packinfo: Reply to a sticker to get it's pack info
-- /getsticker: Uploads the .png of the sticker you've replied to
-- /sticker_id : Reply to Sticker for getting sticker Id. 
-- /kang [Emoji for sticker] [reply to Image/Sticker]: Kang replied sticker/image.
-- /rmkang [REPLY]: Remove replied sticker from your kang pack.
+<b>Perintah yang tersedia:</b>
+- /searchsticker: Cari stiker untuk kueri yang diberikan.
+- /packinfo: Balas ke stiker untuk mendapatkan info paketnya/pack
+- /getsticker: Balas ke stiker untuk mengubah stiker menjadi foto(png)
+- /sticker_id : Balas ke Stiker untuk mendapatkan ID stiker. 
+- /kang [Emoji untuk stiker] [balas ke Gambar/Stiker]: Kang/Mengambil stiker atau gambar ke dalam paket/pack
+- /rmkang [REPLY]: Hapus stiker, balasan dari paket yang Anda ambil/kang
 """
