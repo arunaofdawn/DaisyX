@@ -385,16 +385,16 @@ async def inuka(client, message):
 
 __help__ = """
 <b> Chatbot </b>
-DAISY AI 3.0 ADALAH SATU-SATUNYA SISTEM AI YANG DAPAT MENDETEKSI & MEMBALAS HINGGA 200 BAHASA
+BOT INI MEMPUNYAI SISTEM AI YANG DAPAT MENDETEKSI & MEMBALAS HINGGA 200 BAHASA
 
- - /chatbot [ON/OFF]: Mengaktifkan dan menonaktifkan mode Obrolan AI (EKSKLUSIF)
+ - /chatbot [ON/OFF]: Mengaktifkan dan menonaktifkan mode Obrolan AI(EKSKLUSIF)
  - /chatbot EN : Mengaktifkan chatbot khusus bahasa Inggris
  
  
 <b> Assistant </b>
  - /ask [question]: Ajukan pertanyaan ke bot
  - /ask [reply to voice note]: Dapatkan balasan suara
- 
+ catatan: semakin sering anda memakainya semakin terkuras dyno saya:')
 """
 
 __mod_name__ = "AI Assistant"
