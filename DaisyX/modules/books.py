@@ -34,7 +34,7 @@ async def _(event):
         return
     input_str = event.pattern_match.group(1)
     lool = 0
-    KkK = await event.reply("searching for the book...")
+    KkK = await event.reply("mencari buku...")
     lin = "https://b-ok.cc/s/"
     text = input_str
     link = lin + text
@@ -50,7 +50,7 @@ async def _(event):
     for nb in total.descendants:
         nbx = nb.replace("(", "").replace(")", "")
     if nbx == "0":
-        await event.reply("No Books Found with that name.")
+        await event.reply("Tidak Ditemukan Buku dengan nama itu.")
     else:
 
         for tr in soup.find_all("td"):
@@ -65,14 +65,14 @@ async def _(event):
                 f.write("\n" + title)
                 f.write("\nBook link:- " + link + "\n\n")
 
-        f.write("By @DaisyXBot.")
+        f.write("By @RosoManage_bot.")
         f.close()
-        caption = "A collabration with Friday.\n Join Support @DaisySupport_Official"
+        caption = "Kolaborasi dengan Friday.\n Join Support @arunasupportbot"
 
         await tbot.send_file(
             event.chat_id,
             "book.txt",
-            caption=f"**BOOKS GATHERED SUCCESSFULLY!\n\nBY DAISYX. JOIN THE SUPPORT @DaisySupport_Official.**",
+            caption=f"**Buku berhasil dikumpulkan!\n\nby Roso. support kami di @arunasupportbot.**",
         )
         os.remove("book.txt")
         await KkK.delete()
