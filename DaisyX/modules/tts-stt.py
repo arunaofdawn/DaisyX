@@ -166,6 +166,6 @@ async def _(event):
 _mod_name_ = "Text to Speech"
 
 _help_ = """
- - /tts: Reply to any message to get text to speech output
- - /stt: Type in reply to a voice message(english only) to extract text from it.
+ - /tts: Balas pesan apa pun untuk mendapatkan output teks ke ucapan
+ - /stt: Ketik membalas pesan suara (khusus bhs Inggris) untuk mengekstrak teks darinya.
 """
