@@ -165,7 +165,7 @@ STRINGS:
   pm_menu:
     start_hi_group: 'Hai yang disana! Nama saya Roso'
     start_hi: "Hai yang disana! Nama saya <b>Roso.</b>\nSaya bisa membantu mengatur grup dengan fitur-fitur yang berguna, jangan ragu untuk menambahkan saya ke grup anda!"
-    btn_source: "🧑‍💻 Owner"
+    btn_source: "🧑‍💻 Pemilik"
     btn_help: "❔ Bantuan"
     btn_lang: "🇮🇩 Indonesia"
     btn_channel: "🔊 Dukungan"
@@ -370,11 +370,11 @@ STRINGS:
     #/fcheck
     fcheck_header: "<b>Info blokir federasi:</b>\n"
     fbanned_count_pm: "Anda terblokir di {count} federasi!\n"
-    "fban_info:fcheck": "You have been fbanned in {fed} federation on {date}, No reason was given!"
-    "fban_info:fcheck:reason": "You have been fbanned in {fed} federation on {date} because of reason -\n {reason}\n"
-    fbanned_data: "{user} has been fbanned in {count} federation(s).\n"
-    fbanned_nowhere: "{user} isn't fbanned anywhere!\n"
-    fbanned_in_fed: "Including the <b>{fed}</b> federation!\n"
+    "fban_info:fcheck": "Anda telah di-fban di {fed} federasi aktif {date}, Tidak ada alasan yang diberikan!"
+    "fban_info:fcheck:reason": "Anda telah di-fban di {fed} federasi aktif {date} karena alasan -\n {reason}\n"
+    fbanned_data: "{user} telah di-fban di {count} federasi(s).\n"
+    fbanned_nowhere: "{user} tidak di-fban di mana saja!\n"
+    fbanned_in_fed: "Termasuk <b>{fed}</b> federasi!\n"
     "fbanned_in_fed:reason": "Including the <b>{fed}</b> federation for reason of -\n <code>{reason}</code>"
     contact_in_pm: "\n\nFor more info on your fbans, please send me a direct message for privacy!"
     too_long_fbaninfo: "Well! your fbaninfo requires a file!"
@@ -400,16 +400,16 @@ STRINGS:
     chat_lang: "Current chat language: <b>{lang}</b>"
     select_pm_lang: "\n<b>Select your new language:</b>"
     select_chat_lang: "\n<b>Select new chat language:</b>"
-    crowdin_btn: "🌎 Help us with translation"
-    help_us_translate: "\n\n<a href=\"https://crowdin.com/project/DaisyXx\">🌎 Help us improve our translations</a>"
-    not_supported_lang: This language is not supported!
-    lang_changed: Language was changed to <b>{lang_name}</b>.
-    see_translators: '👥 See translators'
+    crowdin_btn: "🌎 Bantu kami dengan terjemahan"
+    help_us_translate: "\n\n<a href=\"https://crowdin.com/project/DaisyXx\">🌎 Bantu kami meningkatkan terjemahan kami</a>"
+    not_supported_lang: Bahasa ini tidak didukung!
+    lang_changed: Bahasa telah diubah ke <b>{lang_name}</b>.
+    see_translators: '👥 Lihat penerjemah'
     back: Back
   connections:
-    pm_connected: "Your PM has been successfully connected to <b>{chat_name}</b>!"
-    connected_pm_to_me: "Your PM has been successfully connected to <b>{chat_name}</b>! Please pm me to start using connection."
-    chat_connection_tlt: "<b>Chat connection</b>\n"
+    pm_connected: "PM Anda telah berhasil terhubung ke <b>{chat_name}</b>!"
+    connected_pm_to_me: "PM Anda telah berhasil terhubung ke <b>{chat_name}</b>! Please pm me to start using connection."
+    chat_connection_tlt: "<b>Koneksi obrolan</b>\n"
     connected_chat: |
       <b>Current connected chat:</b>
       {chat_name}
@@ -447,19 +447,19 @@ STRINGS:
     #is chat creator
     unable_identify_creator: "Unable to identify anonymous chat creator, duplicate signature (titles) found!"
   owner_stuff:
-    father: "\nHe is my creator."
-    sudo_crown: "\nHey! Look, that user has a crown, let me see it... Wow, it has an engraving - <b>'sudo user'</b>!"
+    father: "\nDia adalah pengembangku."
+    sudo_crown: "\nHei! Lihat, pengguna itu memiliki mahkota, biarkan aku melihatnya ... Wow, itu memiliki ukiran - <b>'sudo user'</b>!"
   stickers:
-    rpl_to_sticker: "Reply to a sticker!"
+    rpl_to_sticker: "Balas ke stiker!"
     ur_sticker: |
       <b>Emoji:</b> <code>{emoji}</code>
       <b>Sticker ID:</b> <code>{id}</code>
   pins:
-    no_reply_msg: "Reply to a message to pin!"
+    no_reply_msg: "Balas pesan untuk disematkan!"
     chat_not_modified_pin: "That message is already pinned!"
     chat_not_modified_unpin: "There isn't any pinned message to unpin!"
-    pinned_success: "Successfully pinned!"
-    unpin_success: "Successfully unpinned!"
+    pinned_success: "Berhasil disematkan!"
+    unpin_success: "Berhasil melepas pin!"
   users:
     user_info: "<b>User info:</b>\n"
     info_id: "ID: <code>{id}</code>"
@@ -493,10 +493,10 @@ STRINGS:
   restrictions:
     user_not_in_chat: User is not in this chat!
     #Kicks
-    kick_DaisyX: Instead of trying kick me you could spend your time better. Thats just boring.
-    kick_admin: Kicking admin is not best idea thought.
+    kick_DaisyX: Alih-alih mencoba menendang saya, Anda bisa menghabiskan waktu Anda dengan lebih baik. Itu hanya membosankan.
+    kick_admin: Menendang admin bukanlah ide terbaik.
     kick_self: If you want to kick yourself - just leave this chat. I would rather not see you than look at these pathetic attempts at self-punishment.
-    user_kicked: "{user} was kicked by {admin} in {chat_name}."
+    user_kicked: "{user} telah ditendang oleh {admin} di {chat_name}."
     #Mutes
     mute_DaisyX: Actually, I'll be happy to shut up you instead.
     mute_admin: If you think you can shut up an admin, you are wrong!
