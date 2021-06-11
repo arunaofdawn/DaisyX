@@ -388,25 +388,25 @@ __filters__ = {
 __mod_name__ = "Warnings"
 
 __help__ = """
-You can keep your members from getting out of control using this feature!
+Anda dapat menjaga anggota Anda agar tidak lepas kendali menggunakan fitur ini!
 
-<b>Available commands:</b>
-<b>General (Admins):</b>
-- /warn (?user) (?reason): Use this command to warn the user! you can mention or reply to the offended user and add reason if needed
-- /delwarns or /resetwarns: This command is used to delete all the warns user got so far in the chat
-- /dwarn [reply]: Delete the replied message and warn him
-<b>Warnlimt (Admins):</b>
-- /warnlimit (new limit): Sets a warnlimit
-Not all chats want to give same maximum warns to the user, right? This command will help you to modify default maximum warns. Default is 3
+<b>Perintah yang tersedia:</b>
+<b>Perintah Umum(Admin):</b>
+- /warn (user) (alasan): Gunakan perintah ini untuk memperingatkan pengguna! Anda dapat menyebutkan atau membalas pengguna yang tersinggung dan menambahkan alasan jika diperlukan
+- /delwarns or /resetwarns: Perintah ini digunakan untuk menghapus semua peringatan yang didapat pengguna sejauh ini dalam obrolan
+- /dwarn [reply]: Hapus pesan yang dibalas dan peringatkan dia
+<b>Batas peringatan(Admin):</b>
+- /warnlimit (batas baru/limit): Menetapkan batas peringatan warn
+Tidak semua chat ingin memberikan peringatan maksimal yang sama kepada pengguna, bukan? Perintah ini akan membantu Anda untuk mengubah peringatan maksimum default. Standarnya adalah 3
 
-The warnlimit should be greater than <code>1</code> and less than <code>10,000</code>
+Batas peringatan harus lebih besar dari <code>1</code> dan kurang dari <code>10,000</code>
 
-<b>Warnaction (Admins):</b>
-/warnaction (mode) (?time)
-Well again, not all chats want to ban (default) users when exceed maximum warns so this command will able to modify that.
-Current supported actions are <code>ban</code> (default one), <code>mute</code>, <code>tmute</code>. The tmute mode require <code>time</code> argument as you guessed.
+<b>Tindakan peringatan(Admin):</b>
+/warnaction (mode) (waktu)
+Sekali lagi, tidak semua obrolan ingin melarang pengguna (default) ketika melebihi peringatan maksimum sehingga perintah ini akan dapat mengubahnya.
+Tindakan yang didukung saat ini adalah <code>ban</code> (default one), <code>mute</code>, <code>tmute</code>. Mode tmute membutuhkan <code>time</code> argumen seperti yang Anda duga.
 
-<b>Available for all users:</b>
-/warns (?user)
-Use this command to know number of warns and information about warns you got so far in the chat. To use yourself you doesn't require user argument.
+<b>Tersedia untuk semua Anggota:</b>
+/warns (user)
+Gunakan perintah ini untuk mengetahui jumlah peringatan dan informasi tentang peringatan yang Anda dapatkan sejauh ini dalam obrolan. Untuk menggunakan diri Anda sendiri, Anda tidak memerlukan argumen pengguna.
 """
