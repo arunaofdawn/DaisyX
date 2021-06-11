@@ -66,93 +66,92 @@ class AioHttp:
 
 __mod_name__ = "Inline"
 __help__ = """
- <b> INLINE BOT SERVICE OF @DAISYXBOT </b> 
+ <b> LAYANAN INLINE BOT </b> 
  
-<i> I'm more efficient when added as group admin. By the way these commands can be used by anyone in a group via inline.</i>
+<i> Saya lebih efisien ketika ditambahkan sebagai admin grup. Omong-omong, perintah ini dapat digunakan oleh siapa saja dalam grup melalui inline.</i>
 
 <b>Syntax</b>
-   @DaisyXBot [command] [query]
+   @RosoManage_bot [perintah] [kata kunci]
 
-<b> Commands Available</b>
-- alive - Check Bot's Stats.
-- yt [query] - Youtube Search.
-- tr [LANGUAGE_CODE] [QUERY]** - Translate Text.
-- modapk [name] - Give you direct link of mod apk.
-- ud [QUERY] - Urban Dictionary Query
-- google [QUERY] - Google Search.
-- webss [URL] - Take Screenshot Of A Website.
-- bitly [URL] - Shorten A Link.
-- wall [Query] - Find Wallpapers.
-- pic [Query] - Find pictures.
-- saavn [SONG_NAME] - Get Songs From Saavn.
-- deezer [SONG_NAME] - Get Songs From Deezer.
-- torrent [QUERY] - Torrent Search.
-- reddit [QUERY] - Get memes from reddit.
-- imdb [QUERY] - Search movies on imdb.
-- spaminfo [ID] - Get spam info of the user.
-- lyrics [QUERY] - Get lyrics of the song.
-- paste [TEXT] - Paste text on pastebin.
-- define [WORD] - Get definition from Dictionary.
-- synonyms [WORD] - Get synonyms from Dictionary.
-- antonyms [WORD] - Get antonyms from Dictionary.
-- country [QUERY] - Get Information about given country.
-- cs - Gathers Cricket info (Globally).
-- covid [COUNTRY] - Get covid updates of given country.
-- fakegen - Gathers fake information.
-- weather [QUERY] - Get weather information.
-- datetime [QUERY] - Get Date & time information of given country/region.
-- app [QUERY] - Search for apps in playstore.
-- gh [QUERY] - Search github.
-- so [QUERY] - Search stack overflow.
-- wiki [QUERY] - Search wikipedia.
-- ping - Check ping rate.
-- pokedex [TEXT]: Pokemon Search
+<b> Perintah Tersedia </b>
+- alive - Periksa Statistik Bot.
+- yt [kata kunci] - Pencarian Youtube.
+- tr [kode bahasa] [pertanyaan]** - Terjemahkan Teks.
+- modapk [nama] - Memberi Anda tautan(link) langsung mod apk.
+- ud [pertanyaan] - Kamus Perkotaan
+- google [pertanyaan] - Pencarian Google.
+- webss [URL] - Ambil Tangkapan Layar Situs Web.
+- bitly [URL] - Persingkat Tautan.
+- wall [Query] - Temukan Wallpaper.
+- pic [Query] - Temukan gambar.
+- saavn [nama lagu] - Dapatkan Lagu Dari Saavn.
+- deezer [nama lagu] - Dapatkan Lagu Dari Deezer.
+- torrent [QUERY] - Pencarian Torrent.
+- reddit [QUERY] - Dapatkan meme dari reddit.
+- imdb [QUERY] - Cari film di imdb.
+- spaminfo [id] - Dapatkan info spam dari pengguna.
+- lyrics [judul] - Dapatkan lirik lagu.
+- paste [teks] - Tempel teks di pastebin.
+- define [kata] - Dapatkan definisi dari Kamus.
+- synonyms [kata] - Dapatkan sinonim dari Kamus.
+- antonyms [kata] - Dapatkan antonim dari Kamus.
+- country [negara] - Dapatkan Informasi tentang negara tertentu.
+- cs - Mengumpulkan info Kriket (Secara Global).
+- covid [negara] - Dapatkan pembaruan informasi covid dari negara tertentu.
+- fakegen - Mengumpulkan informasi palsu.
+- weather [kota] - Dapatkan informasi cuaca.
+- datetime [QUERY] - Dapatkan informasi Tanggal & waktu dari negara/wilayah tertentu.
+- app [QUERY] - Cari aplikasi di playstore.
+- gh [QUERY] - Cari github.
+- so [QUERY] - Cari tumpukan overflow.
+- wiki [QUERY] - Cari di wikipedia.
+- ping - Periksa kecepatan ping.
+- pokedex [teks]: Pencarian Pokemon
 """
 
 __MODULE__ = "Inline"
 __HELP__ = """
- ==>> **INLINE BOT SERVICE OF @DAISYXBOT** <<==
-`I'm more efficient when added as group admin. By the way these commands can be used by anyone in a group via inline.`
+ ==>> **LAYANAN INLINE BOT @RosoManage_bot** <<==
+`Saya lebih efisien ketika ditambahkan sebagai admin grup. Omong-omong, perintah ini dapat digunakan oleh siapa saja dalam grup melalui inline.`
 
    >> Syntax <<
-@DaisyXBot [command] [query]
+@RosoManage_bot [perintah] [kata kunci]
 
-   >> Commands Available <<
-- **alive** - __Check Bot's Stats.__
-- **yt [query]** - __Youtube Search.__
-- **tr [LANGUAGE_CODE] [QUERY]** - __Translate Text.__
-- **ud [QUERY]** - __Urban Dictionary Query.__
-- **google [QUERY]** - __Google Search.__
-- **modapk [name]** - __Give you direct link of mod apk__
-- **webss [URL]** - __Take Screenshot Of A Website.__
-- **bitly [URL]** - __Shorten A Link.__
-- **wall [Query]** - __Find Wallpapers.__
-- **pic [Query]** - __Find pictures.__
-- **saavn [SONG_NAME]** - __Get Songs From Saavn.__
-- **deezer [SONG_NAME]** - __Get Songs From Deezer.__
-- **torrent [QUERY]** - __Torrent Search.__
-- **reddit [QUERY]** - __Get memes from redit.__
-- **imdb [QUERY]** - __Search movies on imdb.__
-- **spaminfo [id]** - __Get spam info of the user.__
-- **lyrics [QUERY]** - __Get lyrics of given song.__
-- **paste [TEXT]** - __Paste text on pastebin.__
-- **define [WORD]** - __Get definition from Dictionary.__
-- **synonyms [WORD]** - __Get synonyms from Dictionary.__
+   >> Perintah Yang Tersedia <<
+- **alive** - __Periksa Statistik Bot.__
+- **yt [query]** - __Pencarian Youtube.__
+- **tr [KODE BAHASA] [QUERY]** - __Terjemahkan Teks.__
+- **ud [QUERY]** - __Terjemahan Kamus Perkotaan.__
+- **google [QUERY]** - __Pencarian Google.__
+- **modapk [name]** - __Memberi Anda tautan langsung mod apk__
+- **webss [URL]** - __Ambil Tangkapan Layar Situs Web.__
+- **bitly [URL]** - __Persingkat Tautan.__
+- **wall [Query]** - __Temukan Wallpaper.__
+- **pic [Query]** - __Temukan gambar.__
+- **saavn [SONG_NAME]** - __Dapatkan Lagu Dari Saavn.__
+- **deezer [SONG_NAME]** - __Dapatkan Lagu Dari Deezer.__
+- **torrent [QUERY]** - __Pencarian Torrent.__
+- **reddit [QUERY]** - __Dapatkan meme dari reddit.__
+- **imdb [QUERY]** - __Cari film di imdb.__
+- **spaminfo [id]** - __Dapatkan info spam dari pengguna.__
+- **lyrics [QUERY]** - __Dapatkan lirik lagu yang diberikan.__
+- **paste [TEXT]** - __Tempel teks di pastebin.__
+- **define [WORD]** - __Dapatkan definisi dari Kamus.__
+- **synonyms [WORD]** - __Dapatkan sinonim dari Kamus.__
 - **antonyms [WORD]** - __Get antonyms from Dictionary.__
-- **country [QUERY]** - __Get Information about given country.__
-- **cs** - __Gathers Cricket info (Globally).__
-- **covid [COUNTRY]** - __Get covid updates of given country.__
-- **fakegen** - __Gathers fake information.__
-- **weather [QUERY]** - __Get weather information.__
-- **datetime [QUERY]** - __Get Date & time information of given country/region.__
-- **app [QUERY]** - __Search for apps on playstore.
+- **country [QUERY]** - __Dapatkan Informasi tentang negara tertentu.__
+- **cs** - __Mengumpulkan info Kriket (Secara Global).__
+- **covid [COUNTRY]** - __Dapatkan pembaruan covid dari negara tertentu.__
+- **fakegen** - __Mengumpulkan informasi palsu.__
+- **weather [QUERY]** - __Dapatkan informasi cuaca.__
+- **datetime [QUERY]** - __Dapatkan informasi Tanggal & waktu dari negara/wilayah tertentu.__
+- **app [QUERY]** - __Cari aplikasi di playstore.
 - **gh [QUERY]** - __Search github.__
 - **so [QUERY]** - __Search stack overfolw.__
 - **wiki [QUERY]** - __Search wikipedia.__
-- **ping** - __Check ping rate.__
-- **pokedex [TEXT]** - __Pokemon Search.__
+- **ping** - __Periksa kecepatan ping.__
+- **pokedex [TEXT]** - __Pencarian Pokemon.__
 """
-
 
 @app.on_message(filters.command("inline"))
 async def inline_help(_, message):
@@ -623,25 +622,25 @@ async def inline_query_handler(client, query):
 
             caption = f"""<b><u>Information Gathered Successfully</b></u>
         <b>
-        Country Name:- {name}
-        Alternative Spellings:- {hu}
-        Country Area:- {area} square kilometers
-        Borders:- {borders}
-        Calling Codes:- {call}
-        Country's Capital:- {capital}
-        Country's currency:- {currencies}
+        Nama negara:- {name}
+        Ejaan Alternatif:- {hu}
+        Wilayah Negara:- {area} kilometer persegi
+        perbatasan:- {borders}
+        Kode Panggilan:- {call}
+        Ibukota Negara:- {capital}
+        Mata uang negara:- {currencies}
         Demonym:- {HmM}
-        Country Type:- {EsCoBaR}
-        ISO Names:- {iso}
-        Languages:- {lMAO}
-        Native Name:- {nonive}
-        population:- {waste}
-        Region:- {reg}
-        Sub Region:- {sub}
-        Time Zones:- {tom}
-        Top Level Domain:- {lanester}
+        Tipe Negara:- {EsCoBaR}
+        Nama ISO:- {iso}
+        Bahasa:- {lMAO}
+        Nama Asli:- {nonive}
+        populasi:- {waste}
+        Wilayah:- {reg}
+        Sub Wilayah:- {sub}
+        Zona waktu:- {tom}
+        Domain Tingkat Atas:- {lanester}
         wikipedia:- {wiki}</b>
-        Gathered By Daisy X.</b>
+        Dikumpulkan Oleh Roso.</b>
         """
             results.append(
                 InlineQueryResultArticle(
@@ -784,15 +783,15 @@ async def inline_query_handler(client, query):
                 sun_set_time = int(response_api["sys"]["sunset"]) + country_time_zone
                 lol = """ 
         WEATHER INFO GATHERED
-        Location: {}
-        Temperature ☀️: {}°С
-            minimium: {}°С
+        Lokasi: {}
+        Suhu ☀️: {}°С
+            minimum: {}°С
             maximum : {}°С
-        Humidity 🌤**: {}%
-        Wind 💨: {}m/s
-        Clouds ☁️: {}hpa
-        Sunrise 🌤: {} {}
-        Sunset 🌝: {} {}""".format(
+        Kelembaban 🌤**: {}%
+        Angin 💨: {}m/s
+        awan ☁️: {}hpa
+        Matahari terbit 🌤: {} {}
+        Matahari terbenam 🌝: {} {}""".format(
                     input_str,
                     response_api["main"]["temp"],
                     response_api["main"]["temp_min"],
@@ -1011,13 +1010,13 @@ def generate_time(to_find: str, findtype: List[str]) -> str:
     try:
         result = (
             f" DATE AND TIME OF COUNTRY"
-            f"🌍Country :{country_name}\n"
-            f"⏳Zone Name : {country_zone}\n"
-            f"🗺Country Code: {country_code}\n"
-            f"🌞Daylight saving : {daylight_saving}\n"
-            f"🌅Day : {current_day}\n"
-            f"⌚Current Time : {current_time}\n"
-            f"📆Current Date :{current_date}"
+            f"🌍Negara :{country_name}\n"
+            f"⏳Nama Zona : {country_zone}\n"
+            f"🗺Kode negara: {country_code}\n"
+            f"🌞Hemat di siang hari : {daylight_saving}\n"
+            f"🌅Hari : {current_day}\n"
+            f"⌚Waktu saat ini : {current_time}\n"
+            f"📆Tanggal sekarang :{current_date}"
         )
     except BaseException:
         result = None
