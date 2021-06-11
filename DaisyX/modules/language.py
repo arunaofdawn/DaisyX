@@ -167,12 +167,12 @@ async def __import__(chat_id, data):
 __mod_name__ = "Languages"
 
 __help__ = """
-This module is dedicated towards utlising Daisy's localization feature! You can also <a href='https://crowdin.com/project/DaisyXx'>contribute</a> for improving localization in Daisy!
+Modul ini didedikasikan untuk memanfaatkan fitur lokalisasi Bot! Anda juga bisa <a href='https://crowdin.com/project/DaisyXx'>menyumbang</a> untuk meningkatkan lokalisasi di Bot!
 
-<b>Available commands:</b>
-- /lang: Shows a list of avaible languages
-- /lang (language codename): Sets a language
+<b>Perintah yang tersedia:</b>
+- /lang: Menampilkan daftar bahasa yang tersedia
+- /lang (nama kode bahasa): Mengatur bahasa
 
-<b>Example:</b> <code>/lang</code>
-Daisy will send you bunch of inline buttons where you can select your prefered language interatively without any hassles!
+<b>Contoh:</b> <code>/lang</code>
+Bot akan mengirimkan banyak tombol sebaris di mana Anda dapat memilih bahasa pilihan Anda secara interaktif tanpa repot!
 """
