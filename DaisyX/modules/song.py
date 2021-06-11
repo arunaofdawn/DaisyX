@@ -45,13 +45,13 @@ async def ytmusic(client, message: Message):
     if not urlissed:
         await client.send_message(
             message.chat.id,
-            "Invalid Command Syntax, Please Check Help Menu To Know More!",
+            "Sintaks Perintah Tidak Valid, harap Periksa Menu Bantuan Untuk Mengetahui Lebih Lanjut!",
         )
         return
     global dl_limit
     if dl_limit >= 4:
         await message.reply_text(
-            "Daisy's server busy due to too many downloads, try again after sometime."
+            "Server Bot sibuk karena terlalu banyak unduhan, coba lagi setelah beberapa saat."
         )
         return
     pablo = await client.send_message(
@@ -69,7 +69,7 @@ async def ytmusic(client, message: Message):
         kekme = f"https://img.youtube.com/vi/{fridayz}/hqdefault.jpg"
     except:
         await message.reply_text(
-            "Sorry I accounted an error.\n Unkown error raised while getting search result"
+            "Maaf saya menghitung kesalahan.\n Kesalahan yang tidak diketahui muncul saat mendapatkan hasil pencarian"
         )
         return
 
@@ -100,11 +100,11 @@ async def ytmusic(client, message: Message):
             ytdl_data = ytdl.extract_info(mo, download=True)
 
     except Exception as e:
-        await pablo.edit(f"**Failed To Download** \n**Error :** `{str(e)}`")
+        await pablo.edit(f"**Gagal Mengunduh** \n**Error :** `{str(e)}`")
         # dl_limit = dl_limit-1
         return
     c_time = time.time()
-    capy = f"**Song Name :** `{thum}` \n**Requested For :** `{urlissed}` \n**Channel :** `{thums}` \n**Link :** `{mo}`"
+    capy = f"**Nama lagu :** `{thum}` \n**Diminta oleh :** `{urlissed}` \n**Chanel :** `{thums}` \n**Link :** `{mo}`"
     file_stark = f"{ytdl_data['id']}.mp3"
     try:
         await client.send_audio(
@@ -119,7 +119,7 @@ async def ytmusic(client, message: Message):
             progress_args=(
                 pablo,
                 c_time,
-                f"`Uploading {urlissed} Song From YouTube Music!`",
+                f"`Mengupload {urlissed} Lagu Dari YouTube Music!`",
                 file_stark,
             ),
         )
@@ -177,16 +177,16 @@ async def jssong(_, message):
     global is_downloading
     global dl_limit
     if len(message.command) < 2:
-        await message.reply_text("/saavn requires an argument.")
+        await message.reply_text("/saavn membutuhkan argumen.")
         return
     if dl_limit >= 3:
         await message.reply_text(
-            "Daisy's server busy due to too many downloads, try again after sometime."
+            "Server Bot sibuk karena terlalu banyak unduhan, coba lagi setelah beberapa saat."
         )
         return
     if is_downloading:
         await message.reply_text(
-            "Another download is in progress, try again after sometime."
+            "Unduhan lain sedang berlangsung, coba lagi setelah beberapa saat."
         )
         return
     is_downloading = True
@@ -221,16 +221,16 @@ async def jssong(_, message):
 async def deezsong(_, message):
     global is_downloading
     if len(message.command) < 2:
-        await message.reply_text("/deezer requires an argument.")
+        await message.reply_text("/deezer membutuhkan argumen.")
         return
     if is_downloading:
         await message.reply_text(
-            "Another download is in progress, try again after sometime."
+            "Unduhan lain sedang berlangsung, coba lagi setelah beberapa saat."
         )
         return
     if dl_limit >= 3:
         await message.reply_text(
-            "Daisy's server busy due to too many downloads, try again after sometime."
+            "Server Bot sibuk karena terlalu banyak unduhan, coba lagi setelah beberapa saat."
         )
         return
     is_downloading = True
@@ -263,13 +263,13 @@ async def ytmusic(client, message: Message):
     global is_downloading
     if is_downloading:
         await message.reply_text(
-            "Another download is in progress, try again after sometime."
+            "Unduhan lain sedang berlangsung, coba lagi setelah beberapa saat."
         )
         return
     global dl_limit
     if dl_limit >= 4:
         await message.reply_text(
-            "Daisy s server busy due to too many downloads, try again after sometime."
+            "Server Bot sibuk karena terlalu banyak unduhan, coba lagi setelah beberapa saat."
         )
         return
     urlissed = get_text(message)
@@ -318,20 +318,20 @@ async def ytmusic(client, message: Message):
 
             if duration > 8:
                 await pablo.edit(
-                    f"❌ Videos longer than 8 minute(s) aren t allowed, the provided video is {duration} minute(s)"
+                    f"❌ Video berdurasi lebih dari 8 menit tidak diperbolehkan, video yang disediakan adalah {duration} menit"
                 )
                 is_downloading = False
                 return
             ytdl_data = ytdl.extract_info(url, download=True)
 
     except Exception:
-        # await pablo.edit(event, f"**Failed To Download** \n**Error :** `{str(e)}`")
+        # await pablo.edit(event, f"**Gagal Mengunduh** \n**Error :** `{str(e)}`")
         is_downloading = False
         return
 
     c_time = time.time()
     file_stark = f"{ytdl_data['id']}.mp4"
-    capy = f"**Video Name ➠** `{thum}` \n**Requested For :** `{urlissed}` \n**Channel :** `{thums}` \n**Link :** `{mo}`"
+    capy = f"**Nama Video ➠** `{thum}` \n**Diminta oleh :** `{urlissed}` \n**Chanel :** `{thums}` \n**Link :** `{mo}`"
     await client.send_video(
         message.chat.id,
         video=open(file_stark, "rb"),
@@ -344,7 +344,7 @@ async def ytmusic(client, message: Message):
         progress_args=(
             pablo,
             c_time,
-            f"`Uploading {urlissed} Song From YouTube Music!`",
+            f"`Mengupload {urlissed} Lagu Dari YouTube Music!`",
             file_stark,
         ),
     )
