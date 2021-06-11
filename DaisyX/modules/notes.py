@@ -765,54 +765,54 @@ __filters__ = {
 __mod_name__ = "Notes"
 
 __help__ = """
-Sometimes you need to save some data, like text or pictures. With notes, you can save any types of Telegram's data in your chats.
-Also notes perfectly working in PM with Daisy.
+Terkadang Anda perlu menyimpan beberapa data, seperti teks atau gambar. Dengan catatan/notes, Anda dapat menyimpan semua jenis data Telegram di obrolan Anda.
+Juga mencatat bekerja sempurna di PM dengan Roso.
 
-<b>Available commands:</b>
-- /save (name) (data): Saves the note.
-- #(name) or /get (name): Get the note registered to that word.
-- /clear (name): deletes the note.
-- /notes or /saved: Lists all notes.
-- /noteinfo (name): Shows detailed info about the note.
-- /search (search pattern): Search text in notes
-- /clearall: Clears all notes
+<b>Perintah yang tersedia:</b>
+- /save (nama) (data): Menyimpan catatan.
+- #(name) atau /get (name): Dapatkan catatan yang terdaftar untuk kata itu.
+- /clear (nama): menghapus catatan.
+- /notes atau /saved: Daftar semua catatan.
+- /noteinfo (name): Menampilkan info detail tentang catatan.
+- /search (pola pencarian): Cari teks di catatan
+- /clearall: Menghapus semua catatan
 
-<b>Only in groups:</b>
-- /privatenotes (on/off): Redirect user in PM to see notes
-- /cleannotes (on/off): Will clean old notes messages
+<b>Hanya tersedia di grup:</b>
+- /privatenotes (on/off): Mengarahkan ulang pengguna di PM untuk melihat catatan
+- /cleannotes (on/off): Akan membersihkan pesan catatan lama
 
-<b>Examples:</b>
-An example of how to save a note would be via:
-<code>/save data This is example note!</code>
-Now, anyone using <code>/get data</code>, or <code>#data</code> will be replied to with This is example note!.
+<b>Contoh:</b>
+Contoh cara menyimpan catatan adalah melalui:
+<code>/save data Ini adalah contoh catatan!</code>
+Sekarang, siapa pun yang menggunakan <code>/get data</code>, atau <code>#data</code> akan dijawab dengan "Ini adalah contoh catatan!".
 
-<b>Saving pictures and other non-text data:</b>
-If you want to save an image, gif, or sticker, or any other data, do the following:
-<code>/save word</code> while replying to a sticker or whatever data you'd like. Now, the note at <code>#word</code> contains a sticker which will be sent as a reply.
+<b>Menyimpan gambar dan data non-teks lainnya:</b>
+Jika Anda ingin menyimpan gambar, gif, atau stiker, atau data lainnya, lakukan hal berikut:
+<code>/save word</code> balas/reply stiker atau data apa pun yang Anda inginkan. Sekarang, catatan di <code>#word</code> berisi stiker yang akan dikirim sebagai balasan.
 
-<b>Removing many notes per one request:</b>
-To remove many notes you can use the /clear command, just place all note names which you want to remove as argument of the command, use | as seprator, for example:
+<b>Menghapus banyak catatan sekaligus:</b>
+Untuk menghapus banyak catatan Anda dapat menggunakan perintah /clear, cukup tempatkan semua nama catatan yang ingin Anda hapus sebagai argumen dari perintah tersebut, gunakan | sebagai pemisah, misalnya:
 <code>/clear note1|note2|note3</code>
 
 <b>Notes aliases:</b>
-You can save note with many names, example:
+Anda dapat menyimpan catatan dengan banyak nama, contoh:
 <code>/save name1|name2|name3</code>
-That will save a note with 3 different names, by any you can /get note, that can be useful if users in your chat trying to get notes which exits by other names.
+Itu akan menyimpan catatan dengan 3 nama berbeda, dengan catatan apa pun dengan perintah /get note, yang dapat berguna jika pengguna di obrolan Anda mencoba mendapatkan catatan yang keluar dengan nama lain.
 
 <b>Notes buttons and variables:</b>
-Notes support inline buttons, send /buttonshelp to get started with using it.
-Variables are special words which will be replaced by actual info like if you add <code>{id}</code> in your note it will be replaced by user ID which asked note. Send /variableshelp to get started with using it.
+Notes support inline buttons, kirim /buttonshelp untuk memulai menggunakannya.
+Variabel adalah kata-kata khusus yang akan diganti dengan info aktual seperti jika Anda menambahkan <code>{id}</code> di catatanmu itu akan diganti dengan ID pengguna yang meminta catatan. Kirim /variableshelp untuk memulai menggunakannya.
 
 <b>Notes formatting and settings:</b>
-Every note can contain special settings, for example you can change formatting method to HTML by <code>%PARSEMODE_HTML</code> and fully disable it by <code>%PARSEMODE_NONE</code> ( By default formatting is Markdown or the same formatting Telegram supports )
+Setiap catatan dapat berisi pengaturan khusus, misalnya Anda dapat mengubah metode pemformatan ke HTML dengan <code>%PARSEMODE_HTML</code> dan nonaktifkan sepenuhnya dengan <code>%PARSEMODE_NONE</code> ( Secara default, pemformatan adalah markdown atau pemformatan yang sama yang didukung Telegram )
 
-<code>%PARSEMODE_(HTML, NONE)</code>: Change the note formatting
-<code>%PREVIEW</code>: Enables the links preview in saved note
+<code>%PARSEMODE_(HTML, NONE)</code>: Ubah format catatan
+<code>%PREVIEW</code>: Mengaktifkan pratinjau tautan di catatan yang disimpan
 
-<b>Saving notes from other Marie style bots:</b>
-Daisy can save notes from other bots, just reply /save on the saved message from another bot, saving pictures and buttons supported aswell.
+<b>Menyimpan catatan dari bot gaya Marie lainnya:</b>
+Roso dapat menyimpan catatan dari bot lain, cukup balas /save pesan yang disimpan dari bot lain, simpan gambar dan tombol yang didukung juga.
 
-<b>Retrieving notes without the formatting:</b>
-To retrieve a note without the formatting, use <code>/get (name) raw</code> or <code>/get (name) noformat</code>
-This will retrieve the note and send it without formatting it; getting you the raw note, allowing you to make easy edits.
+<b>Mengambil catatan tanpa memformat:</b>
+Untuk mengambil catatan tanpa format, gunakan <code>/get (name) raw</code> atau <code>/get (name) noformat</code>
+Ini akan mengambil catatan dan mengirimkannya tanpa memformatnya; memberi Anda catatan mentah, memungkinkan Anda melakukan pengeditan dengan mudah.
 """
