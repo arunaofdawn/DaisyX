@@ -80,13 +80,13 @@ async def report(message, chat, strings):
 __mod_name__ = "Reports"
 
 __help__ = """
-We're all busy people who don't have time to monitor our groups 24/7. But how do you react if someone in your group is spamming?
+Kami semua adalah orang sibuk yang tidak punya waktu untuk memantau grup kami 24/7. Tetapi bagaimana reaksi Anda jika seseorang di grup Anda melakukan spam?
 
-Presenting reports; if someone in your group thinks someone needs reporting, they now have an easy way to call all admins.
+Menyajikan laporan; jika seseorang di grup Anda merasa seseorang perlu melaporkan, mereka sekarang memiliki cara mudah untuk memanggil semua admin.
 
-<b>Available commands:</b>
-- /report (?text): Reports
-- @admins: Same as above, but not a clickable
+<b>Perintah yang tersedia:</b>
+- /report (reply) (teks/alasan): melaporkan pengguna kepada admin
+- @admins: Sama seperti di atas, tetapi tidak dapat diklik
 
-<b>TIP:</b> You always can disable reporting by disabling module
+<b>TIPS:</b> Anda selalu dapat menonaktifkan pelaporan/report dengan modul disabling.
 """
