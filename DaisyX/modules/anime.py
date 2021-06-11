@@ -324,11 +324,11 @@ def quote(_, message):
 __mod_name__ = "Anime"
 
 __help__ = """
-Get information about anime, manga or anime characters.
+Memberikan informasi tentang anime, manga atau karakter anime.
 
-<b>Available commands:</b>
+<b>Perintah yang tersedia:</b>
 - /anime (anime): mengembalikan informasi terkait anime.
-- /character (character): mengembalikan informasi tentang karakter.
+- /character (karakter): mengembalikan informasi tentang karakter.
 - /manga (manga): mengembalikan informasi tentang manga.
 - /airing (anime): mengembalikan info penayangan anime.
 - /kaizoku (anime): cari anime di animekaizoku.com
