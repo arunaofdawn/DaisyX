@@ -61,17 +61,17 @@ async def pin_message(message, strings):
 __mod_name__ = "Pinning"
 
 __help__ = """
-All the pin related commands can be found here; keep your chat up to date on the latest news with a simple pinned message!
+Semua perintah terkait pin dapat ditemukan di sini; tetap perbarui obrolan Anda tentang berita terbaru dengan pesan yang disematkan secara sederhana!
 
 <b> Basic Pins </b>
-- /pin: silently pins the message replied to - add 'loud' or 'notify' to give notifs to users.
-- /unpin: unpins the currently pinned message - add 'all' to unpin all pinned messages.
+- /pin: secara diam-diam menyematkan pesan yang dibalas - tambahkan 'loud' atau 'notify' untuk memberikan pemberitahuan kepada pengguna.
+- /unpin: melepas pin pesan yang saat ini disematkan - tambahkan 'all' untuk melepas pin semua pesan yang disematkan.
 
-<b> Other </b>
-- /permapin [reply]: Pin a custom message through the bot. This message can contain markdown, buttons, and all the other cool features.
-- /unpinall: Unpins all pinned messages.
-- /antichannelpin [yes/no/on/off]: Don't let telegram auto-pin linked channels. If no arguments are given, shows current setting.
-- /cleanlinked [yes/no/on/off]: Delete messages sent by the linked channel.
+<b> Lainnya </b>
+- /permapin [reply]: Sematkan pesan khusus melalui bot. Pesan ini dapat berisi markdown, button, dan semua fitur keren lainnya.
+- /unpinall: Lepas pin semua pesan yang disematkan.
+- /antichannelpin [yes/no/on/off]: Jangan biarkan telegram menyematkan chanel tertaut secara otomatis. Jika tidak ada argumen yang diberikan akan menunjukkan pengaturan saat ini.
+- /cleanlinked [yes/no/on/off]: Hapus pesan yang dikirim oleh chanel tertaut.
 
-Note: When using antichannel pins, make sure to use the /unpin command, instead of doing it manually. Otherwise, the old message will get re-pinned when the channel sends any messages.
+Catatan: Saat menggunakan antichannelpin, pastikan untuk menggunakan perintah /unpin, daripada melakukannya secara manual. Jika tidak, pesan lama akan disematkan ulang saat chanel mengirim pesan apa pun.
 """
