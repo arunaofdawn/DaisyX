@@ -126,10 +126,10 @@ async def lyrics(client, message):
 __mod_name__ = "Music"
 
 __help__ = """
-/video <i>query</i>: download video from youtube. 
-/deezer <i>query</i>: download from deezer. 
-/saavn <I>query</i>: download song from saavn. 
-/music <i>query</i>: download song from yt servers. (API BASED) 
-/lyrics <i>song name</i> : This plugin searches for song lyrics with song name.
-/glyrics <i> song name </i> : This plugin searches for song lyrics with song name and artist.
+/video <i>judul</i>: unduh video dari youtube. 
+/deezer <i>judul</i>: unduh lagu dari deezer. 
+/saavn <I>judul</i>: download lagu dari saavn. 
+/music <i>judul</i>: download lagu dari server yt. (API BASED) 
+/lyrics <i>nama lagu</i> : Plugin ini mencari lirik lagu dengan nama lagu.
+/glyrics <i>nama lagu</i> : Plugin ini mencari lirik lagu dengan nama lagu dan artis.
 """
