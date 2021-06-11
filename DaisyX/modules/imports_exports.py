@@ -164,11 +164,11 @@ async def import_fun(message, document, chat, strings):
 __mod_name__ = "Backups"
 
 __help__ = """
-Sometimes you want to see all of your data in your chats or you want to copy your data to another chats or you even want to swift bots, in all these cases imports/exports for you!
+Terkadang Anda ingin melihat semua data Anda di obrolan Anda atau Anda ingin menyalin data Anda ke obrolan lain atau Anda bahkan ingin bot cepat, dalam semua kasus ini impor/ekspor solusi untuk Anda!
 
-<b>Available commands:</b>
-- /export: Export chat's data to JSON file
-- /import: Import JSON file to chat
+<b>Perintah yang tersedia:</b>
+- /export: Ekspor data obrolan ke file JSON
+- /import: Impor file JSON ke obrolan
 
-<b>Notes:</b> Exporting / importing avaible every 2 hours to prevent flooding.
+<b>Catatan:</b> Eksport/import tersedia setiap 2 jam setelah pemakaian untuk mencegah flood.
 """
