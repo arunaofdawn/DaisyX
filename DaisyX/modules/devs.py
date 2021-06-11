@@ -2,9 +2,9 @@
 
 __mod_name__ = "Devs"
 __help__ = """
-<b>⚠️ Notice:</b>
-Commands listed here only work for users with special access are mainly used for troubleshooting, debugging purposes.
-Group admins/group owners do not need these commands. 
+<b>⚠️ Perhatian:</b>
+Perintah yang tercantum di sini hanya berfungsi untuk pengguna dengan akses khusus terutama digunakan untuk pemecahan masalah, tujuan debugging.
+Admin grup/pemilik grup tidak memerlukan perintah ini.
 
 <b>Commands:</b> 
 
