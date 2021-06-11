@@ -77,13 +77,13 @@ def generate_time(to_find: str, findtype: List[str]) -> str:
 
     try:
         result = (
-            f"<b>🌍Country :</b> <code>{country_name}</code>\n"
-            f"<b>⏳Zone Name :</b> <code>{country_zone}</code>\n"
-            f"<b>🗺Country Code :</b> <code>{country_code}</code>\n"
-            f"<b>🌞Daylight saving :</b> <code>{daylight_saving}</code>\n"
-            f"<b>🌅Day :</b> <code>{current_day}</code>\n"
-            f"<b>⌚Current Time :</b> <code>{current_time}</code>\n"
-            f"<b>📆Current Date :</b> <code>{current_date}</code>"
+            f"<b>🌍Negara :</b> <code>{country_name}</code>\n"
+            f"<b>⏳Nama Zona :</b> <code>{country_zone}</code>\n"
+            f"<b>🗺Kode negara :</b> <code>{country_code}</code>\n"
+            f"<b>🌞Hemat siang hari :</b> <code>{daylight_saving}</code>\n"
+            f"<b>🌅Hari :</b> <code>{current_day}</code>\n"
+            f"<b>⌚Waktu saat ini :</b> <code>{current_time}</code>\n"
+            f"<b>📆Tanggal sekarang :</b> <code>{current_date}</code>"
         )
     except BaseException:
         result = None
@@ -130,6 +130,6 @@ async def _(event):
 
 _mod_name_ = "Date Time"
 _help_ = """
- - /datetime [timezone]: Get the present date and time information
-**You can check out this [link](https://timezonedb.com/time-zones) for the available timezones**
+ - /datetime [zona waktu]: Dapatkan informasi tanggal dan waktu saat ini
+**Anda dapat memeriksa [link](https://timezonedb.com/time-zones) ini untuk zona waktu yang tersedia**
 """
