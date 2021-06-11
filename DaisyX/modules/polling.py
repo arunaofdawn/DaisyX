@@ -414,23 +414,23 @@ async def stop(event):
 
 
 __help__ = """
-You can now send polls anonymously with Daisy
-Here is how you can do it:
+Anda sekarang dapat mengirim polling secara anonim dengan Bot
+Berikut adalah bagaimana Anda dapat melakukannya:
 <b> Parameters </b> -
- - poll-id - a poll id consists of an 5 digit random integer, this id is automatically removed from the system when you stop your previous poll
- - question - the question you wanna ask
- - [True@optionnumber/False](1) - quiz mode, you must state the correct answer with @ eg: True@ or True@2
- - [True/False](2) - public votes
- - [True/False](3) - multiple choice
+ - poll-id - id polling terdiri dari 5 digit bilangan bulat acak, id ini secara otomatis dihapus dari sistem ketika Anda menghentikan polling sebelumnya
+ - question - pertanyaan yang ingin kamu tanyakan
+ - [True@optionnumber/False](1) - mode kuis, Anda harus menyatakan jawaban yang benar dengan @eg: True@ atau True@2
+ - [True/False](2) - suara publik
+ - [True/False](3) - pilihan ganda
 <b> Syntax </b> -
-- /poll [poll-id] <i>question</i> | <i>True@optionnumber/False</i> [True/False] [True/False] [option1] [option2] ... upto [option10]
-<b> Examples </b> -
+- /poll [poll-id] [pertanyaan] | <i>True@optionnumber/False</i> [True/False] [True/False] [option1] [option2] ... sampai [option10]
+<b> Contoh </b> -
 - /poll 12345 | am i cool? | False False False yes no`
 - /poll 12345 | am i cool? | True@1 False False yes no`
-<b> To stop a poll </b>
-Reply to the poll with `/stoppoll [poll-id]` to stop the poll
-<b> Fogot poll id </b>
-- /forgotpollid - to reset poll
+<b> Untuk menghentikan polling </b>
+Balas polling dengan `/stoppoll [poll-id]` untuk menghentikan polling
+<b> Lupa id pil </b>
+- /forgotpollid - untuk mengatur ulang polling
 
 """
 
