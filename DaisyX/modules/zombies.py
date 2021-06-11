@@ -89,18 +89,18 @@ async def zombies(event):
             return
     con = event.pattern_match.group(1).lower()
     del_u = 0
-    del_status = "No Deleted Accounts Found, Group Is Clean."
+    del_status = "Tidak Ada Akun yang terhapus yang ditemukan, Grup Bersih."
 
     if con != "clean":
-        find_zombies = await event.respond("Searching For Zombies...")
+        find_zombies = await event.respond("Mencari Zombie...")
         async for user in event.client.iter_participants(event.chat_id):
 
             if user.deleted:
                 del_u += 1
                 await sleep(1)
         if del_u > 0:
-            del_status = f"Found **{del_u}** Zombies In This Group.\
-            \nClean Them By Using - `/zombies clean`"
+            del_status = f"Ditemukan **{del_u}** Zombie Di Grup Ini.\
+            \nBersihkan Mereka Dengan Menggunakan - `/zombies clean`"
         await find_zombies.edit(del_status)
         return
 
@@ -111,7 +111,7 @@ async def zombies(event):
 
     # Well
 
-    cleaning_zombies = await event.respond("Cleaning Zombies...")
+    cleaning_zombies = await event.respond("Membersihkan Zombie...")
     del_u = 0
     del_a = 0
 
@@ -122,7 +122,7 @@ async def zombies(event):
                     EditBannedRequest(event.chat_id, user.id, BANNED_RIGHTS)
                 )
             except ChatAdminRequiredError:
-                await cleaning_zombies.edit("I Don't Have Ban Rights In This Group.")
+                await cleaning_zombies.edit("Saya Tidak Memiliki Hak untuk Banned Di Grup Ini.")
                 return
             except UserAdminInvalidError:
                 del_u -= 1
@@ -135,6 +135,6 @@ async def zombies(event):
 
     if del_a > 0:
         del_status = f"Cleaned `{del_u}` Zombies \
-        \n`{del_a}` Zombie Admin Accounts Are Not Removed!"
+        \n`{del_a}` Zombie Admin sangat kuat! Tidak bisa disingkirkan!"
 
     await cleaning_zombies.edit(del_status)
