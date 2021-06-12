@@ -1,4 +1,4 @@
-__mod_name__ = "🔐kunci"
+__mod_name__ = "🔐Blok"
 
 __help__ = """
 Gunakan fitur ini untuk memblokir pengguna agar tidak mengirim jenis pesan tertentu ke grup Anda!
