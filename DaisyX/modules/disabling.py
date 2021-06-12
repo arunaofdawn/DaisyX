@@ -179,7 +179,7 @@ async def __import__(chat_id, data):
     )
 
 
-__mod_name__ = "Disabling"
+__mod_name__ = "Disabling🔇"
 
 __help__ = """
 Menonaktifkan modul memungkinkan Anda untuk menonaktifkan perintah tertentu agar tidak dieksekusi/dipakai oleh pengguna.
