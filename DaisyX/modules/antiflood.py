@@ -372,7 +372,7 @@ async def __import__(chat_id: int, data: dict):  # noqa
     await db.antiflood.update_one({"chat_id": chat_id}, {"$set": data})
 
 
-__mod_name__ = "AntiFlood"
+__mod_name__ = "AntiFlood⌛️"
 
 __help__ = """
 Anda tau bagaimana terkadang, orang bergabung, mengirim 100 pesan atau spam, dan merusak obrolan Anda? Dengan antiflood, itu tidak terjadi lagi!
