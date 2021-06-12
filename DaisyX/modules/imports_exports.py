@@ -161,7 +161,7 @@ async def import_fun(message, document, chat, strings):
     await msg.edit_text(strings["import_done"])
 
 
-__mod_name__ = "Backups"
+__mod_name__ = "♻️Backups"
 
 __help__ = """
 Terkadang Anda ingin melihat semua data Anda di obrolan Anda atau Anda ingin menyalin data Anda ke obrolan lain atau Anda bahkan ingin bot cepat, dalam semua kasus ini impor/ekspor solusi untuk Anda!
