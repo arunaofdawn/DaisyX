@@ -1,6 +1,6 @@
 # Credits Telegram @ChankitSaini
 
-__mod_name__ = "Devs"
+__mod_name__ = "🧑‍💻Devs"
 __help__ = """
 <b>⚠️ Perhatian:</b>
 Perintah yang tercantum di sini hanya berfungsi untuk pengguna dengan akses khusus terutama digunakan untuk pemecahan masalah, tujuan debugging.
