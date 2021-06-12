@@ -130,6 +130,7 @@ __help__ = """
  - /forbesify: Perbaiki tanda baca Anda lebih baik gunakan modul mantra lanjutan
  - /synonyms <i>word</i>: Temukan sinonim dari sebuah kata
  - /antonyms <i>word</i>: Temukan antonim dari sebuah kata
+Cek: [kode bahasa](https://telegra.ph/Kode-Bahasa-06-12-2)
 """
 
-__mod_name__ = "Alat-Terjemah🗣"
+__mod_name__ = "Terjemah🗣"
