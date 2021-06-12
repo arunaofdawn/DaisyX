@@ -120,7 +120,7 @@ async def help_cmd(message, strings):
 async def help_cmd_g(message, strings):
     text = strings["btn_group_help"]
     button = InlineKeyboardMarkup().add(
-        InlineKeyboardButton(text=text, url="https://t.me/DaisyXBOT?start")
+        InlineKeyboardButton(text=text, url="https://t.me/RosoManage_bot?start")
     )
     await message.reply(strings["help_header"], reply_markup=button)
 
@@ -134,7 +134,7 @@ async def helpmenu_callback(query, callback_data=None, **kwargs):
     msg = f"Help for <b>{mod}</b> module:\n"
     msg += f"{MOD_HELP[mod]}"
     button = InlineKeyboardMarkup().add(
-        InlineKeyboardButton(text="⬅️ Kembali", callback_data="get_help")
+        InlineKeyboardButton(text="🔙Kembali", callback_data="get_help")
     )
     with suppress(MessageNotModified):
         await query.message.edit_text(
