@@ -159,7 +159,7 @@ scheduler = AsyncIOScheduler(timezone="Asia/Kolkata")
 scheduler.add_job(job_open, trigger="cron", hour=6, minute=10)
 scheduler.start()
 
-__mod_name__ = "Mode Malam🌒"
+__mod_name__ = "Md.Malam🌒"
 
 __help__ = """
 <b> Mode Malam </b>
