@@ -166,10 +166,8 @@ STRINGS:
     start_hi_group: 'Hai yang disana! Nama saya Roso'
     start_hi: "Hai yang disana! Nama saya <b>Roso.</b>\nSaya bisa membantu mengatur grup dengan fitur-fitur yang berguna, jangan ragu untuk menambahkan saya ke grup anda!"
     btn_source: "🧑‍💻 Pemilik"
-    btn_help: "❔ Bantuan"
-    btn_lang: "🇮🇩 Indonesia"
-    btn_channel: "🔊 Dukungan"
-    btn_group: "👥 Grup"
+    btn_help: "❔ Daftar Perintah"
+    btn_channel: "🔊 Support"
     btn_group_help: "Tekan tombol ini untuk mendapatkan bantuan!"
     back: Kembali
     #/help
@@ -377,9 +375,9 @@ STRINGS:
     fbanned_in_fed: "Termasuk <b>{fed}</b> federasi!\n"
     "fbanned_in_fed:reason": "Including the <b>{fed}</b> federation for reason of -\n <code>{reason}</code>"
     contact_in_pm: "\n\nFor more info on your fbans, please send me a direct message for privacy!"
-    too_long_fbaninfo: "Well! your fbaninfo requires a file!"
-    didnt_fbanned: "You aren't fbanned in this fed."
-    not_fbanned_in_fed: They aren't fbanned in the <b>{fed_name}</b> fed
+    too_long_fbaninfo: "Baik! fbaninfo Anda membutuhkan file!"
+    didnt_fbanned: "Anda tidak diblokir di fed ini."
+    not_fbanned_in_fed: Mereka tidak diblokir di <b>{fed_name}</b> fed
   reports:
     user_user_admin: "Anda seorang admin di sini, kenapa kamu harus melaporkan seseorang?.."
     user_is_whitelisted: "Dia adalah pengguna yang masuk whitelist, mengapa Anda perlu melaporkan seseorang?.."
@@ -419,8 +417,8 @@ STRINGS:
       {chat_name}, (bridged commands are {commands}),
       ⚠ <i>Anda hanya dapat mengakses perintah yang di lakukan dari obrolan yang terhubung! Semua perintah lain akan diperlakukan sebagai Obrolan lokal</i>
       Ketik /disconect untuk memutuskan sambungan dari obrolan.
-    u_wasnt_connected: "You were not connected to any chat before!"
-    select_chat_to_connect: "\n<b>Select a chat to connect:</b>"
+    u_wasnt_connected: "Anda tidak terhubung ke obrolan apa pun sebelumnya!"
+    select_chat_to_connect: "\n<b>Pilih obrolan untuk dihubungkan:</b>"
     disconnected: "Anda terputus dari <b>{chat_name}</b>."
     cant_find_chat: "Saya tidak dapat menemukan obrolan ini."
     cant_find_chat_use_id: "Saya tidak dapat menemukan grup ini. Gunakan ID grup."
@@ -429,11 +427,11 @@ STRINGS:
     disabled: dinonaktifkan
     chat_users_connections_info: "Connections for normal users currently is <b>{status}</b> for <b>{chat_name}</b>"
     chat_users_connections_cng: "Connections for normal users changed to <b>{status}</b> for <b>{chat_name}</b>"
-    not_in_group: "You're not in the group you're trying to connect to, join and send a message."
-    history_empty: "You're not connected to any chat for history, connect via `/connect (chat id)`"
-    not_in_chat: "You're not in this chat anymore, I'll disconnect you."
-    u_should_be_admin: "You should be an admin in {}!"
-    usage_only_in_groups: "Usage limited only in groups!"
+    not_in_group: "Anda tidak berada dalam grup yang Anda coba sambungkan, bergabunglah, dan kirim pesan."
+    history_empty: "Anda tidak terhubung ke obrolan apa pun untuk riwayat, terhubung melalui `/connect (chat id)`"
+    not_in_chat: "Anda tidak dalam obrolan ini lagi, saya akan memutuskan hubungan Anda."
+    u_should_be_admin: "Anda harus menjadi admin di {}!"
+    usage_only_in_groups: "Penggunaan terbatas hanya dalam grup!"
     anon_admin_conn: |
       Silakan klik tombol di bawah ini untuk menghubungkan!
     click_here: Klik disini!
@@ -566,8 +564,8 @@ STRINGS:
     #/welcome
     enabled: enabled
     disabled: disabled
-    wlcm_security_enabled: "enabled, set to {level}"
-    wlcm_mutes_enabled: "enabled, set to {time}"
+    wlcm_security_enabled: "diaktifkan, di atur ke {level}"
+    wlcm_mutes_enabled: "diaktifkan, di atur ke {time}"
     welcome_info: |
       <b>Pengaturan sambutan di {chat_name}:</b>
       Pesan sambutan adalah <code>{welcomes_status}</code>
@@ -579,11 +577,11 @@ STRINGS:
     raw_wlcm_note: "Raw welcome note is:"
     security_note: "Welcome security text is:"
     #/setsecuritynote
-    security_note_saved: "Custom security text was saved <b>%s</b>"
-    security_note_updated: "Custom security text was updated <b>%s</b>"
+    security_note_saved: "Custom security text telah disimpan <b>%s</b>"
+    security_note_updated: "Custom security text telah diperbarui <b>%s</b>"
     #/delsecuritynote
-    security_note_not_found: Security text in <b>%s</b> has not been set before
-    del_security_note_ok: Security text was reset to default in <b>%s</b>
+    security_note_not_found: Security text di <b>%s</b> belum ditetapkan sebelumnya
+    del_security_note_ok: Security text disetel ulang ke default di <b>%s</b>
     #/cleanwelcome
     cleanwelcome_enabled: pembersihan pesan Sambutan lama diaktifkan di <b>%s</b>
     cleanwelcome_disabled: pembersihan pesan Sambutan lama dinonaktifkan di <b>%s</b>
@@ -595,22 +593,22 @@ STRINGS:
     #/welcomemute
     welcomemute_invalid_arg: Argumen tidak valid, mengharapkan waktu.
     welcomemute_enabled: Welcome mute enabled in <b>%s</b>
-    welcomemute_disabled: Welcome mute disabled in <b>%s</b>
-    welcomemute_status: Welcome mute is <code>{status}</code> in <b>{chat_name}</b>
+    welcomemute_disabled: Welcome mute dinonaktifkan di <b>%s</b>
+    welcomemute_status: Status Welcome mute saat ini <code>{status}</code> in <b>{chat_name}</b>
     #/welcomesecurity
-    welcomesecurity_enabled: Welcome security enabled in <b>{chat_name}</b> to <code>{level}</code>.
+    welcomesecurity_enabled: Welcome security diaktifkan di <b>{chat_name}</b> to <code>{level}</code>.
     "welcomesecurity_enabled:customized_time": |
-      Welcome security enabled in <b>{chat_name}</b> to <code>{level}</code>, and kick users which aren't verified within {time}.
+      Welcome security enabled in <b>{chat_name}</b> to <code>{level}</code>, dan keluarkan pengguna yang tidak terverifikasi dalam {time}.
     ask_for_time_customization: |
-      Do you want to customize the time period to kick unverified user? (by default it's {time})
+      Apakah Anda ingin menyesuaikan periode waktu untuk mengeluarkan pengguna yang belum diverifikasi? (secara default adalah {time})
     send_time: Please specify a time.
     invalid_time: "Invalid time!"
-    welcomesecurity_enabled_word: enabled, set to level {level}
-    welcomesecurity_disabled: Welcome security disabled in <b>%s</b>.
-    welcomesecurity_invalid_arg: Invalid argument, expected <code>button</code>/<code>captcha</code>.
-    welcomesecurity_status: Welcome security is <code>{status}</code> in <b>{chat_name}</b>
-    yes_btn: "Yes"
-    no_btn: "No"
+    welcomesecurity_enabled_word: diaktifkan, setel ke level {level}
+    welcomesecurity_disabled: Welcome security dinonaktifkan di <b>%s</b>.
+    welcomesecurity_invalid_arg: Argumen tidak valid, diharapkan <code>button</code>/<code>captcha</code>.
+    welcomesecurity_status: Status Welcome security saat ini <code>{status}</code> di <b>{chat_name}</b>
+    yes_btn: "Ya"
+    no_btn: "Tidak"
     #Welcomesecurity handler
     click_here: Klik disini!
     not_allowed: Anda tidak diizinkan untuk menggunakan ini!
