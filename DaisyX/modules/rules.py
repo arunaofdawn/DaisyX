@@ -134,7 +134,7 @@ async def __import__(chat_id, data):
     await db.rules.replace_one({"chat_id": rules["chat_id"]}, rules, upsert=True)
 
 
-__mod_name__ = "Rules"
+__mod_name__ = "📋Rules"
 
 __help__ = """
 <b>Available Commands:</b>
