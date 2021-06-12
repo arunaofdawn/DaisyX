@@ -262,7 +262,7 @@ async def connect_anon_admins(event: CallbackQuery):
     )
 
 
-__mod_name__ = "Connections"
+__mod_name__ = "📡Connections"
 
 __help__ = """
 Terkadang Anda perlu mengubah sesuatu dalam obrolan Anda, seperti catatan, tetapi Anda tidak ingin melakukan spam di dalamnya, cobalah `Connections`, ini memungkinkan Anda mengubah pengaturan obrolan dan mengelola konten obrolan dalam pesan pribadi dengan Bot.
