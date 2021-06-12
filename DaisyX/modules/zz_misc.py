@@ -1,62 +1,62 @@
-__mod_name__ = "Misc ⚙️"
+__mod_name__ = "Misc🗂"
 
 __help__ = """
-An "odds and ends" module for small, simple commands which don't really fit anywhere.
+Modul "peluang dan akhir" untuk perintah kecil dan sederhana yang tidak cocok di mana pun.
 
 <b>Available commands:</b>
 
 <b>BASIC</b>
-- /github (username): Returns info about a GitHub user or organization.
-- /wiki (keywords): Get wikipedia articles just using this bot.
-- /imdb: Search for a movie
-- /cancel: Disables current state. Can help in cases if DaisyXBot not responing on your message.
-- /id: get the current group id. If used by replying to a message, gets that user's id.
-- /info: get information about a user.
-- /paste: Pase the text/file in nekobin
-- /gps: Find a location
+- /github (username): Mengembalikan info tentang pengguna atau organisasi GitHub.
+- /wiki (kata kunci): Dapatkan artikel wikipedia hanya menggunakan dengan bot ini.
+- /imdb: Cari film
+- /cancel: Menonaktifkan status saat ini. Dapat membantu jika Bot tidak menanggapi pesan Anda.
+- /id: dapatkan id grup saat ini. Jika digunakan dengan membalas pesan, dapatkan id pengguna itu.
+- /info [reply user]: dapatkan informasi tentang pengguna.
+- /paste [reply teks]: Tempel teks/file di nekobin
+- /gps [lokasi]: Temukan lokasi
 
 <b>BOOK DOWNLOAD </b>
-- /book <i>book name</i> : Usage :Gets Instant Download Link Of Given Book.
+- /book [nama buku] : Penggunaan: Mendapat Tautan Unduhan Instan Dari Buku yang Diberikan.
 
 <b>FAKE INFO</b>
-- /fakegen : Generates Fake Information
-- /picgen : generate a fake pic
+- /fakegen : Menghasilkan Informasi Palsu
+- /picgen : buat foto palsu
 
 <b>ZIPPER</b>
-- /zip: reply to a telegram file to compress it in .zip format
-- /unzip: reply to a telegram file to decompress it from the .zip format
+- /zip: balas ke file telegram untuk mengompresnya dalam format .zip
+- /unzip: balas ke file telegram untuk mendekompresnya dari format .zip
 
 <b>WEATHER</b>
-- /weather: Gives weather forcast
-- /wheatherimg: Gives weather image
+- /weather: Memberikan ramalan cuaca
+- /wheatherimg: Memberikan gambaran cuaca
 
 <b>PHONE INFO</b>
-- /phone [phone no]: Gathers no info
+- /phone [no telepon]: Cek nomor aktif/terdaftar
 
 <b>CURRENCY</b>
- - /cash : currency converter
-Example syntax: `/cash 1 USD INR`
+ - /cash : pengonversi mata uang
+Contoh sintaks: `/cash 1 USD INR`
 
 <b>NAME HISTORY</b>
-- /namehistory [REPLY]: Get the Username and Name history of user.
+- /namehistory [reply user]: Dapatkan Nama Pengguna dan riwayat Nama pengguna.
 
 <b>SEND</b>
-- /send [MESSAGE]: Send given text by bot.
+- /send [pesan]: Kirim teks yang diberikan oleh bot.
 
 <b>CC CHECKER</b>
-- /au [cc]: Stripe Auth given CC
-- /pp [cc]: Paypal 1$ Guest Charge
-- /ss [cc]: Speedy Stripe Auth
-- /ch [cc]: Check If CC is Live
-- /bin [bin]: Gather's Info About the bin
-- /gen [bin]: Generates CC with given bin
-- /key [sk]: Checks if Stripe key is Live
+- /au [cc]: Garis Otentikasi diberikan CC
+- /pp [cc]: Paypal 1$ Biaya Tamu
+- /ss [cc]: Otentik Garis Cepat
+- /ch [cc]: Periksa Apakah CC Live
+- /bin [bin]: Kumpulkan Info Tentang tempat sampah
+- /gen [bin]: Menghasilkan CC dengan bin yang diberikan
+- /key [sk]: Memeriksa apakah kunci Stripe adalah Live
 
-  Note: Format of cc is ccnum|mm|yy|cvv
-  Privacy warning: Don't check any of your personal CC's.
+  Catatan: Format cc adalah ccnum|mm|yy|cvv
+  Peringatan privasi: Jangan periksa CC pribadi Anda.
   
 <b>URL TOOLS</b>
-- /short (url): Shortify given url.
-- /ip (url): Displays information about an IP / domain.
-- /direct (url): Generates direct links from the sourceforge.net
+- /short (url): Persingkat url yang diberikan.
+- /ip (url): Menampilkan informasi tentang IP/domain.
+- /direct (url): Menghasilkan tautan langsung dari sourceforge.net
 """
