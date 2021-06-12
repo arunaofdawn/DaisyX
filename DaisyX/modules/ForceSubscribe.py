@@ -230,4 +230,4 @@ Catatan: Hanya pembuat grup yang dapat mengatur saya dan saya tidak akan mengizi
 Catatan: /forcesub adalah alias dari /forcesubscribe
  
 """
-__mod_name__ = "Force Subs "
+__mod_name__ = "🔔Force Subs "
