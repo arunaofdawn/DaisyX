@@ -66,7 +66,7 @@ def _onUnMuteRequest(client, cb):
                 except UserNotParticipant:
                     client.answer_callback_query(
                         cb.id,
-                        text=f"❗ Bergabunglah dengan kami chanel @{channel} dan tekan tombol 'UnMute Me'.",
+                        text=f"❗ Bergabunglah dengan kami di chanel @{channel} dan tekan tombol 'UnMute Me'.",
                         show_alert=True,
                     )
                 except ChannelPrivate:
@@ -83,13 +83,13 @@ def _onUnMuteRequest(client, cb):
             if not client.get_chat_member(chat_id, BOT_ID).status == "administrator":
                 client.send_message(
                     chat_id,
-                    f"❗ **{cb.from_user.mention} sedang mencoba untuk unmute diri sendiri tetapi saya tidak dapat mengaktifkannya karena saya bukan admin dalam obrolan ini, tambahkan saya sebagai admin lagi.**\n__#Leaving this chat...__",
+                    f"❗ **{cb.from_user.mention} sedang mencoba untuk unmute sendiri tetapi saya tidak dapat mengaktifkannya karena saya bukan admin dalam obrolan ini, tambahkan saya sebagai admin lagi.**\n__#Leaving this chat...__",
                 )
 
             else:
                 client.answer_callback_query(
                     cb.id,
-                    text="❗ Peringatan! Jangan tekan tombol ini saat Anda bisa berbicara.",
+                    text="❗ Peringatan! Jangan tekan tombol ini saat Anda tidak di mute.",
                     show_alert=True,
                 )
 
@@ -115,7 +115,7 @@ def _check_member(client, message):
                 except UserNotParticipant:
                     try:
                         sent_message = message.reply_text(
-                            "Welcome {} 🙏 \n **Anda belum bergabung dengan kami di chanel @{} sekarang** 😭 \n \nTolong ikuti [chanel kami](https://t.me/{}) dan tekan tombol **UNMUTE ME**. \n \n ".format(
+                            "Welcome {} 🙏 \n **Anda belum bergabung dengan kami di chanel @{} sekarang**❕ \n \nTolong ikuti kami di [channel](https://t.me/{}) dan tekan tombol **UNMUTE ME**. \n \n ".format(
                                 message.from_user.mention, channel, channel
                             ),
                             disable_web_page_preview=True,
