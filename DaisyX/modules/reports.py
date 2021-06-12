@@ -77,7 +77,7 @@ async def report(message, chat, strings):
     await message.reply(text)
 
 
-__mod_name__ = "Reports"
+__mod_name__ = "Report🚫"
 
 __help__ = """
 Kami semua adalah orang sibuk yang tidak punya waktu untuk memantau grup kami 24/7. Tetapi bagaimana reaksi Anda jika seseorang di grup Anda melakukan spam?
