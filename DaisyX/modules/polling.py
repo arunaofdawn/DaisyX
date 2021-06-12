@@ -435,4 +435,4 @@ Balas polling dengan `/stoppoll [poll-id]` untuk menghentikan polling
 """
 
 
-__mod_name__ = "Polls"
+__mod_name__ = "📊Polling"
