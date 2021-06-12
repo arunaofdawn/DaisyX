@@ -123,7 +123,7 @@ async def lyrics(client, message):
     return
 
 
-__mod_name__ = "Music"
+__mod_name__ = "Musik🎧"
 
 __help__ = """
 /video <i>judul</i>: unduh video dari youtube. 
