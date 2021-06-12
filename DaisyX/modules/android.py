@@ -429,7 +429,7 @@ async def orangefox(message):
     return
 
 
-__mod_name__ = "Android"
+__mod_name__ = "Android📱"
 
 __help__ = """
 Modul yang dibuat khusus untuk pengguna Android.
