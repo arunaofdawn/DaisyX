@@ -470,7 +470,7 @@ __filters__ = {
 }
 
 
-__mod_name__ = "Restrictions"
+__mod_name__ = "Hak Admin🛃"
 
 __help__ = """
 Hak admin umum adalah membatasi pengguna dan mengontrol aturan mereka, dengan modul ini Anda dapat melakukannya dengan mudah.
