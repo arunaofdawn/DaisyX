@@ -1100,7 +1100,7 @@ async def __import__(chat_id, data):
     await get_greetings_data.reset_cache(chat_id)
 
 
-__mod_name__ = "⛩Greetings"
+__mod_name__ = "⛩Sambutan"
 
 __help__ = """
 <b>Perintah yang tersedia:</b>
