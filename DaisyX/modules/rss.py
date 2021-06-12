@@ -170,9 +170,9 @@ scheduler.start()
 
 __mod_name__ = "RSS Feed"
 __help__ = """
-- /addrss : Add Rss to the chat
-- /testrss : Test RSS Of The Chat
-- /listrss : List all RSS Of The Chat
-- /delrss : Delete RSS From The Chat
-- /delallrss : Deletes All RSS From The Chat
+- /addrss : Tambahkan Rss ke obrolan
+- /testrss : Test RSS Dari obrolan
+- /listrss : Daftar semua RSS Obrolan
+- /delrss : Hapus RSS Dari Obrolan
+- /delallrss : Menghapus Semua RSS Dari Obrolan
 """
