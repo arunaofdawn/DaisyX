@@ -168,9 +168,9 @@ scheduler = AsyncIOScheduler()
 scheduler.add_job(check_rss, "interval", minutes=10)
 scheduler.start()
 
-__mod_name__ = "RSS Feed"
+__mod_name__ = "RSS Feed📶"
 __help__ = """
-- /addrss : Tambahkan Rss ke obrolan
+- /addrss : Tambahkan RSS ke obrolan
 - /testrss : Test RSS Dari obrolan
 - /listrss : Daftar semua RSS Obrolan
 - /delrss : Hapus RSS Dari Obrolan
