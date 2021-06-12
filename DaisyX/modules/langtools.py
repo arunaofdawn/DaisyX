@@ -125,11 +125,11 @@ async def _(event):
 
 __help__ = """
  - /tr <i>kode bahasa</i>(reply teks) atau /tr <i>kode bahasa</i> , <i>text</i>: untuk mendapatkan terjemahannya dalam bahasa tujuan 
- - /define <i>teks</i>: Ketik kata atau ekspresi yang ingin dicari. Misalnya /define makruh
+ - /define <i>teks</i>: Ketik kata atau ekspresi yang ingin dicari. Misalnya /define federations
  - /spell: (dilakukan sambil membalas pesan) bot akan membalas dengan versi tata bahasa yang dikoreksi
  - /forbesify: Perbaiki tanda baca Anda lebih baik gunakan modul mantra lanjutan
  - /synonyms <i>word</i>: Temukan sinonim dari sebuah kata
  - /antonyms <i>word</i>: Temukan antonim dari sebuah kata
 """
 
-__mod_name__ = "Lang-Tools"
+__mod_name__ = "Alat-Terjemah🗣"
