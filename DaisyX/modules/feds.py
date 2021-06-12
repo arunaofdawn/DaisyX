@@ -1366,7 +1366,7 @@ async def __import__(chat_id, data):
         await get_fed_by_id.reset_cache(fed_id)
 
 
-__mod_name__ = "Federations"
+__mod_name__ = "Federations🛂"
 
 __help__ = """
 Yah pada dasarnya ada 2 alasan untuk menggunakan Federasi:
