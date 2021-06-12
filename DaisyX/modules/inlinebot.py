@@ -64,7 +64,7 @@ class AioHttp:
                 return await resp.read()
 
 
-__mod_name__ = "Inline"
+__mod_name__ = "Inline🔗"
 __help__ = """
  <b> LAYANAN INLINE BOT </b> 
  
@@ -119,38 +119,38 @@ __HELP__ = """
 
    >> Perintah Yang Tersedia <<
 - **alive** - __Periksa Statistik Bot.__
-- **yt [query]** - __Pencarian Youtube.__
-- **tr [KODE BAHASA] [QUERY]** - __Terjemahkan Teks.__
-- **ud [QUERY]** - __Terjemahan Kamus Perkotaan.__
-- **google [QUERY]** - __Pencarian Google.__
-- **modapk [name]** - __Memberi Anda tautan langsung mod apk__
-- **webss [URL]** - __Ambil Tangkapan Layar Situs Web.__
-- **bitly [URL]** - __Persingkat Tautan.__
-- **wall [Query]** - __Temukan Wallpaper.__
-- **pic [Query]** - __Temukan gambar.__
-- **saavn [SONG_NAME]** - __Dapatkan Lagu Dari Saavn.__
-- **deezer [SONG_NAME]** - __Dapatkan Lagu Dari Deezer.__
-- **torrent [QUERY]** - __Pencarian Torrent.__
-- **reddit [QUERY]** - __Dapatkan meme dari reddit.__
-- **imdb [QUERY]** - __Cari film di imdb.__
+- **yt [kata kunci]** - __Pencarian Youtube.__
+- **tr [kode bahasa] [kata]** - __Terjemahkan Teks.__
+- **ud [pertanyaan]** - __Terjemahan Kamus Perkotaan.__
+- **google [pertanyaan]** - __Pencarian Google.__
+- **modapk [nama apk]** - __Memberi Anda tautan langsung mod apk__
+- **webss [url]** - __Ambil Tangkapan Layar Situs Web.__
+- **bitly [url]** - __Persingkat Tautan.__
+- **wall [kata kunci]** - __Temukan Wallpaper.__
+- **pic [kata kunci]** - __Temukan gambar.__
+- **saavn [nama lagu]** - __Dapatkan Lagu Dari Saavn.__
+- **deezer [nama lagu]** - __Dapatkan Lagu Dari Deezer.__
+- **torrent [pertanyaan]** - __Pencarian Torrent.__
+- **reddit [pertanyaan]** - __Dapatkan meme dari reddit.__
+- **imdb [pertanyaan]** - __Cari film di imdb.__
 - **spaminfo [id]** - __Dapatkan info spam dari pengguna.__
-- **lyrics [QUERY]** - __Dapatkan lirik lagu yang diberikan.__
-- **paste [TEXT]** - __Tempel teks di pastebin.__
-- **define [WORD]** - __Dapatkan definisi dari Kamus.__
-- **synonyms [WORD]** - __Dapatkan sinonim dari Kamus.__
-- **antonyms [WORD]** - __Get antonyms from Dictionary.__
-- **country [QUERY]** - __Dapatkan Informasi tentang negara tertentu.__
+- **lyrics [judul]** - __Dapatkan lirik lagu yang diberikan.__
+- **paste [teks]** - __Tempel teks di pastebin.__
+- **define [kata]** - __Dapatkan definisi dari Kamus.__
+- **synonyms [kata]** - __Dapatkan sinonim dari Kamus.__
+- **antonyms [kata]** - __Get antonyms from Dictionary.__
+- **country [negara]** - __Dapatkan Informasi tentang negara tertentu.__
 - **cs** - __Mengumpulkan info Kriket (Secara Global).__
-- **covid [COUNTRY]** - __Dapatkan pembaruan covid dari negara tertentu.__
+- **covid [negara]** - __Dapatkan pembaruan covid dari negara tertentu.__
 - **fakegen** - __Mengumpulkan informasi palsu.__
-- **weather [QUERY]** - __Dapatkan informasi cuaca.__
-- **datetime [QUERY]** - __Dapatkan informasi Tanggal & waktu dari negara/wilayah tertentu.__
-- **app [QUERY]** - __Cari aplikasi di playstore.
-- **gh [QUERY]** - __Search github.__
-- **so [QUERY]** - __Search stack overfolw.__
-- **wiki [QUERY]** - __Search wikipedia.__
+- **weather [kota]** - __Dapatkan informasi cuaca.__
+- **datetime [kota]** - __Dapatkan informasi Tanggal & waktu dari negara/wilayah tertentu.__
+- **app [nama app]** - __Cari aplikasi di playstore.
+- **gh [pertanyaan]** - __Search github.__
+- **so [pertanyaan]** - __Search stack overfolw.__
+- **wiki [pertanyaan]** - __Search wikipedia.__
 - **ping** - __Periksa kecepatan ping.__
-- **pokedex [TEXT]** - __Pencarian Pokemon.__
+- **pokedex [teks]** - __Pencarian Pokemon.__
 """
 
 
