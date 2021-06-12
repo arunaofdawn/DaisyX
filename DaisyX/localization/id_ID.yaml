@@ -163,13 +163,13 @@ STRINGS:
     cant_promote_yourself: "Anda tidak dapat mempromosikan diri anda sendiri."
     emoji_not_allowed: "Mohon maaf, tetapi gelar admin tidak dapat memiliki sebuah emoji 😞"
   pm_menu:
-    start_hi_group: 'Hai yang disana! Nama saya Roso'
+    start_hi_group: 'Haloo yang disana..Nama saya Roso'
     start_hi: "Hai yang disana! Nama saya <b>Roso.</b>\nSaya bisa membantu mengatur grup dengan fitur-fitur yang berguna, jangan ragu untuk menambahkan saya ke grup anda!"
-    btn_source: "🧑‍💻 Pemilik"
-    btn_help: "❔ Daftar Perintah"
+    btn_source: "🧑‍💻 Owner"
+    btn_help: "📚 Daftar Perintah"
     btn_channel: "🔊 Support"
     btn_group_help: "Tekan tombol ini untuk mendapatkan bantuan!"
-    back: Kembali
+    back: 🔝Kembali
     #/help
     help_header: "Hai! Nama saya <b>Roso</b>. Saya adalah seorang bot manajemen grup, disini untuk membantu anda menjaga ketertiban dalam grup anda! Saya memiliki banyak fitur berguna, seperti pengendalian pesan flood, sistem peringatan, sistem catatan, dan bahkan balasan yang telah ditentukan sebelumnya pada kata kunci tertentu."
     click_btn: Tekan disini
