@@ -473,29 +473,30 @@ __filters__ = {
 __mod_name__ = "Restrictions"
 
 __help__ = """
-General admin's rights is restrict users and control their rules with this module you can easely do it.
+Hak admin umum adalah membatasi pengguna dan mengontrol aturan mereka, dengan modul ini Anda dapat melakukannya dengan mudah.
 
-<b>Available commands:</b>
+<b>Perintah yang tersedia:</b>
 <b>Kicks:</b>
-- /kick: Kicks a user
-- /skick: Silently kicks
+- /kick: Mengeluarkan pengguna
+- /skick: Sama namun secara diam-diam
 
 <b>Mutes:</b>
-- /mute: Mutes a user
-- /smute: Silently mutes
-- /tmute (time): Temprotary mute a user
-- /stmute (time): Silently temprotary mute a user
-- /unmute: Unmutes the user
+- /mute: Membisukan pengguna
+- /smute: Sama namun secara diam-diam
+- /tmute (waktu): Bisukan selama waktu yang anda tentukan
+- /stmute (waktu): Sama namun secara diam-diam
+- /unmute: Bunyikan pengguna
 
 <b>Bans:</b>
-- /ban: Bans a user
-- /sban: Silently bans
-- /tban (time): Temprotary ban a user
--/stban (time): Silently temprotary ban a user
-- /unban: Unbans the user
+- /ban: Ban/blokir pengguna
+- /sban: sama namun secara diam-diam
+- /tban (waktu): Ban/blokir pengguna selama waktu yang anda tentukan
+-/stban (waktu): Sama namun secara diam-diam
+- /unban: Batalkan pemblokiran pengguna
 
-<b>Examples:</b>
-<code>- Mute a user for two hours.
+catatan: m = menit, h = jam, d = hari.
+<b>Contoh:</b>
+<code>- Bisukan pengguna selama dua jam.
 -> /tmute @username 2h</code>
 
 
