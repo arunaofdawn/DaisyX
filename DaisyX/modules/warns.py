@@ -385,7 +385,7 @@ __filters__ = {
 }
 
 
-__mod_name__ = "Warnings"
+__mod_name__ = "Warning⚠️"
 
 __help__ = """
 Anda dapat menjaga anggota Anda agar tidak lepas kendali menggunakan fitur ini!
