@@ -48,40 +48,40 @@ async def buttons_help(message):
     await message.reply(
         """
 <b>Buttons:</b>
-Here you will know how to setup buttons in your note, welcome note, etc...
+Di sini Anda akan tahu cara mengatur tombol(button) di catatan(notes) Anda, catatan welcome, dll...
 
-There are different types of buttons!
+Ada berbagai jenis tombol!
 
-<i>Due to current Implementation adding invalid button syntax to your note will raise error! This will be fixed in next major version.</i>
+<i>Karena Implementasi saat ini menambahkan sintaks tombol yang tidak valid ke catatan Anda akan menimbulkan kesalahan! Ini akan diperbaiki di versi utama berikutnya.</i>
 
-<b>Did you know?</b>
-You could save buttons in same row using this syntax
+<b>Tahukah kamu?</b>
+Anda bisa menyimpan button di baris yang sama menggunakan sintaks ini
 <code>[Button](btn{mode}:{args if any}:same)</code>
-(adding <code>:same</code> like that does the job.)
+(tambahkan <code>:same</code> seperti itu, untuk melakukan pekerjaan.)
 
 <b>Button Note:</b>
-<i>Don't confuse this title with notes with buttons</i> 😜
+<i>Jangan bingung judul ini Button Note(Catatan dengan tombol)</i>
 
-This types of button will allow you to show specific notes to users when they click on buttons!
+Jenis Tombol ini akan memungkinkan Anda untuk menampilkan catatan tertentu kepada pengguna saat mereka mengklik tombol!
 
-You can save note with button note without any hassle by adding below line to your note ( Don't forget to replace <code>notename</code> according to you 😀)
+Anda dapat menyimpan catatan dengan tombol catatan tanpa kerumitan dengan menambahkan baris di bawah ini ke catatan Anda (Jangan lupa untuk mengganti <code>notename</code> sesuai yang Anda inginkan 😀)
 
 <code>[Button Name](btnnote:notename)</code>
 
 <b>URL Button:</b>
-Ah as you guessed! This method is used to add URL button to your note. With this you can redirect users to your website or even redirecting them to any channel, chat or messages!
+Ah seperti yang Anda duga! Metode ini digunakan untuk menambahkan tombol URL ke catatan Anda. Dengan ini, Anda dapat mengarahkan pengguna ke situs web Anda atau bahkan mengarahkan mereka ke chanel, grup, atau pesan apa pun!
 
-You can add URL button by adding following syntax to your note
+Anda dapat menambahkan tombol URL dengan menambahkan sintaks berikut ke catatan Anda
 
-<code>[Button Name](btnurl:https://your.link.here)</code>
+<code>[Nama tombol](btnurl:https://link Anda)</code>
 
 <b>Button rules:</b>
-Well in v2 we introduced some changes, rules are now saved seperately unlike saved as note before v2 so it require seperate button method!
+Nah di v2 kami memperkenalkan beberapa perubahan, aturan sekarang disimpan secara terpisah tidak seperti disimpan sebagai catatan sebelum v2 sehingga memerlukan metode tombol terpisah!
 
-You can use this button method for including Rules button in your welcome messages, filters etc.. literally anywhere*
+Anda dapat menggunakan metode tombol ini untuk memasukkan tombol aturan(Button Rules) dalam pesan selamat datang(welcome), filter, dll. secara harfiah di mana saja*
 
-You use this button with adding following syntax to your message which support formatting!
-<code>[Button Name](btnrules)</code>
+Anda gunakan tombol ini dengan menambahkan sintaks berikut ke pesan Anda yang mendukung pemformatan!
+<code>[Nama tombol](btnrules)</code>
     """
     )
 
@@ -91,18 +91,18 @@ async def buttons_help(message):
     await message.reply(
         """
 <b>Variables:</b>
-Variables are special words which will be replaced by actual info
+Variabel adalah kata-kata khusus yang akan diganti dengan info aktual
 
 <b>Avaible variables:</b>
-<code>{first}</code>: User's first name
-<code>{last}</code>: User's last name
-<code>{fullname}</code>: User's full name
-<code>{id}</code>: User's ID
-<code>{mention}</code>: Mention the user using first name
-<code>{username}</code>: Get the username, if user don't have username will be returned mention
-<code>{chatid}</code>: Chat's ID
-<code>{chatname}</code>: Chat name
-<code>{chatnick}</code>: Chat username
+<code>{first}</code>: Nama depan pengguna
+<code>{last}</code>: Nama belakang pengguna
+<code>{fullname}</code>: Nama lengkap pengguna
+<code>{id}</code>: ID pengguna
+<code>{mention}</code>: Sebutkan pengguna yang menggunakan nama depan
+<code>{username}</code>: Dapatkan username pengguna, jika pengguna tidak memiliki username maka akan dikembalikan ke mention
+<code>{chatid}</code>: ID Grup
+<code>{chatname}</code>: Nama Grup
+<code>{chatnick}</code>: Username Grup
     """
     )
 
