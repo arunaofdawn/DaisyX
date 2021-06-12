@@ -1786,4 +1786,4 @@ __help__ = """
  
 """
 
-__mod_name__ = "Memes"
+__mod_name__ = "🗿Memes"
