@@ -77,7 +77,7 @@ async def get_start_func(message, strings, edit=False):
     )
     buttons.add(
         InlineKeyboardButton(
-            "🍺 Tambahhkan Roso ke Grup",
+            "Tambahhkan Roso ke Grup 🍺",
             url=f"https://telegram.me/RosoManage_bot?startgroup=true",
         )
     )
@@ -131,7 +131,7 @@ async def helpmenu_callback(query, callback_data=None, **kwargs):
     if not mod in MOD_HELP:
         await query.answer()
         return
-    msg = f"Help for <b>{mod}</b> module:\n"
+    msg = f"Inilah perintah untuk modul <b>{mod}</b>:\n"
     msg += f"{MOD_HELP[mod]}"
     button = InlineKeyboardMarkup().add(
         InlineKeyboardButton(text="🔙Kembali", callback_data="get_help")
