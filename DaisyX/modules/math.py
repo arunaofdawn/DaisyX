@@ -179,4 +179,4 @@ Untuk menemukan area di bawah suatu fungsi, kirim permintaan sebagai c:d|f(x) di
 Untuk menghitung pecahan, masukkan ekspresi sebagai pembilang (lebih) penyebut. Misalnya, untuk memproses 2/4 Anda harus mengirimkan ekspresi Anda sebagai 2(over)4. Ekspresi hasil akan dalam notasi matematika standar (1/2, 3/4).
 """
 
-__mod_name__ = "Maths"
+__mod_name__ = "🧮Matematika"
