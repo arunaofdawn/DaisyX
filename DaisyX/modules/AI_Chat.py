@@ -398,4 +398,4 @@ BOT INI MEMPUNYAI SISTEM AI YANG DAPAT MENDETEKSI & MEMBALAS HINGGA 200 BAHASA
 
 """
 
-__mod_name__ = "AI Assistant"
+__mod_name__ = "🤖AI Assistant"
