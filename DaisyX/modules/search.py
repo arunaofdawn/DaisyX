@@ -287,4 +287,4 @@ __help__ = """
  - /app [nama aplikasi]: Mencari aplikasi di Play Store dan mengembalikan detailnya.
 """
 
-__mod_name__ = "Search"
+__mod_name__ = "🔎Search"
