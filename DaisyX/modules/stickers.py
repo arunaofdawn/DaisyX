@@ -519,7 +519,7 @@ async def sticker_id(_, message):
     await message.reply_text(f"`{file_id}`")
 
 
-__mod_name__ = "Stickers"
+__mod_name__ = "🎭Stiker"
 
 __help__ = """
 Stiker adalah cara terbaik untuk menunjukkan emosi.
@@ -529,6 +529,6 @@ Stiker adalah cara terbaik untuk menunjukkan emosi.
 - /packinfo: Balas ke stiker untuk mendapatkan info paketnya/pack
 - /getsticker: Balas ke stiker untuk mengubah stiker menjadi foto(png)
 - /sticker_id : Balas ke Stiker untuk mendapatkan ID stiker. 
-- /kang [Emoji untuk stiker] [balas ke Gambar/Stiker]: Kang/Mengambil stiker atau gambar ke dalam paket/pack
+- /kang [Emoji untuk stiker] (balas ke Gambar/Stiker): Kang/Mengambil stiker atau gambar ke dalam paket/pack
 - /rmkang [REPLY]: Hapus stiker, balasan dari paket yang Anda ambil/kang
 """
