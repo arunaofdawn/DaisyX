@@ -164,10 +164,10 @@ async def __import__(chat_id, data):
     )
 
 
-__mod_name__ = "Languages"
+__mod_name__ = "Bahasa🇮🇩"
 
 __help__ = """
-Modul ini didedikasikan untuk memanfaatkan fitur lokalisasi Bot! Anda juga bisa <a href='https://crowdin.com/project/DaisyXx'>menyumbang</a> untuk meningkatkan lokalisasi di Bot!
+Modul ini didedikasikan untuk memanfaatkan fitur lokalisasi Bot! Anda juga bisa <a href='https://t.me/RosoOwner_bot'>menyumbang</a> untuk meningkatkan lokalisasi di Bot!
 
 <b>Perintah yang tersedia:</b>
 - /lang: Menampilkan daftar bahasa yang tersedia
