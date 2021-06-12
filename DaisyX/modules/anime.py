@@ -321,7 +321,7 @@ def quote(_, message):
 
 # added ganime search based on gogoanime.so
 
-__mod_name__ = "Anime"
+__mod_name__ = "Anime👨🏻‍🎤"
 
 __help__ = """
 Memberikan informasi tentang anime, manga atau karakter anime.
