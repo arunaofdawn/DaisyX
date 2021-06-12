@@ -280,11 +280,11 @@ async def apk(e):
 
 
 __help__ = """
- - /google <i>text</i>: Perform a google search
- - /so - Search For Something On Stack OverFlow
- - /gh - Search For Something On GitHub
- - /yts - Search For Something On YouTub
- - /app <i>appname</i>: Searches for an app in Play Store and returns its details.
+ - /google [pertanyaan]: Lakukan pencarian google
+ - /so - Cari Sesuatu Di Stack OverFlow
+ - /gh - Cari Sesuatu Di GitHub 
+ - /yts - Cari Sesuatu Di YouTube
+ - /app [nama aplikasi]: Mencari aplikasi di Play Store dan mengembalikan detailnya.
 """
 
 __mod_name__ = "Search"
