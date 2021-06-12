@@ -3,7 +3,7 @@ __mod_name__ = "Misc🗂"
 __help__ = """
 Modul "peluang dan akhir" untuk perintah kecil dan sederhana yang tidak cocok di mana pun.
 
-<b>Available commands:</b>
+<b>Perintah yang tersedia:</b>
 
 <b>BASIC</b>
 - /github (username): Mengembalikan info tentang pengguna atau organisasi GitHub.
