@@ -762,7 +762,7 @@ __filters__ = {
 }
 
 
-__mod_name__ = "Notes"
+__mod_name__ = "Notes📝"
 
 __help__ = """
 Terkadang Anda perlu menyimpan beberapa data, seperti teks atau gambar. Dengan catatan/notes, Anda dapat menyimpan semua jenis data Telegram di obrolan Anda.
