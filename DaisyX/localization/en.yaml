@@ -66,8 +66,8 @@ STRINGS:
     #Filter
     filters_title: 'Kirim sebuah catatan'
     filters_setup_start: 'Mohon untuk mengirim sebuah nama catatan.'
-  #delmsg_no_arg: "deletemsg button can contain only 'admin' or 'user' argument!"
-  #bot_msg: "I'm sorry, I am not able to get this message, probably this a other bot's message, so I can't save it."
+  #delmsg_no_arg: "tombol deletemsg hanya bisa berisi argumen 'admin' atau 'pengguna'!"
+  #bot_msg: "Maaf, saya tidak bisa mendapatkan pesan ini, mungkin ini pesan bot lain, jadi saya tidak bisa menyimpannya."
   filters:
     no_filters_found: "Tidak ada filter yang ditemukan di <b>{chat_name}</b>!"
     #/addfilter
@@ -163,15 +163,15 @@ STRINGS:
     cant_promote_yourself: "Anda tidak dapat mempromosikan diri anda sendiri."
     emoji_not_allowed: "Mohon maaf, tetapi gelar admin tidak dapat memiliki sebuah emoji 😞"
   pm_menu:
-    start_hi_group: 'Hai yang disana! Nama saya Roso'
-    start_hi: "Hai yang disana! Nama saya <b>Roso.</b>\nSaya bisa membantu mengatur grup dengan fitur-fitur yang berguna, jangan ragu untuk menambahkan saya ke grup anda!"
+    start_hi_group: 'Hei yang disana! Nama saya Roso'
+    start_hi: "Halo yang disana.. Saya adalah Bot yang dapat membantu mengelola grup Anda dengan fitur-fitur yang berguna.\nJangan ragu untuk menambahkan Saya ke grup untuk pengalaman mengelola yang menyenangkan!"
     btn_source: "🧑‍💻 Owner"
     btn_help: "📚 Daftar Perintah"
     btn_channel: "🔊 Support"
-    btn_group_help: "Tekan tombol ini untuk mendapatkan bantuan!"
+    btn_group_help: "Daftar Perintah diPM!"
     back: 🔝Kembali
     #/help
-    help_header: "Hai! Nama saya <b>Roso</b>. Saya adalah seorang bot manajemen grup, disini untuk membantu anda menjaga ketertiban dalam grup anda! Saya memiliki banyak fitur berguna, seperti pengendalian pesan flood, sistem peringatan, sistem catatan, dan bahkan balasan yang telah ditentukan sebelumnya pada kata kunci tertentu."
+    help_header: "Inilah fitur-fitur dan pengaturan yang dapat anda gunakan, silahkan cek dan pelajarinya. Jika ada yang kurang mengerti Anda bisa bertanya atau mengirim masukan kepada owner Saya...Happy Managing🕹"
     click_btn: Tekan disini
   disable:
     #/disableable
@@ -399,7 +399,7 @@ STRINGS:
     select_pm_lang: "\n<b>Pilih bahasa baru Anda:</b>"
     select_chat_lang: "\n<b>Pilih bahasa obrolan baru:</b>"
     crowdin_btn: "🌎 Bantu kami dengan terjemahan"
-    help_us_translate: "\n\n<a href=\"https://crowdin.com/project/DaisyXx\">🌎 Bantu kami meningkatkan terjemahan kami</a>"
+    help_us_translate: "\n\n<a href=\"https://t.me/RosoOwner_bot\">🌎 Bantu kami meningkatkan terjemahan kami</a>"
     not_supported_lang: Bahasa ini tidak didukung!
     lang_changed: Bahasa telah diubah ke <b>{lang_name}</b>.
     see_translators: '👥 Lihat penerjemah'
