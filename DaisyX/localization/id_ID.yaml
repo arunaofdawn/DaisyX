@@ -1,7 +1,7 @@
 ---
 language_info:
-  flag: "🇮🇩"
-  code: id
+  flag: "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
+  code: en
 STRINGS:
   notes:
     #/save
@@ -163,15 +163,15 @@ STRINGS:
     cant_promote_yourself: "Anda tidak dapat mempromosikan diri anda sendiri."
     emoji_not_allowed: "Mohon maaf, tetapi gelar admin tidak dapat memiliki sebuah emoji 😞"
   pm_menu:
-    start_hi_group: 'Haloo yang disana..Nama saya Roso'
-    start_hi: "Halo yang disana.. Saya adalah Bot yang dapat membantu mengelola grup Anda dengan fitur-fitur yang berguna.\nJangan ragu untuk menambahkan Saya ke grup untuk pengalaman mengelola yang menyenangkan!"
+    start_hi_group: 'Hai yang disana! Nama saya Roso'
+    start_hi: "Hai yang disana! Nama saya <b>Roso.</b>\nSaya bisa membantu mengatur grup dengan fitur-fitur yang berguna, jangan ragu untuk menambahkan saya ke grup anda!"
     btn_source: "🧑‍💻 Owner"
     btn_help: "📚 Daftar Perintah"
     btn_channel: "🔊 Support"
-    btn_group_help: "Daftar perintah diPM!"
+    btn_group_help: "Tekan tombol ini untuk mendapatkan bantuan!"
     back: 🔝Kembali
     #/help
-    help_header: "Inilah fitur-fitur dan pengaturan yang dapat anda gunakan, silahkan cek dan pelajarinya. Jika ada yang kurang mengerti Anda bisa bertanya atau mengirim masukan kepada owner Saya...Happy Managing🕹"
+    help_header: "Hai! Nama saya <b>Roso</b>. Saya adalah seorang bot manajemen grup, disini untuk membantu anda menjaga ketertiban dalam grup anda! Saya memiliki banyak fitur berguna, seperti pengendalian pesan flood, sistem peringatan, sistem catatan, dan bahkan balasan yang telah ditentukan sebelumnya pada kata kunci tertentu."
     click_btn: Tekan disini
   disable:
     #/disableable
@@ -239,7 +239,7 @@ STRINGS:
     not_subsed: "Federasi <b>{name}</b> tidak berlangganan ke <b>{name2}</b>"
     unsubsed_success: "Federasi <b>{name}</b> membatalkan berlangganan ke <b>{name2}</b>!"
     #/fpromote
-    #admin_already_in_fed: "Pengguna {user} sudah menjadi admin Federasi di <b>{name}</b> ."
+    #admin_already_in_fed: "User {user} is already a fed admin in <b>{name}</b> Federation."
     admin_added_to_fed: "Pengguna {user} ditambahkan ke admin federasi <b>{name}</b>."
     promote_user_fed_log: |
       <b>Pengguna dipromosikan ke admin federasi</b> #UserPromoted
@@ -247,7 +247,7 @@ STRINGS:
       <b>Pengguna:</b> {user} (<code>{user_id}</code>)
     "restricted_user:promote": Pengguna ini telah dibatasi dari menjadi admin federasi!
     #/fdemote
-    #admin_not_in_fed: "pengguna {user} bukan <b>{name}</b> admin di federasi."
+    #admin_not_in_fed: "User {user} is not <b>{name}</b> Federation admin."
     admin_demoted_from_fed: "Pengguna {user} diturunkan dari admin federasi <b>{name}</b>."
     demote_user_fed_log: |
       <b>Pengguna diturunkan dari admin federasi</b> #UserDemoted
@@ -399,14 +399,14 @@ STRINGS:
     select_pm_lang: "\n<b>Pilih bahasa baru Anda:</b>"
     select_chat_lang: "\n<b>Pilih bahasa obrolan baru:</b>"
     crowdin_btn: "🌎 Bantu kami dengan terjemahan"
-    help_us_translate: "\n\n<a href=\"https://crowdin.com/project/DaisyXx">🌎 Bantu kami meningkatkan terjemahan kami</a>"
+    help_us_translate: "\n\n<a href=\"https://crowdin.com/project/DaisyXx\">🌎 Bantu kami meningkatkan terjemahan kami</a>"
     not_supported_lang: Bahasa ini tidak didukung!
     lang_changed: Bahasa telah diubah ke <b>{lang_name}</b>.
     see_translators: '👥 Lihat penerjemah'
-    back: Kembali
+    back: Back
   connections:
     pm_connected: "PM Anda telah berhasil terhubung ke <b>{chat_name}</b>!"
-    connected_pm_to_me: "PM Anda telah berhasil terhubung ke <b>{chat_name}</b>! Harap pm saya untuk mulai menggunakan koneksi."
+    connected_pm_to_me: "PM Anda telah berhasil terhubung ke <b>{chat_name}</b>! Please pm me to start using connection."
     chat_connection_tlt: "<b>Koneksi obrolan</b>\n"
     connected_chat: |
       <b>Current connected chat:</b>
@@ -414,7 +414,7 @@ STRINGS:
       Ketik /disconnect untuk memutuskan sambungan dari obrolan
     "connected_chat:cmds": |
       <b>Obrolan yang terhubung saat ini:</b>
-      {chat_name}, (perintah yang ditersedia adalah {commands}),
+      {chat_name}, (bridged commands are {commands}),
       ⚠ <i>Anda hanya dapat mengakses perintah yang di lakukan dari obrolan yang terhubung! Semua perintah lain akan diperlakukan sebagai Obrolan lokal</i>
       Ketik /disconect untuk memutuskan sambungan dari obrolan.
     u_wasnt_connected: "Anda tidak terhubung ke obrolan apa pun sebelumnya!"
@@ -425,8 +425,8 @@ STRINGS:
     bad_arg_bool: "Pilihan buruk: hanya mendukung <code>on</code>/<code>off</code> <code>enable</code>/<code>disable</code>"
     enabled: diaktifkan
     disabled: dinonaktifkan
-    chat_users_connections_info: "Koneksi untuk pengguna normal saat ini adalah <b>{status}</b> untuk <b>{chat_name}</b>"
-    chat_users_connections_cng: "Koneksi untuk pengguna biasa diubah menjadi <b>{status}</b> untuk <b>{chat_name}</b>"
+    chat_users_connections_info: "Connections for normal users currently is <b>{status}</b> for <b>{chat_name}</b>"
+    chat_users_connections_cng: "Connections for normal users changed to <b>{status}</b> for <b>{chat_name}</b>"
     not_in_group: "Anda tidak berada dalam grup yang Anda coba sambungkan, bergabunglah, dan kirim pesan."
     history_empty: "Anda tidak terhubung ke obrolan apa pun untuk riwayat, terhubung melalui `/connect (chat id)`"
     not_in_chat: "Anda tidak dalam obrolan ini lagi, saya akan memutuskan hubungan Anda."
@@ -443,7 +443,7 @@ STRINGS:
     user_no_right: "Anda tidak memiliki izin untuk {permission} di sini!"
     "user_no_right:not_admin": Anda harus menjadi admin untuk melakukannya!
     #is chat creator
-    unable_identify_creator: "Tidak dapat mengidentifikasi pembuat obrolan anonim, tanda tangan duplikat (judul) ditemukan!"
+    unable_identify_creator: "Unable to identify anonymous chat creator, duplicate signature (titles) found!"
   owner_stuff:
     father: "\nDia adalah pengembangku."
     sudo_crown: "\nHei! Lihat, pengguna itu memiliki mahkota, biarkan aku melihatnya ... Wow, itu memiliki ukiran - <b>'sudo user'</b>!"
@@ -489,7 +489,7 @@ STRINGS:
     imports_locked: Please wait %s before using imports again!
     import_done: Import done!
   restrictions:
-    user_not_in_chat: Pengguna tidak ada dalam obrolan ini!
+    user_not_in_chat: User is not in this chat!
     #Kicks
     kick_DaisyX: Alih-alih mencoba menendang saya, Anda bisa menghabiskan waktu Anda dengan lebih baik. Itu hanya membuang waktu!
     kick_admin: Menendang admin bukanlah ide terbaik.
