@@ -399,7 +399,7 @@ STRINGS:
     select_pm_lang: "\n<b>Pilih bahasa baru Anda:</b>"
     select_chat_lang: "\n<b>Pilih bahasa obrolan baru:</b>"
     crowdin_btn: "🌎 Bantu kami dengan terjemahan"
-    help_us_translate: "\n\n<a href=\"https://t.me/RosoOwner_bot">🌎 Bantu kami meningkatkan terjemahan kami</a>"
+    help_us_translate: "\n\n<a href=\"https://crowdin.com/project/DaisyXx">🌎 Bantu kami meningkatkan terjemahan kami</a>"
     not_supported_lang: Bahasa ini tidak didukung!
     lang_changed: Bahasa telah diubah ke <b>{lang_name}</b>.
     see_translators: '👥 Lihat penerjemah'
