@@ -82,7 +82,7 @@ async def close_ws(event):
                 return
             add_nightmode(str(event.chat_id))
             await event.reply(
-                f"**Menambahkan Obrolan {event.chat.title} dan Id {event.chat_id} ke dalam database. Grup Ini Akan Ditutup Pada Pukul 12 Pagi(WIB) Dan Akan Dibuka Kembali Pada Pukul 06 Pagi(WIB)**"
+                f"**Menambahkan Obrolan {event.chat.title} dan Id {event.chat_id} ke dalam database. Grup Ini Akan Ditutup Pada Pukul 12 Malam(WIB) Dan Akan Dibuka Kembali Pada Pukul 06 Pagi(WIB)**"
             )
         elif (
             input_str == "off"
@@ -96,7 +96,7 @@ async def close_ws(event):
                 return
             rmnightmode(str(event.chat_id))
             await event.reply(
-                f"**Obrolan yang Dihapus {event.chat.title} dengan Id {event.chat_id} dari database. Grup Ini Tidak Akan Ditutup Lagi Pada Pukul 12 Pagi(WIB) Dan Akan Dibuka Pada Pukul 06 Pagi(WIB)**"
+                f"**Menghapus obrolan {event.chat.title} dan id {event.chat_id} dari database. Grup Ini Tidak Akan Ditutup Lagi Pada Pukul 12 Malam(WIB) Dan Seterusnya**"
             )
         else:
             await event.reply("Saya hanya mengerti `/nightmode on` dan `/nightmode off`")
@@ -113,7 +113,7 @@ async def job_close():
         try:
             await tbot.send_message(
                 int(warner.chat_id),
-                "`Sudah jam 12:00 Malam, Grup Ditutup Sampai 6 Pagi. Mode Malam Dimulai!` \n**Didukung oleh @admin & @RosoManage_bot**",
+                "`Sudah jam 12:00 Malam, Grup Ditutup Sampai Jam 6 Pagi. Mode Malam Dimulai!` \n**Didukung oleh @admin & @RosoManage_bot**",
             )
             await tbot(
                 functions.messages.EditChatDefaultBannedRightsRequest(
