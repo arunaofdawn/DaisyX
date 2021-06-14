@@ -64,11 +64,11 @@ openhehe = ChatBannedRights(
 async def close_ws(event):
 
     if not event.is_group:
-        await event.reply("You Can Only Nsfw Watch in Groups.")
+        await event.reply("Anda Hanya Dapat Menonton Nsfw di Grup.")
         return
     input_str = event.pattern_match.group(1)
     if not await is_admin(event, BOT_ID):
-        await event.reply("`I Should Be Admin To Do This!`")
+        await event.reply("`Saya Harus Menjadi Admin Untuk Melakukan Ini!`")
         return
     if await is_admin(event, event.message.sender_id):
         if (
@@ -78,11 +78,11 @@ async def close_ws(event):
             or input_str == "enable"
         ):
             if is_nightmode_indb(str(event.chat_id)):
-                await event.reply("This Chat is Has Already Enabled Night Mode.")
+                await event.reply("Obrolan Ini Sudah Diaktifkan Mode Malam.")
                 return
             add_nightmode(str(event.chat_id))
             await event.reply(
-                f"**Added Chat {event.chat.title} With Id {event.chat_id} To Database. This Group Will Be Closed On 12Am(IST) And Will Opened On 06Am(IST)**"
+                f"**Menambahkan Obrolan {event.chat.title} dan Id {event.chat_id} ke dalam database. Grup Ini Akan Ditutup Pada Pukul 12 Pagi(WIB) Dan Akan Dibuka Kembali Pada Pukul 06 Pagi(WIB)**"
             )
         elif (
             input_str == "off"
@@ -92,16 +92,16 @@ async def close_ws(event):
         ):
 
             if not is_nightmode_indb(str(event.chat_id)):
-                await event.reply("This Chat is Has Not Enabled Night Mode.")
+                await event.reply("Obrolan Ini Belum Mengaktifkan Mode Malam.")
                 return
             rmnightmode(str(event.chat_id))
             await event.reply(
-                f"**Removed Chat {event.chat.title} With Id {event.chat_id} From Database. This Group Will Be No Longer Closed On 12Am(IST) And Will Opened On 06Am(IST)**"
+                f"**Obrolan yang Dihapus {event.chat.title} dengan Id {event.chat_id} dari database. Grup Ini Tidak Akan Ditutup Lagi Pada Pukul 12 Pagi(WIB) Dan Akan Dibuka Pada Pukul 06 Pagi(WIB)**"
             )
         else:
-            await event.reply("I undestand `/nightmode on` and `/nightmode off` only")
+            await event.reply("Saya hanya mengerti `/nightmode on` dan `/nightmode off`")
     else:
-        await event.reply("`You Should Be Admin To Do This!`")
+        await event.reply("`Anda Harus Menjadi Admin Untuk Melakukan Ini!`")
         return
 
 
@@ -113,7 +113,7 @@ async def job_close():
         try:
             await tbot.send_message(
                 int(warner.chat_id),
-                "`12:00 Am, Group Is Closing Till 6 Am. Night Mode Started !` \n**Powered By @DaisyXbot**",
+                "`Sudah jam 12:00 Malam, Grup Ditutup Sampai 6 Pagi. Mode Malam Dimulai!` \n**Didukung oleh @admin & @RosoManage_bot**",
             )
             await tbot(
                 functions.messages.EditChatDefaultBannedRightsRequest(
@@ -127,10 +127,10 @@ async def job_close():
                             int(warner.chat_id), user.id, view_messages=False
                         )
         except Exception as e:
-            print(f"Unable To Close Group {warner} - {e}")
+            print(f"Tidak Dapat Menutup Grup {warner} - {e}")
 
 
-scheduler = AsyncIOScheduler(timezone="Asia/Kolkata")
+scheduler = AsyncIOScheduler(timezone="Asia/Jakarta")
 scheduler.add_job(job_close, trigger="cron", hour=23, minute=55)
 scheduler.start()
 
@@ -143,7 +143,7 @@ async def job_open():
         try:
             await tbot.send_message(
                 int(warner.chat_id),
-                "`06:00 Am, Group Is Opening.`\n**Powered By @DaisyXBot**",
+                "`Jam 06:00 pagi, Grup kembali Dibuka.`\n**Didukung oleh @admin & @RosoManage_bot**",
             )
             await tbot(
                 functions.messages.EditChatDefaultBannedRightsRequest(
@@ -151,11 +151,11 @@ async def job_open():
                 )
             )
         except Exception as e:
-            print(f"Unable To Open Group {warner.chat_id} - {e}")
+            print(f"Tidak Dapat Membuka Grup {warner.chat_id} - {e}")
 
 
 # Run everyday at 06
-scheduler = AsyncIOScheduler(timezone="Asia/Kolkata")
+scheduler = AsyncIOScheduler(timezone="Asia/Jakarta")
 scheduler.add_job(job_open, trigger="cron", hour=6, minute=10)
 scheduler.start()
 
@@ -163,8 +163,8 @@ __mod_name__ = "Md.Malam🌒"
 
 __help__ = """
 <b> Mode Malam </b>
-Tutup grup Anda pada pukul 12.00 dan buka kembali pada pukul 6.00.(IST)
-<i> Hanya tersedia untuk negara-negara Asia (standar waktu India)</i>
+Tutup grup Anda pada pukul 12.00 dan buka kembali pada pukul 6.00(WIB)
+<i> Hanya tersedia untuk negara-negara Asia </i>
 
 - /nightmode [ON/OFF]: Aktifkan/Nonaktifkan Mode Malam.
 
