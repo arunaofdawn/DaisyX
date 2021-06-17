@@ -90,16 +90,16 @@ async def photo(client: Client, message: Message):
                         InlineKeyboardButton(text="🌌 BORDER", callback_data="border"),
                     ],
                     [
-                        InlineKeyboardButton(text="🎉 STICKER", callback_data="stick"),
-                        InlineKeyboardButton(text="↩️ ROTATE", callback_data="rotate"),
+                        InlineKeyboardButton(text="🎉 STIKER", callback_data="stick"),
+                        InlineKeyboardButton(text="↩️ ROTASI", callback_data="rotate"),
                         InlineKeyboardButton(
                             text="🔦 CONTRAST", callback_data="contrast"
                         ),
                     ],
                     [
                         InlineKeyboardButton(text="🌇 SEPIA", callback_data="sepia"),
-                        InlineKeyboardButton(text="✏️ PENCIL", callback_data="pencil"),
-                        InlineKeyboardButton(text="🦄 CARTOON", callback_data="cartoon"),
+                        InlineKeyboardButton(text="✏️ PENSIL", callback_data="pencil"),
+                        InlineKeyboardButton(text="🦄 KARTUN", callback_data="cartoon"),
                     ],
                     [
                         InlineKeyboardButton(text="🔄 INVERT", callback_data="inverted"),
@@ -132,7 +132,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     if lel == user_id:
         if query.data == "removebg":
             await query.message.edit_text(
-                "**Select required mode**ㅤㅤㅤㅤ",
+                "**Pilih mode yang diperlukan**ㅤㅤㅤㅤ",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
@@ -145,7 +145,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                         ],
                         [
                             InlineKeyboardButton(
-                                text="STICKER", callback_data="rmbgsticker"
+                                text="STIKER", callback_data="rmbgsticker"
                             )
                         ],
                     ]
@@ -153,7 +153,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             )
         elif query.data == "stick":
             await query.message.edit(
-                "**Select a Type**",
+                "**Pilih Tipe**",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
@@ -172,7 +172,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             )
         elif query.data == "rotate":
             await query.message.edit_text(
-                "**Select the Degree**",
+                "**Pilih Arah Rotasi**",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
@@ -186,7 +186,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
         elif query.data == "glitch":
             await query.message.edit_text(
-                "**Select required mode**ㅤㅤㅤㅤ",
+                "**Pilih mode yang diperlukan**ㅤㅤㅤㅤ",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
@@ -202,7 +202,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             )
         elif query.data == "normalglitch":
             await query.message.edit_text(
-                "**Select Glitch power level**",
+                "**Pilih level Glitch**",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
@@ -229,7 +229,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             )
         elif query.data == "scanlineglitch":
             await query.message.edit_text(
-                "**Select Glitch power level**",
+                "**Pilih level Glitch**",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
@@ -256,7 +256,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             )
         elif query.data == "blur":
             await query.message.edit(
-                "**Select a Type**",
+                "**Pilih Tipe**",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
@@ -269,15 +269,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
             )
         elif query.data == "circle":
             await query.message.edit_text(
-                "**Select required mode**",
+                "**Pilih mode yang diperlukan**",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
                             InlineKeyboardButton(
-                                text="WITH BG", callback_data="circlewithbg"
+                                text="Dengan BG", callback_data="circlewithbg"
                             ),
                             InlineKeyboardButton(
-                                text="WITHOUT BG", callback_data="circlewithoutbg"
+                                text="Tanpa BG", callback_data="circlewithoutbg"
                             ),
                         ]
                     ]
@@ -285,20 +285,20 @@ async def cb_handler(client: Client, query: CallbackQuery):
             )
         elif query.data == "border":
             await query.message.edit(
-                "**Select Border**",
+                "**Pilih Border**",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
                             InlineKeyboardButton(text="🔴 RED 🔴", callback_data="red"),
                             InlineKeyboardButton(
-                                text="🟢 Green 🟢", callback_data="green"
+                                text="🟢 Hijau 🟢", callback_data="green"
                             ),
                         ],
                         [
                             InlineKeyboardButton(
-                                text="⚫ Black ⚫", callback_data="black"
+                                text="⚫ Hitam ⚫", callback_data="black"
                             ),
-                            InlineKeyboardButton(text="🔵 Blue 🔵", callback_data="blue"),
+                            InlineKeyboardButton(text="🔵 Biru 🔵", callback_data="blue"),
                         ],
                     ]
                 ),
@@ -395,7 +395,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.message.delete()
             await pencil(client, query.message)
 
-        elif query.data == "cartoon":
+        elif query.data == "cartoon": 
             await query.message.delete()
             await cartoon(client, query.message)
 
@@ -450,9 +450,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await removebg_sticker(client, query.message)
 
 
-__mod_name__ = "🎨Edit Foto"
+__mod_name__ = "Edit Foto🎨"
 __help__ = """
-<b> IMAGE EDITOR </b>
+<b> EDITOR GAMBAR </b>
 Roso memiliki beberapa alat pengeditan gambar canggih bawaan
 Cerah, Lingkaran, Penghapus latar, Blur, Perbatasan, invert, Glitch, Pembuat stiker, dan lainnya
 
