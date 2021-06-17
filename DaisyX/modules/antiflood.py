@@ -300,7 +300,7 @@ async def setfloodaction(message: Message, chat: dict, strings: dict):
 
     if action.startswith("t"):
         await message.reply(
-            "Send a time for t action", allow_sending_without_reply=True
+            "Atur waktu untuk t tindakan", allow_sending_without_reply=True
         )
         redis.set(f"floodactionstate:{chat['chat_id']}", action)
         return await AntiFloodActionState.set_time_proc.set()
@@ -386,12 +386,12 @@ Antiflood memungkinkan Anda untuk mengambil tindakan pada pengguna yang mengirim
 
 Ganti (batas/limit) dengan bilangan bulat apa saja (harus kurang dari 200). Saat mengatur, Bot akan meminta Anda untuk mengirim waktu kedaluwarsa, jika Anda tidak mengerti untuk apa waktu kedaluwarsa ini? Pengguna yang mengirimkan batas pesan tertentu secara berurutan dalam WAKTU ini, akan ditendang, dilarang apa pun tindakannya. jika Anda tidak menginginkan WAKTU ini, ingin mengambil tindakan terhadap mereka yang melebihi batas yang ditentukan tanpa mempedulikan INTERVAL WAKTU antara pesan. Anda dapat membalas pertanyaan dengan 0
  
-<b>Mengonfigurasi waktu:</b>
+<b>Mengkonfigurasi waktu:</b>
 <code>2m</code> = 2 minutes(menit)
 <code>2h</code> = 2 hours(jam)
 <code>2d</code> = 2 days(hari)
 
-<b>Example:</b>
+<b>Contoh:</b>
 Saya: <code>/setflood 10</code>
 Roso: <code>Silakan kirim waktu kedaluwarsa [...]</code>
 Saya: <code>5m</code> (5 minutes)
