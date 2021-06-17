@@ -32,7 +32,7 @@ async def set_chat_title(_, message):
         user_id = message.from_user.id
         permissions = await member_permissions(chat_id, user_id)
         if "can_change_info" not in permissions:
-            await message.reply_text("You Don't Have Enough Permissions.")
+            await message.reply_text("Anda Tidak Memiliki Izin yang Cukup.")
             return
         if len(message.command) < 2:
             await message.reply_text("**Usage:**\n/set_chat_title NEW NAME")
@@ -41,7 +41,7 @@ async def set_chat_title(_, message):
         new_title = message.text.split(None, 1)[1]
         await message.chat.set_title(new_title)
         await message.reply_text(
-            f"Successfully Changed Group Title From {old_title} To {new_title}"
+            f"Berhasil Mengubah Judul Grup Dari {old_title} ke {new_title}"
         )
     except Exception as e:
         print(e)
@@ -56,7 +56,7 @@ async def set_user_title(_, message):
         from_user = message.reply_to_message.from_user
         permissions = await member_permissions(chat_id, user_id)
         if "can_change_info" not in permissions:
-            await message.reply_text("You Don't Have Enough Permissions.")
+            await message.reply_text("Anda Tidak Memiliki Izin yang Cukup.")
             return
         if len(message.command) < 2:
             await message.reply_text(
@@ -66,7 +66,7 @@ async def set_user_title(_, message):
         title = message.text.split(None, 1)[1]
         await app.set_administrator_title(chat_id, from_user.id, title)
         await message.reply_text(
-            f"Successfully Changed {from_user.mention}'s Admin Title To {title}"
+            f"Berhasil Mengubah title Admin {from_user.mention}'s Menjadi {title}"
         )
     except Exception as e:
         print(e)
@@ -81,17 +81,17 @@ async def set_chat_photo(_, message):
 
         permissions = await member_permissions(chat_id, user_id)
         if "can_change_info" not in permissions:
-            await message.reply_text("You Don't Have Enough Permissions.")
+            await message.reply_text("Anda Tidak Memiliki Izin yang Cukup.")
             return
         if not message.reply_to_message:
-            await message.reply_text("Reply to a photo to set it as chat_photo")
+            await message.reply_text("Balas ke foto untuk mengaturnya sebagai foto Grup")
             return
         if not message.reply_to_message.photo and not message.reply_to_message.document:
-            await message.reply_text("Reply to a photo to set it as chat_photo")
+            await message.reply_text("Balas ke foto untuk mengaturnya sebagai foto Grup")
             return
         photo = await message.reply_to_message.download()
         await message.chat.set_photo(photo)
-        await message.reply_text("Successfully Changed Group Photo")
+        await message.reply_text("Berhasil Mengubah Foto Grup")
         os.remove(photo)
     except Exception as e:
         print(e)
