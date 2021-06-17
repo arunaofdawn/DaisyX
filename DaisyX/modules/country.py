@@ -33,35 +33,35 @@ async def msg(event):
         a = country.info()
     except:
         await event.reply("Negara Tidak Tersedia Saat Ini")
-    name = a.get("name")
-    bb = a.get("altSpellings")
+    name = a.get("nama")
+    bb = a.get("alt Ejaan")
     hu = ""
     for p in bb:
         hu += p + ",  "
 
     area = a.get("area")
     borders = ""
-    hell = a.get("borders")
+    hell = a.get("perbatasan")
     for fk in hell:
         borders += fk + ",  "
 
     call = ""
-    WhAt = a.get("callingCodes")
+    WhAt = a.get("kode panggilan")
     for what in WhAt:
         call += what + "  "
 
-    capital = a.get("capital")
+    capital = a.get("modal")
     currencies = ""
-    fker = a.get("currencies")
+    fker = a.get("mata uang")
     for FKer in fker:
         currencies += FKer + ",  "
 
     HmM = a.get("demonym")
     geo = a.get("geoJSON")
-    pablo = geo.get("features")
+    pablo = geo.get("fitur")
     Pablo = pablo[0]
     PAblo = Pablo.get("geometry")
-    EsCoBaR = PAblo.get("type")
+    EsCoBaR = PAblo.get("tipe")
     iso = ""
     iSo = a.get("ISO")
     for hitler in iSo:
@@ -70,16 +70,16 @@ async def msg(event):
     fla = iSo.get("alpha2")
     fla.upper()
 
-    languages = a.get("languages")
+    languages = a.get("bahasa")
     lMAO = ""
     for lmao in languages:
         lMAO += lmao + ",  "
 
-    nonive = a.get("nativeName")
-    waste = a.get("population")
-    reg = a.get("region")
-    sub = a.get("subregion")
-    tik = a.get("timezones")
+    nonive = a.get("nama asli")
+    waste = a.get("populasi")
+    reg = a.get("wilayah")
+    sub = a.get("sub kawasan")
+    tik = a.get("zona waktu")
     tom = ""
     for jerry in tik:
         tom += jerry + ",   "
@@ -95,7 +95,7 @@ async def msg(event):
 <b>
 Nama negara:- {name}
 Ejaan Alternatif:- {hu}
-Wilayah Negara:- {area} square kilometers
+Wilayah Negara:- {area} km persegi
 Borders:- {borders}
 Kode Panggilan:- {call}
 Ibukota Negara:- {capital}
