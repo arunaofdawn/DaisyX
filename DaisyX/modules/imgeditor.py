@@ -93,7 +93,7 @@ async def photo(client: Client, message: Message):
                         InlineKeyboardButton(text="🎉 STIKER", callback_data="stick"),
                         InlineKeyboardButton(text="↩️ ROTASI", callback_data="rotate"),
                         InlineKeyboardButton(
-                            text="🔦 CONTRAST", callback_data="contrast"
+                            text="🔦 KONTRAS", callback_data="contrast"
                         ),
                     ],
                     [
@@ -137,10 +137,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     [
                         [
                             InlineKeyboardButton(
-                                text="WITH WHITE BG", callback_data="rmbgwhite"
+                                text="DENGAN BG PUTIH", callback_data="rmbgwhite"
                             ),
                             InlineKeyboardButton(
-                                text="WITHOUT BG", callback_data="rmbgplain"
+                                text="TANPA BG", callback_data="rmbgplain"
                             ),
                         ],
                         [
