@@ -83,22 +83,22 @@ async def _(event):
             extract_url = tldextract.extract(to_blacklist[0])
             if extract_url.domain and extract_url.suffix:
                 await event.reply(
-                    "Added <code>{}</code> domain to the blacklist!".format(
+                    "Menambahkan <code>{}</code> domain ke blacklist!".format(
                         html.escape(extract_url.domain + "." + extract_url.suffix)
                     ),
                     parse_mode="html",
                 )
             else:
-                await event.reply("You are trying to blacklist an invalid url")
+                await event.reply("Anda mencoba memasukkan url yang tidak valid ke daftar hitam")
         else:
             await event.reply(
-                "Added <code>{}</code> domains to the blacklist.".format(
+                "Menambahkan <code>{}</code> domain ke blacklist.".format(
                     len(blacklisted)
                 ),
                 parse_mode="html",
             )
     else:
-        await event.reply("Tell me which urls you would like to add to the blacklist.")
+        await event.reply("Beri tahu saya url mana yang ingin Anda tambahkan ke blacklist.")
 
 
 @register(pattern="^/delurl")
@@ -139,23 +139,23 @@ async def _(event):
                 await event.reply("This isn't a blacklisted domain...!")
         elif unblacklisted == len(to_unblacklist):
             await event.reply(
-                "Removed <code>{}</code> domains from the blacklist.".format(
+                "Menghapus <code>{}</code> domain dari blacklist.".format(
                     unblacklisted
                 ),
                 parse_mode="html",
             )
         elif not unblacklisted:
-            await event.reply("None of these domains exist, so they weren't removed.")
+            await event.reply("Tak satu pun dari domain ini ada, jadi mereka tidak dihapus.")
         else:
             await event.reply(
-                "Removed <code>{}</code> domains from the blacklist. {} did not exist, so were not removed.".format(
+                "Menghapus <code>{}</code> domains dari blacklist. {} tidak ada, jadi tidak dihapus.".format(
                     unblacklisted, len(to_unblacklist) - unblacklisted
                 ),
                 parse_mode="html",
             )
     else:
         await event.reply(
-            "Tell me which domains you would like to remove from the blacklist."
+            "Beri tahu saya domain mana yang ingin Anda hapus dari daftar hitam."
         )
 
 
@@ -195,7 +195,7 @@ async def _(event):
     base_string = "Current <b>blacklisted</b> domains:\n"
     blacklisted = urlsql.get_blacklisted_urls(chat.id)
     if not blacklisted:
-        await event.reply("There are no blacklisted domains here!")
+        await event.reply("Tidak ada domain yang masuk blacklist di sini!")
         return
     for domain in blacklisted:
         base_string += "- <code>{}</code>\n".format(domain)
@@ -213,7 +213,7 @@ __help__ = """
  - /addurl [url/link]: Tambahkan domain ke daftar hitam. Bot akan secara otomatis mem-parsing url.
  - /delurl [url/link]: Hapus url dari daftar hitam.
 <b> Contoh:</b>
- - /addblacklist adminnya ngeselin: Ini akan menghapus kata "adminnya ngeselin" setiap kali anggota grup(kecuali admin) mengetiknya
+ - /addblacklist admin jelek: Ini akan menghapus kata "admin jelek" setiap kali anggota grup(kecuali admin) mengetiknya
  - /addurl bit.ly: Ini akan menghapus pesan apa pun yang berisi url "bit.ly"
 """
 __mod_name__ = "📓Blacklist"
