@@ -104,7 +104,7 @@ async def hmm(_, message):
     global daisy_chats
     if len(message.command) != 2:
         await message.reply_text(
-            "I only recognize `/chatbot on` and /chatbot `off only`"
+            "Saya hanya mengenali `/chatbot on` dan `/chatbot off`"
         )
         message.continue_propagation()
     status = message.text.split(None, 1)[1]
@@ -113,20 +113,20 @@ async def hmm(_, message):
         lel = await edit_or_reply(message, "`Processing...`")
         lol = add_chat(int(message.chat.id))
         if not lol:
-            await lel.edit("Daisy AI Already Activated In This Chat")
+            await lel.edit("Bot AI Sudah Diaktifkan Di Obrolan Ini")
             return
         await lel.edit(
-            f"Daisy AI Successfully Added For Users In The Chat {message.chat.id}"
+            f"Bot AI Berhasil Ditambahkan Untuk Pengguna Dalam Obrolan {message.chat.id}"
         )
 
     elif status == "OFF" or status == "off" or status == "Off":
         lel = await edit_or_reply(message, "`Processing...`")
         Escobar = remove_chat(int(message.chat.id))
         if not Escobar:
-            await lel.edit("Daisy AI Was Not Activated In This Chat")
+            await lel.edit("Bot AI Tidak Diaktifkan Dalam Obrolan Ini")
             return
         await lel.edit(
-            f"Daisy AI Successfully Deactivated For Users In The Chat {message.chat.id}"
+            f"Bot AI Berhasil Dinonaktifkan Untuk Pengguna Dalam Obrolan {message.chat.id}"
         )
 
     elif status == "EN" or status == "en" or status == "english":
@@ -392,8 +392,8 @@ BOT INI MEMPUNYAI SISTEM AI YANG DAPAT MENDETEKSI & MEMBALAS HINGGA 200 BAHASA
  
  
 <b> Assistant </b>
- - /ask [question]: Ajukan pertanyaan ke bot
- - /ask [reply to voice note]: Dapatkan balasan suara
+ - /ask [pertanyaan]: Ajukan pertanyaan ke bot
+ - /ask [reply vn]: Dapatkan balasan suara
  catatan: semakin sering anda memakainya semakin terkuras dyno saya:')
 
 """
