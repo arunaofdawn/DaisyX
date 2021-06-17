@@ -1,37 +1,37 @@
 # Credits Telegram @ChankitSaini
 
-__mod_name__ = "🧑‍💻Devs"
+__mod_name__ = "Devs🧑‍💻"
 __help__ = """
 <b>⚠️ Perhatian:</b>
 Perintah yang tercantum di sini hanya berfungsi untuk pengguna dengan akses khusus terutama digunakan untuk pemecahan masalah, tujuan debugging.
 Admin grup/pemilik grup tidak memerlukan perintah ini.
 
-<b>Commands:</b> 
+<b>コマンド：</b>
 
-<b>Bot Owner Only: </b>
-- <code>/leavechat chat id</code> : Leaves the chat
-- <code>/ip</code> : Fetch server's ip (Works in pm only)
-- <code>/term</code> : Runs the shell commands
-- <code>/sbroadcast</code> : Smart broadcast in chats where bot is currently added.
-- <code>/stopsbroadcast</code> : Stops the current ongoing broadcast
-- <code>/continuebroadcast</code> : Continue the stopped broadcast
-- <code>/purgecache</code> : Clear cache in redis server
+<b>ボット所有者のみ：</b>
+-/LeavechatチャットID：チャットを終了します
+-/ip：サーバーのIPを取得します（午後にのみ機能します）
+-/term：シェルコマンドを実行します
+-/sbroadcast：ボットが現在追加されているチャットでのスマートブロードキャスト。
+-/stopsbroadcast：現在進行中のブロードキャストを停止します
+-/continuebroadcast：停止したブロードキャストを続行します
+-/purgecache：Redisサーバーのキャッシュをクリアします
 
-<b>System Commands</b>
-- <code>/botstop</code> : Shutdowns the bot.
-- <code>/restart</code> : Restarts the bot
-- <code>/upgrade</code> : Updates the bot.
-- <code>/upload</code> : Uploads the file from bot's server
-- <code>/crash</code> : Crashes the bot
-- <code>/update</code> : updates the bot
+<b>システムコマンド</b>
+-/botstop：ボットをシャットダウンします。
+-/restart：ボットを再起動します
+-/upgrade：ボットを更新します。
+-/upload：ボットのサーバーからファイルをアップロードします
+-/crash：ボットをクラッシュさせます
+-/update：ボットを更新します
 
-<b>Operators:</b> 
-- <code>/stats</code> : To get bot's current stats
-- <code>/allcommands</code> : Shows the list of all available commands 
-- <code>/allcmdsaliases</code> : Shows the aliases list 
-- <code>/loadedmodules</code> : Shows the currently loaded modules
-- <code>/avaiblebtns</code> : Shows the list of all message inline buttons
-- <code>/logs</code> : Uploads the bot logs as file
-- <code>/event</code> : To get a event via aiogram
+<b>演算子：</b>
+-/stats：ボットの現在の統計を取得するには
+-/allcommands：使用可能なすべてのコマンドのリストを表示します
+-/allcmdsaliases：エイリアスリストを表示します
+-/loadedmodules：現在ロードされているモジュールを表示します
+-/avaiblebtns：すべてのメッセージインラインボタンのリストを表示します
+-/logs：ボットログをファイルとしてアップロードします
+-/event：アイオグラムを介してイベントを取得するには
 
 """
