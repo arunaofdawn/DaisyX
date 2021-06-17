@@ -98,7 +98,7 @@ async def set_chat_photo(_, message):
         await message.reply_text(e)
 
 
-__mod_name__ = "🧑‍✈️Admin"
+__mod_name__ = "Admin🧑‍✈️"
 
 __help__ = """
 Permudah admin untuk mengelola pengguna dan grup dengan modul admin!
