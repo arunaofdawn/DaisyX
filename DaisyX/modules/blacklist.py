@@ -216,4 +216,4 @@ __help__ = """
  - /addblacklist admin jelek: Ini akan menghapus kata "admin jelek" setiap kali anggota grup(kecuali admin) mengetiknya
  - /addurl bit.ly: Ini akan menghapus pesan apa pun yang berisi url "bit.ly"
 """
-__mod_name__ = "📓Blacklist"
+__mod_name__ = "Blacklist📓"
