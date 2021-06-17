@@ -1100,7 +1100,7 @@ async def __import__(chat_id, data):
     await get_greetings_data.reset_cache(chat_id)
 
 
-__mod_name__ = "⛩Sambutan"
+__mod_name__ = "Sambutan⛩"
 
 __help__ = """
 <b>Perintah yang tersedia:</b>
@@ -1114,14 +1114,14 @@ __help__ = """
 Mengaktifkan keamanan selamat datang dengan level tertentu, baik tombol atau captcha.
 Menyiapkan keamanan selamat datang akan memberi Anda pilihan untuk menyesuaikan waktu kedaluwarsa bergabung alias waktu minimum yang diberikan kepada pengguna untuk memverifikasi diri mereka sendiri bukan bot, pengguna yang tidak memverifikasi dalam waktu ini akan ditendang!
 - /welcomesecurity (off/no/0): Nonaktifkan keamanan selamat datang
-- /setsecuritynote: Membuat Custom teks, jika tidak akan tampil default seperti ini "Please press the button below to verify themselves as human!"
+- /setsecuritynote: Membuat Custom teks, jika tidak akan tampil default seperti ini "Silakan tekan tombol di bawah untuk memverifikasi diri Anda sebagai manusia!"
 - /delsecuritynote: Setel ulang teks keamanan ke default
 <b>Level yang tersedia:</b>
 - <code>button</code>: Minta pengguna untuk menekan tombol "I'm not a bot" 
 - <code>math</code>: Meminta pengguna untuk menyelesaikan pertanyaan matematika sederhana, beberapa tombol dengan jawaban akan disediakan, hanya satu yang akan memiliki jawaban yang benar
 - <code>captcha</code>: Meminta pengguna untuk memasukkan captcha
 <b>Welcome mutes:</b>
-- /welcomemute (waktu): Melarang pengguna yang baru bergabung untuk mengirim media dalam waktu yang anda tentukan)
+- /welcomemute (waktu): Melarang pengguna yang baru bergabung untuk mengirim media dalam waktu yang anda tentukan
 - /welcomemute (off/no): Nonaktifkan pembisuan(media) selamat datang
 <b>Purges:</b>
 - /cleanwelcome (on/off): Menghapus pesan selamat datang lama dan yang terakhir setelah 45 menit
