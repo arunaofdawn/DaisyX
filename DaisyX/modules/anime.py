@@ -47,14 +47,14 @@ url = "https://graphql.anilist.co"
 async def anime_airing(message):
     search_str = message.text.split(" ", 1)
     if len(search_str) == 1:
-        await message.reply("Provide anime name!")
+        await message.reply("Berikan nama anime!")
         return
 
     variables = {"search": search_str[1]}
     response = requests.post(
         url, json={"query": airing_query, "variables": variables}
     ).json()["data"]["Media"]
-    ms_g = f"<b>Name</b>: <b>{response['title']['romaji']}</b>(<code>{response['title']['native']}</code>)\n<b>ID</b>: <code>{response['id']}</code>"
+    ms_g = f"<b>Nama</b>: <b>{response['title']['romaji']}</b>(<code>{response['title']['native']}</code>)\n<b>ID</b>: <code>{response['id']}</code>"
     if response["nextAiringEpisode"]:
         airing_time = response["nextAiringEpisode"]["timeUntilAiring"] * 1000
         airing_time_final = t(airing_time)
@@ -69,7 +69,7 @@ async def anime_airing(message):
 async def anime_search(message):
     search = message.text.split(" ", 1)
     if len(search) == 1:
-        await message.reply("Provide anime name!")
+        await message.reply("Berikan nama anime!")
         return
     else:
         search = search[1]
@@ -128,7 +128,7 @@ async def anime_search(message):
 async def character_search(message):
     search = message.text.split(" ", 1)
     if len(search) == 1:
-        await message.reply("Provide character name!")
+        await message.reply("Berikan nama karakter!")
         return
     search = search[1]
     variables = {"query": search}
@@ -155,7 +155,7 @@ async def character_search(message):
 async def manga_search(message):
     search = message.text.split(" ", 1)
     if len(search) == 1:
-        await message.reply("Provide manga name!")
+        await message.reply("Berikan nama manga!")
         return
     search = search[1]
     variables = {"search": search}
@@ -229,7 +229,7 @@ async def site_search(message, site: str):
     try:
         search_query = args[1]
     except IndexError:
-        await message.reply("Give something to search")
+        await message.reply("Berikan sesuatu untuk dicari")
         return
 
     if site == "kaizoku":
@@ -239,14 +239,14 @@ async def site_search(message, site: str):
         search_result = soup.find_all("h2", {"class": "post-title"})
 
         if search_result:
-            result = f"<b>Search results for</b> <code>{html.escape(search_query)}</code> <b>on</b> <code>AnimeKaizoku</code>: \n"
+            result = f"<b>Hasil Pencarian for</b> <code>{html.escape(search_query)}</code> <b>on</b> <code>AnimeKaizoku</code>: \n"
             for entry in search_result:
                 post_link = entry.a["href"]
                 post_name = html.escape(entry.text)
                 result += f"• <a href='{post_link}'>{post_name}</a>\n"
         else:
             more_results = False
-            result = f"<b>No result found for</b> <code>{html.escape(search_query)}</code> <b>on</b> <code>AnimeKaizoku</code>"
+            result = f"<b>Tidak ada hasil yang ditemukan untuk</b> <code>{html.escape(search_query)}</code> <b>on</b> <code>AnimeKaizoku</code>"
 
     elif site == "kayo":
         search_url = f"https://animekayo.com/?s={search_query}"
@@ -258,7 +258,7 @@ async def site_search(message, site: str):
         for entry in search_result:
 
             if entry.text.strip() == "Nothing Found":
-                result = f"<b>No result found for</b> <code>{html.escape(search_query)}</code> <b>on</b> <code>AnimeKayo</code>"
+                result = f"<b>Tidak ada hasil yang ditemukan untuk</b> <code>{html.escape(search_query)}</code> <b>on</b> <code>AnimeKayo</code>"
                 more_results = False
                 break
 
@@ -276,7 +276,7 @@ async def site_search(message, site: str):
         for entry in search_result:
 
             if entry.text.strip() == "Nothing Found":
-                result = f"<b>No result found for</b> <code>{html.escape(search_query)}</code> <b>on</b> <code>gogoanime</code>"
+                result = f"<b>Tidak ada hasil yang ditemukan untuk</b> <code>{html.escape(search_query)}</code> <b>on</b> <code>gogoanime</code>"
                 more_results = False
                 break
 
@@ -285,7 +285,7 @@ async def site_search(message, site: str):
             result += f"• <a href='{post_link}'>{post_name}</a>\n"
 
     buttons = InlineKeyboardMarkup().add(
-        InlineKeyboardButton(text="See all results", url=search_url)
+        InlineKeyboardButton(text="Lihat semua hasil", url=search_url)
     )
 
     if more_results:
