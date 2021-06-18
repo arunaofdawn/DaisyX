@@ -68,9 +68,9 @@ async def inline_help_func(__HELP__):
     answerss = [
         InlineQueryResultArticle(
             title="Inline Commands",
-            description="Help Related To Inline Usage.",
+            description="Bantuan Terkait Penggunaan Inline.",
             input_message_content=InputTextMessageContent(__HELP__),
-            thumb_url="https://telegra.ph/file/109e8fe98acc6d262b7c6.jpg",
+            thumb_url="https://telegra.ph/file/49a2496aba1d7c7e85a17.jpg",
             reply_markup=buttons,
         )
     ]
@@ -83,25 +83,25 @@ async def alive_function(answers):
     bot_state = "Dead" if not await app.get_me() else "Alive"
     # ubot_state = 'Dead' if not await app2.get_me() else 'Alive'
     buttons.add(
-        InlineKeyboardButton("Main Bot", url="https://t.me/DaisyXbot"),
+        InlineKeyboardButton("Main Bot", url="https://t.me/RosoManage_bot"),
         InlineKeyboardButton("Go Inline!", switch_inline_query_current_chat=""),
     )
 
     msg = f"""
-**[DaisyX✨](https://github.com/TeamDaisyX):**
+**[Abot-Support](https://t.me/arunasupportbot):**
 **MainBot:** `{bot_state}`
 **UserBot:** `Alive`
 **Python:** `3.9`
 **Pyrogram:** `{pyrover}`
 **MongoDB:** `{mongover}`
 **Platform:** `{sys.platform}`
-**Profiles:** [BOT](t.me/{BOT_USERNAME}) | [UBOT](t.me/daisyxhelper)
+**Profiles:** [BOT](t.me/{BOT_USERNAME}) | [UBOT](t.me/RosoOwner_bot)
 """
     answers.append(
         InlineQueryResultArticle(
             title="Alive",
-            description="Check Bot's Stats",
-            thumb_url="https://telegra.ph/file/debc179305d2e1f140636.jpg",
+            description="Periksa Statistik Bot",
+            thumb_url="https://telegra.ph/file/27e656097d18364722578.jpg",
             input_message_content=InputTextMessageContent(
                 msg, disable_web_page_preview=True
             ),
@@ -131,7 +131,7 @@ async def webss(url):
 async def translate_func(answers, lang, tex):
     i = Translator().translate(tex, dest=lang)
     msg = f"""
-__**Translated from {i.src} to {lang}**__
+__**Diterjemahkan dari {i.src} ke {lang}**__
 
 **INPUT:**
 {tex}
@@ -260,11 +260,11 @@ async def saavn_func(answers, text):
         buttons_list.append(buttons)
         duration = await time_convert(i.duration)
         caption = f"""
-**Title:** {i.song}
+**Judul:** {i.song}
 **Album:** {i.album}
-**Duration:** {duration}
-**Release:** {i.year}
-**Singers:** {i.singers}"""
+**Durasi:** {duration}
+**Rilis:** {i.year}
+**Penyanyi:** {i.singers}"""
         description = f"{i.album} | {duration} " + f"| {i.singers} ({i.year})"
         answers.append(
             InlineQueryResultArticle(
@@ -384,7 +384,7 @@ async def torrent_func(answers, text):
         upload_date = i.uploaded + " Ago"
         magnet = i.magnet
         caption = f"""
-**Title:** __{title}__
+**Judul:** __{title}__
 **Size:** __{size}__
 **Seeds:** __{seeds}__
 **Leechs:** __{leechs}__
