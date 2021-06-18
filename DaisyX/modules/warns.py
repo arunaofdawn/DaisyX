@@ -114,7 +114,7 @@ async def warn_func(message: Message, chat, user, text, strings, filter_action=F
 
     buttons = InlineKeyboardMarkup().add(
         InlineKeyboardButton(
-            "⚠️ Remove warn", callback_data="remove_warn_{}".format(warn_id)
+            "⚠️ Hapus warn", callback_data="remove_warn_{}".format(warn_id)
         )
     )
 
