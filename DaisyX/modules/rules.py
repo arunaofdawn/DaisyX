@@ -134,10 +134,10 @@ async def __import__(chat_id, data):
     await db.rules.replace_one({"chat_id": rules["chat_id"]}, rules, upsert=True)
 
 
-__mod_name__ = "📋Rules"
+__mod_name__ = "Rules📜"
 
 __help__ = """
-<b>Available Commands:</b>
+<b>Perintah yang tersedia:</b>
 - /setrules (rules): menyimpan aturan (bisa berfungsi dengan dibalas/reply)
 - /rules: Menunjukkan aturan grup, jika ada!
 - /resetrules: Setel ulang aturan grup
