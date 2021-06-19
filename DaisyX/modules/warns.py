@@ -94,7 +94,7 @@ async def warn_func(message: Message, chat, user, text, strings, filter_action=F
                 {
                     "user_id": user_id,
                     "chat_id": chat_id,
-                    "reason": str(reason),
+                    "alasan": str(reason),
                     "by": by_id,
                 }
             )
@@ -121,7 +121,7 @@ async def warn_func(message: Message, chat, user, text, strings, filter_action=F
     if await db.rules.find_one({"chat_id": chat_id}):
         buttons.insert(
             InlineKeyboardButton(
-                "📝 Rules", url=await get_start_link(f"btn_rules_{chat_id}")
+                "📜 Rules", url=await get_start_link(f"btn_rules_{chat_id}")
             )
         )
 
@@ -202,7 +202,7 @@ async def warns(message, chat, user, strings):
         rsn = warn["reason"]
         reason = f"<code>{rsn}</code>"
         if not rsn or rsn == "None":
-            reason = "<i>No Reason</i>"
+            reason = "<i>Tanpa Alasan</i>"
         text += strings["warns"].format(count=count, reason=reason, admin=by)
 
     if count == 0:
