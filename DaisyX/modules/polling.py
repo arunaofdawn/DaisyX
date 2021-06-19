@@ -112,7 +112,7 @@ async def _(event):
             rightone = two.strip()
         else:
             await event.reply(
-                "You need to select the right answer with question number like True@1, True@3 etc.."
+                "Anda harus memilih jawaban yang tepat dengan nomor pertanyaan seperti True@1, True@3 dll.."
             )
             return
 
@@ -195,7 +195,7 @@ async def _(event):
         optionss.append(types.PollAnswer(ab, b"1"))
         optionss.append(types.PollAnswer(cd, b"2"))
     except Exception:
-        await event.reply("At least need two options to create a poll")
+        await event.reply("Setidaknya perlu dua opsi untuk membuat polling")
         return
     try:
         ef = option.split(" ")[6 - 1]
@@ -318,10 +318,10 @@ async def _(event):
         )
 
     if pvoty is True and quizy is True and mchoicee is True:
-        await event.reply("You can't use multiple voting with quiz mode")
+        await event.reply("Anda tidak dapat menggunakan banyak pemungutan suara dengan mode kuis")
         return
     if pvoty is False and quizy is True and mchoicee is True:
-        await event.reply("You can't use multiple voting with quiz mode")
+        await event.reply("Anda tidak dapat menggunakan banyak pemungutan suara dengan mode kuis")
         return
 
 
@@ -342,21 +342,21 @@ async def stop(event):
             return
 
     if not event.reply_to_msg_id:
-        await event.reply("Please reply to a poll to stop it")
+        await event.reply("Harap balas/reply polling untuk menghentikannya")
         return
 
     if input is None:
-        await event.reply("Where is the poll id ?")
+        await event.reply("Dimana id pollingnya?")
         return
 
     try:
         secret = str(secret)
     except ValueError:
-        await event.reply("Poll id should contain only numbers")
+        await event.reply("Poll id harus hanya berisi angka")
         return
 
     if len(secret) != 5:
-        await event.reply("Poll id should be an integer of 5 digits")
+        await event.reply("Poll id harus berupa bilangan bulat dari 5 digit")
         return
 
     msg = await event.get_reply_message()
@@ -435,4 +435,4 @@ Balas polling dengan `/stoppoll [poll-id]` untuk menghentikan polling
 """
 
 
-__mod_name__ = "📊Polling"
+__mod_name__ = "Polling📊"
