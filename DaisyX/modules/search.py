@@ -151,8 +151,8 @@ async def ytsearch(_, message):
         i = 0
         text = ""
         while i < 3:
-            text += f"Title - {results[i]['title']}\n"
-            text += f"Duration - {results[i]['duration']}\n"
+            text += f"Judul - {results[i]['title']}\n"
+            text += f"Durasi - {results[i]['duration']}\n"
             text += f"Views - {results[i]['views']}\n"
             text += f"Channel - {results[i]['channel']}\n"
             text += f"https://youtube.com{results[i]['url_suffix']}\n\n"
@@ -269,12 +269,12 @@ async def apk(e):
         app_details += (
             "\n<code>Features :</code> <a href='"
             + app_link
-            + "'>View in Play Store</a>"
+            + "'>Lihat di Play Store</a>"
         )
-        app_details += "\n\n===> @DaisySupport_Official <==="
+        app_details += "\n\n===> @RosoManage2_bot <==="
         await e.reply(app_details, link_preview=True, parse_mode="HTML")
     except IndexError:
-        await e.reply("No result found in search. Please enter **Valid app name**")
+        await e.reply("Tidak ada hasil yang ditemukan dalam pencarian. Harap masukan **Nama aplikasi yang valid**")
     except Exception as err:
         await e.reply("Exception Occured:- " + str(err))
 
@@ -287,4 +287,4 @@ __help__ = """
  - /app [nama aplikasi]: Mencari aplikasi di Play Store dan mengembalikan detailnya.
 """
 
-__mod_name__ = "🔎Search"
+__mod_name__ = "Search🔍"
