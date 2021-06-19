@@ -80,7 +80,7 @@ async def delmsg_btn(event, regexp=None, **kwargs):
     await event.message.delete()
 
 
-__mod_name__ = "🗑Purge"
+__mod_name__ = "Purge🗑"
 
 __help__ = """
 Perlu menghapus banyak pesan? Itulah gunanya purges!
