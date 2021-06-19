@@ -41,8 +41,6 @@ data = {
     "info": "can_change_info",
     "invite": "can_invite_users",
     "pin": "can_pin_messages",
-    "forward": "can_send_forward",
-    "bots": "can_add_bots",
 }
 
 
@@ -82,8 +80,6 @@ async def wew(_, message):
 - pin
 - info 
 - invite
-- forward
-- bots
 
 *Catatan: Untuk mengunci url coba
      `/urllock [on|off]`
