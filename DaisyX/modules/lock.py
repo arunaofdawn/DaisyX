@@ -41,17 +41,19 @@ data = {
     "info": "can_change_info",
     "invite": "can_invite_users",
     "pin": "can_pin_messages",
+    "forward": "can_send_forward",
+    "bots": "can_add_bots",
 }
 
 
 async def tg_lock(message, permissions: list, perm: str, lock: bool):
     if lock:
         if perm not in permissions:
-            await message.reply_text("Already locked.")
+            await message.reply_text("Sudah terkunci.")
             return
     else:
         if perm in permissions:
-            await message.reply_text("Already Unlocked.")
+            await message.reply_text("Sudah Dibuka.")
             return
     (permissions.remove(perm) if lock else permissions.append(perm))
     permissions = {perm: True for perm in list(set(permissions))}
@@ -80,6 +82,8 @@ async def wew(_, message):
 - pin
 - info 
 - invite
+- forward
+- bots
 
 *Catatan: Untuk mengunci url coba
      `/urllock [on|off]`
@@ -104,7 +108,7 @@ async def locks_func(_, message):
 
         permissions = await member_permissions(chat_id, user_id)
         if "can_restrict_members" not in permissions:
-            await message.reply_text("You Don't Have Enough Permissions.")
+            await message.reply_text("Anda Tidak Memiliki Izin yang Cukup.")
             return
 
         permissions = await current_chat_permissions(chat_id)
@@ -118,7 +122,7 @@ async def locks_func(_, message):
             return
         elif parameter == "all" and state == "lock":
             await _.set_chat_permissions(chat_id, ChatPermissions())
-            await message.reply_text("Locked Everything.")
+            await message.reply_text("Mengunci Semuanya.")
     except Exception as e:
         await message.reply_text(str(e))
         print(e)
@@ -128,7 +132,7 @@ async def locks_func(_, message):
 async def locktypes(_, message):
     permissions = await current_chat_permissions(message.chat.id)
     if not permissions:
-        await message.reply_text("No Permissions.")
+        await message.reply_text("Tidak ada izin.")
         return
     perms = ""
     for i in permissions:
