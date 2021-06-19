@@ -1,4 +1,4 @@
-__mod_name__ = "Extras➕"
+__mod_name__ = "Extras🗃"
 __help__ = """
 Modul yang berisi alat tambahan yang membantu Anda melakukan banyak hal keren.
 
@@ -13,7 +13,7 @@ Modul yang berisi alat tambahan yang membantu Anda melakukan banyak hal keren.
 
 <b> DATE TIME </b>
 - /datetime [timezone]: Dapatkan informasi tanggal dan waktu saat ini
-Anda bisa cek link [ini](https://timezonedb.com/time-zones) untuk zona waktu yang tersedia
+Anda bisa cek link ini (https://timezonedb.com/time-zones) untuk zona waktu yang tersedia
 
 <b> PASTE </b>
 - /paste [reply]
