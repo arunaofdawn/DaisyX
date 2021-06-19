@@ -166,7 +166,7 @@ async def _(event):
     stickerset_attr_s = rep_msg.document.attributes
     stickerset_attr = find_instance(stickerset_attr_s, DocumentAttributeSticker)
     if not stickerset_attr.stickerset:
-        await event.reply("sticker does not belong to a pack.")
+        await event.reply("stiker bukan milik paket.")
         return
     get_stickerset = await tbot(
         GetStickerSetRequest(
@@ -181,12 +181,12 @@ async def _(event):
         if document_sticker.emoticon not in pack_emojis:
             pack_emojis.append(document_sticker.emoticon)
     await event.reply(
-        f"**Sticker Title:** `{get_stickerset.set.title}\n`"
-        f"**Sticker Short Name:** `{get_stickerset.set.short_name}`\n"
+        f"**Judul Stiker:** `{get_stickerset.set.title}\n`"
+        f"**Nama Pendek Stiker:** `{get_stickerset.set.short_name}`\n"
         f"**Official:** `{get_stickerset.set.official}`\n"
-        f"**Archived:** `{get_stickerset.set.archived}`\n"
-        f"**Stickers In Pack:** `{len(get_stickerset.packs)}`\n"
-        f"**Emojis In Pack:** {' '.join(pack_emojis)}"
+        f"**Arsip:** `{get_stickerset.set.archived}`\n"
+        f"**Stiker Dalam Paket:** `{len(get_stickerset.packs)}`\n"
+        f"**Emoji Dalam Paket:** {' '.join(pack_emojis)}"
     )
 
 
@@ -197,8 +197,8 @@ def find_instance(items, class_or_tuple):
     return None
 
 
-DEFAULTUSER = "DaisyX"
-FILLED_UP_DADDY = "Invalid pack selected."
+DEFAULTUSER = "Roso"
+FILLED_UP_DADDY = "Paket yang dipilih tidak valid."
 
 
 async def get_sticker_emoji(event):
@@ -228,7 +228,7 @@ async def _(event):
     first_name = user.first_name
     packname = f"{first_name}'s Sticker Vol.{pack}"
     packshortname = f"DaisyX_stickers_{userid}"
-    kanga = await event.reply("Hello, This Sticker Looks Noice. Mind if Daisy steal it")
+    kanga = await event.reply("Halo, Stiker Ini Terlihat Tidak Ada Keberatan jika Saya mencurinya")
     is_a_s = is_it_animated_sticker(reply_message)
     file_ext_ns_ion = "Stickers.png"
     file = await event.client.download_file(reply_message.media)
@@ -239,7 +239,7 @@ async def _(event):
         packname = f"{first_name}'s Animated Sticker Vol.{pack}"
         packshortname = f"DaisyX_animated_{userid}"
     elif not is_message_image(reply_message):
-        await kanga.edit("Oh no.. This Message type is invalid")
+        await kanga.edit("Oh tidak.. Jenis pesan ini tidak valid")
         return
     else:
         with BytesIO(file) as mem_file, BytesIO() as sticker:
@@ -249,7 +249,7 @@ async def _(event):
                 sticker, file_name=file_ext_ns_ion
             )
 
-    await kanga.edit("This Sticker is Gonna Get Stolen.....")
+    await kanga.edit("Stiker Ini Akan Dicuri.....")
 
     async with ubot.conversation("@Stickers") as d_conv:
         now = datetime.datetime.now()
@@ -388,7 +388,7 @@ async def _(event):
                 await silently_send_message(d_conv, "/done")
     await kanga.edit("Mengambil Stiker Ini Ke Paket Anda 🚶")
     await kanga.edit(
-        f"Stiker Ini Telah Dimasukan Ke Paket Anda.` \n**Coba lihat** [Ini](t.me/addstickers/{packshortname})"
+        f"Stiker Ini Telah Dimasukan Ke Paket Anda.` \n**Coba** [lihat Ini](t.me/addstickers/{packshortname})"
     )
     os.system("rm -rf  Stickers.png")
     os.system("rm -rf  AnimatedSticker.tgs")
@@ -400,14 +400,14 @@ async def _(event):
     try:
         if not event.is_reply:
             await event.reply(
-                "Reply to a sticker to remove it from your personal sticker pack."
+                "Balas stiker untuk menghapusnya dari paket stiker pribadi Anda."
             )
             return
         reply_message = await event.get_reply_message()
-        kanga = await event.reply("`Deleting .`")
+        kanga = await event.reply("`Menghapus .`")
 
         if not is_message_image(reply_message):
-            await kanga.edit("Please reply to a sticker.")
+            await kanga.edit("Tolong balas ke stiker.")
             return
 
         rmsticker = await ubot.get_messages(event.chat_id, ids=reply_message.id)
@@ -415,7 +415,7 @@ async def _(event):
         stickerset_attr_s = reply_message.document.attributes
         stickerset_attr = find_instance(stickerset_attr_s, DocumentAttributeSticker)
         if not stickerset_attr.stickerset:
-            await event.reply("Sticker does not belong to a pack.")
+            await event.reply("Stiker bukan milik paket.")
             return
 
         get_stickerset = await tbot(
@@ -453,13 +453,13 @@ async def _(event):
             response = await silently_send_message(bot_conv, "/delsticker")
             if "Choose" not in response.text:
                 await tbot.edit_message(
-                    kanga, f"**FAILED**! @Stickers replied: {response.text}"
+                    kanga, f"**GAGAL**! @Stickers replied: {response.text}"
                 )
                 return
             response = await silently_send_message(bot_conv, packname)
             if not response.text.startswith("Please"):
                 await tbot.edit_message(
-                    kanga, f"**FAILED**! @Stickers replied: {response.text}"
+                    kanga, f"**GAGAL**! @Stickers replied: {response.text}"
                 )
                 return
             try:
@@ -469,11 +469,11 @@ async def _(event):
             if response.text.startswith("This pack has only"):
                 await silently_send_message(bot_conv, "Delete anyway")
 
-            await kanga.edit("`Deleting ...`")
+            await kanga.edit("`Menghapus ...`")
             response = await bot_conv.get_response()
             if not "I have deleted" in response.text:
                 await tbot.edit_message(
-                    kanga, f"**FAILED**! @Stickers replied: {response.text}"
+                    kanga, f"**GAGAL**! @Stickers replied: {response.text}"
                 )
                 return
 
@@ -519,7 +519,7 @@ async def sticker_id(_, message):
     await message.reply_text(f"`{file_id}`")
 
 
-__mod_name__ = "🎭Stiker"
+__mod_name__ = "Stiker🎭"
 
 __help__ = """
 Stiker adalah cara terbaik untuk menunjukkan emosi.
