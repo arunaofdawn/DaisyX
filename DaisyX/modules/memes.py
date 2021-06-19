@@ -292,7 +292,7 @@ async def msg(event):
     await event.reply(reply_text)
 
 
-CARBONLANG = "en"
+CARBONLANG = "id"
 
 
 @register(pattern="^/carbon (.*)")
@@ -1364,7 +1364,7 @@ async def _(event):
 
 
 SFW_STRINGS = (
-        "Berhenti jadi anak alay sekarang juga!.",
+    "Berhenti jadi anak alay sekarang juga!.",
     "Jangan minum sambil mengetik.",
     "Saya pikir Anda harus pulang atau lebih baik ke rumah sakit jiwa.",
     "Apakah kamu sadar bahwa kamu membodohi dirimu sendiri? Rupanya tidak.",
@@ -1786,4 +1786,4 @@ __help__ = """
  
 """
 
-__mod_name__ = "🗿Meme"
+__mod_name__ = "Meme🗿"
