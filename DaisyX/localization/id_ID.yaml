@@ -486,14 +486,14 @@ STRINGS:
     started_importing: Import dimulai! Harap tunggu...
     bad_file: Bad file! Diharapkan <code>'umum'</code> kolom.
     file_version_so_new: Versi file yang diekspor lebih baru daripada yang saat ini didukung oleh Bot!
-    imports_locked: Please wait %s before using imports again!
+    imports_locked: Mohon tunggu %s sebelum menggunakan import lagi!
     import_done: Import done!
   restrictions:
-    user_not_in_chat: User is not in this chat!
+    user_not_in_chat: Pengguna tidak ada dalam obrolan ini!
     #Kicks
     kick_DaisyX: Alih-alih mencoba menendang saya, Anda bisa menghabiskan waktu Anda dengan lebih baik. Itu hanya membuang waktu!
     kick_admin: Menendang admin bukanlah ide terbaik.
-    kick_self: If you want to kick yourself - just leave this chat. I would rather not see you than look at these pathetic attempts at self-punishment.
+    kick_self: Jika Anda ingin menendang diri sendiri - tinggalkan saja obrolan ini. Saya lebih suka tidak melihat Anda daripada melihat upaya menyedihkan ini untuk menghukum diri sendiri.
     user_kicked: "{user} telah ditendang oleh {admin} di {chat_name}."
     #Mutes
     mute_DaisyX: Sebenarnya, saya akan dengan senang hati membungkam Anda sebagai gantinya.
@@ -506,7 +506,7 @@ STRINGS:
     user_unmuted: "{user} telah disuarakan oleh {admin} di {chat_name}."
     #Bans
     ban_DaisyX: Tidak, saya tidak akan melakukannya! Minta pembuat obrolan untuk melakukannya!
-    ban_admin: Haha, let's <code>/demote</code> him first.
+    ban_admin: Haha, ayo <code>/demote</code> ban dia dulu.
     ban_self: Mengapa Anda mencoba untuk melarang diri sendiri??
     user_banned: "{user} telah di banned oleh {admin} di {chat_name}."
     unban_DaisyX: Sebenarnya, saya tidak dilarang.
@@ -669,6 +669,6 @@ STRINGS:
     setfloodaction_success: "Berhasil memperbarui antiflood ke <b>{action}</b>!"
     
   afk:
-    is_afk: "{user} sedang Off!\nKarena: {reason}"
-    unafk: "{user} tidak lagi Off!"
-    afk_anon: "Mode AFK/Off tidak dapat digunakan sebagai admin anonim."
+    is_afk: "{user} sedang off!\nAlasan: {reason}"
+    unafk: "{user} sudah tidak off!"
+    afk_anon: "Mode AFK/OFF tidak dapat digunakan sebagai admin anonim."
