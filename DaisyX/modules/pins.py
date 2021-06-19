@@ -58,7 +58,7 @@ async def pin_message(message, strings):
         await message.reply(strings["chat_not_modified_pin"])
 
 
-__mod_name__ = "📌Pinned"
+__mod_name__ = "Pin📌"
 
 __help__ = """
 Semua perintah terkait pin dapat ditemukan di sini; tetap perbarui obrolan Anda tentang berita terbaru dengan pesan yang disematkan secara sederhana!
