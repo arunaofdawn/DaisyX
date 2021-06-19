@@ -112,7 +112,7 @@ Permudah admin untuk mengelola pengguna dan grup dengan modul admin!
 <b> Mutes </b>
 - /mute: bisukan pengguna
 - /unmute: bunyikan pengguna
-- /tmute [waktu] : membisukan sementara pengguna untuk interval waktu
+- /tmute [waktu] : membisukan sementara pengguna untuk interval waktu yang anda tentukan
 - /unmuteall: Bunyikan semua anggota yang dibisukan
 
 <b> Bans & Kicks </b>
@@ -145,15 +145,15 @@ Permudah admin untuk mengelola pengguna dan grup dengan modul admin!
 - /spwinfo : Periksa info spam pengguna dari layanan perlindungan Spam intellivoid
 - /whois : Memberikan info pengguna seperti pyrogram
 
-<b> Other </b>
+<b> Lainnya </b>
 - /invitelink: Dapatkan tautan undangan obrolan grup
-- /settitle [entity] [title]: menetapkan judul khusus untuk admin. Jika tidak ada [judul] yang diberikan, maka secara default ke "Admin"
-- /setgrouptitle [teks] tentukan judul grup group
+- /settitle [entity] [title]: menetapkan title khusus untuk admin. Jika tidak ada [title] yang diberikan, maka secara default ke "Admin"
+- /setgrouptitle [teks] tentukan judul grup
 - /setgrouppic: balas/reply gambar untuk ditetapkan sebagai foto grup
 - /setdescription: Menetapkan deskripsi grup
 - /setsticker: Setel stiker grup
 
 *catatan:
 Terkadang, Anda mempromosikan atau menurunkan seorang admin secara manual, dan Bot tidak segera menyadarinya. Ini karena untuk menghindari spamming server telegram, status admin di-cache secara lokal.
-Ini berarti Anda terkadang harus menunggu beberapa menit untuk memperbarui hak admin. Jika Anda ingin segera memperbaruinya, Anda dapat menggunakan perintah `/admincache`; itu akan memaksa Bot untuk memeriksa siapa admin lagi.
+Ini berarti Anda terkadang harus menunggu beberapa menit untuk memperbarui hak admin. Jika Anda ingin segera memperbaruinya, Anda dapat menggunakan perintah `/admincache`; itu akan memaksa Bot untuk memeriksa siapa admin yang sekarang.
 """
