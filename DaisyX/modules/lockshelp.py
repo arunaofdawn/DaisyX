@@ -23,6 +23,8 @@ Locktypes:
 - pin
 - info 
 - invite
+- forward
+- bots
 
 
 <b> Url Lock </b>
