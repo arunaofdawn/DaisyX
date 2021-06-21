@@ -41,7 +41,7 @@ data = {
     "info": "can_change_info",
     "invite": "can_invite_users",
     "pin": "can_pin_messages",
-    "forward": "can_send_forward",
+    "forward": "can_send_forward_messages",
     "bots": "can_add_bots",
 }
 
