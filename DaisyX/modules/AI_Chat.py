@@ -77,7 +77,7 @@ async def hmm(client, message):
     required_file_name = message.download()
     if IBM_WATSON_CRED_URL is None or IBM_WATSON_CRED_PASSWORD is None:
         await message.reply(
-            "You need to set the required ENV variables for this module. \nModule stopping"
+            "Anda perlu mengatur variabel ENV yang diperlukan untuk modul ini. \nModule stopping"
         )
     else:
         headers = {
@@ -129,16 +129,16 @@ async def hmm(_, message):
             f"Bot AI Berhasil Dinonaktifkan Untuk Pengguna Dalam Obrolan {message.chat.id}"
         )
 
-    elif status == "EN" or status == "en" or status == "english":
+    elif status == "ID" or status == "id" or status == "indonesian":
         if not chat_id in en_chats:
             en_chats.append(chat_id)
-            await message.reply_text("English AI chat Enabled!")
+            await message.reply_text("Indonesia AI Diaktifkan diobrolan!")
             return
-        await message.reply_text("AI Chat Is Already Disabled.")
+        await message.reply_text("AI Chat Sudah Dinonaktifkan.")
         message.continue_propagation()
     else:
         await message.reply_text(
-            "I only recognize `/chatbot on` and /chatbot `off only`"
+            "Saya hanya mengenali `/chatbot on` dan `/chatbot off`"
         )
 
 
@@ -168,13 +168,13 @@ async def hmm(client, message):
         message.continue_propagation()
     if chat_id in en_chats:
         test = msg
-        test = test.replace("daisy", "Aco")
-        test = test.replace("Daisy", "Aco")
+        test = test.replace("roso", "Aco")
+        test = test.replace("Roso", "Aco")
         response = await lunaQuery(
             test, message.from_user.id if message.from_user else 0
         )
-        response = response.replace("Aco", "Daisy")
-        response = response.replace("aco", "Daisy")
+        response = response.replace("Aco", "Roso")
+        response = response.replace("aco", "Roso")
 
         pro = response
         try:
@@ -217,22 +217,22 @@ async def hmm(client, message):
         except:
             return
         test = rm
-        if not "en" in lan and not lan == "":
+        if not "id" in lan and not lan == "":
             try:
-                test = translator.translate(test, lang_tgt="en")
+                test = translator.translate(test, lang_tgt="id")
             except:
                 return
         # test = emoji.demojize(test.strip())
 
-        test = test.replace("daisy", "Aco")
-        test = test.replace("Daisy", "Aco")
+        test = test.replace("roso", "Aco")
+        test = test.replace("Roso", "Aco")
         response = await lunaQuery(
             test, message.from_user.id if message.from_user else 0
         )
-        response = response.replace("Aco", "Daisy")
-        response = response.replace("aco", "Daisy")
+        response = response.replace("Aco", "Roso")
+        response = response.replace("aco", "Roso")
         pro = response
-        if not "en" in lan and not lan == "":
+        if not "id" in lan and not lan == "":
             try:
                 pro = translator.translate(pro, lang_tgt=lan[0])
             except:
@@ -284,24 +284,24 @@ async def inuka(client, message):
     except:
         return
     test = rm
-    if not "en" in lan and not lan == "":
+    if not "id" in lan and not lan == "":
         try:
-            test = translator.translate(test, lang_tgt="en")
+            test = translator.translate(test, lang_tgt="id")
         except:
             return
 
     # test = emoji.demojize(test.strip())
 
     # Kang with the credits bitches @InukaASiTH
-    test = test.replace("daisy", "Aco")
-    test = test.replace("Daisy", "Aco")
+    test = test.replace("roso", "Aco")
+    test = test.replace("Roso", "Aco")
 
     response = await lunaQuery(test, message.from_user.id if message.from_user else 0)
-    response = response.replace("Aco", "Daisy")
-    response = response.replace("aco", "Daisy")
+    response = response.replace("Aco", "Roso")
+    response = response.replace("aco", "Roso")
 
     pro = response
-    if not "en" in lan and not lan == "":
+    if not "id" in lan and not lan == "":
         pro = translator.translate(pro, lang_tgt=lan[0])
     try:
         await daisyx.send_chat_action(message.chat.id, "typing")
@@ -311,7 +311,7 @@ async def inuka(client, message):
 
 
 @daisyx.on_message(
-    filters.regex("Daisy|daisy|DaisyX|daisyx|Daisyx")
+    filters.regex("Roso|roso|Rosoo|rosoo|Roso")
     & ~filters.bot
     & ~filters.via_bot
     & ~filters.forwarded
@@ -356,22 +356,22 @@ async def inuka(client, message):
     except:
         return
     test = rm
-    if not "en" in lan and not lan == "":
+    if not "id" in lan and not lan == "":
         try:
-            test = translator.translate(test, lang_tgt="en")
+            test = translator.translate(test, lang_tgt="id")
         except:
             return
 
     # test = emoji.demojize(test.strip())
 
-    test = test.replace("daisy", "Aco")
-    test = test.replace("Daisy", "Aco")
+    test = test.replace("roso", "Aco")
+    test = test.replace("Roso", "Aco")
     response = await lunaQuery(test, message.from_user.id if message.from_user else 0)
-    response = response.replace("Aco", "Daisy")
-    response = response.replace("aco", "Daisy")
+    response = response.replace("Aco", "Roso")
+    response = response.replace("aco", "Roso")
 
     pro = response
-    if not "en" in lan and not lan == "":
+    if not "id" in lan and not lan == "":
         try:
             pro = translator.translate(pro, lang_tgt=lan[0])
         except Exception:
@@ -388,7 +388,7 @@ __help__ = """
 BOT INI MEMPUNYAI SISTEM AI YANG DAPAT MENDETEKSI & MEMBALAS HINGGA 200 BAHASA
 
  - /chatbot [ON/OFF]: Mengaktifkan dan menonaktifkan mode Obrolan AI(EKSKLUSIF)
- - /chatbot EN : Mengaktifkan chatbot khusus bahasa Inggris
+ - /chatbot ID : Mengaktifkan chatbot khusus bahasa Indonesia
  
  
 <b> Assistant </b>
