@@ -119,9 +119,9 @@ async def help_cmd(message, strings):
 @get_strings_dec("pm_menu")
 async def help_cmd_g(message, strings):
     button = InlineKeyboardMarkup().add(
-        InlineKeyboardButton(text="Open here", callback_data="get_help"))
+        InlineKeyboardButton(text="Open pm", callback_data="get_help"))
     button = InlineKeyboardMarkup().add(
-        InlineKeyboardButton(text="Open pm", url="https://t.me/RosoManage_bot?start")
+        InlineKeyboardButton(text="Open here", callback_data="get_help")
     )
     await message.reply(strings["help_header"], reply_markup=button)
 
