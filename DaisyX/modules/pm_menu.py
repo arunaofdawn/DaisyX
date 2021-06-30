@@ -105,7 +105,7 @@ async def back_btn(event):
     await get_start_func(event, edit=True)
 
 
-@register(cmds="help", only_pm=True)
+@register(cmds="help", only_pm=False)
 @disableable_dec("help")
 @get_strings_dec("pm_menu")
 async def help_cmd(message, strings):
@@ -118,11 +118,10 @@ async def help_cmd(message, strings):
 @disableable_dec("help")
 @get_strings_dec("pm_menu")
 async def help_cmd_g(message, strings):
-    text = strings["btn_group_help"]
     button = InlineKeyboardMarkup().add(
         InlineKeyboardButton(text="Open here", callback_data="get_help"))
     button = InlineKeyboardMarkup().add(
-        InlineKeyboardButton(text=text, url="https://t.me/RosoManage_bot?start")
+        InlineKeyboardButton(text="Open pm", url="https://t.me/RosoManage_bot?start")
     )
     await message.reply(strings["help_header"], reply_markup=button)
 
