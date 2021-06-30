@@ -121,8 +121,6 @@ async def help_cmd_g(message, strings):
     text = strings["btn_group_help"]
     button = InlineKeyboardMarkup().add(
         InlineKeyboardButton(text="Open here", callback_data="get_help"))
-        ),
-    )
     button = InlineKeyboardMarkup().add(
         InlineKeyboardButton(text=text, url="https://t.me/RosoManage_bot?start")
     )
