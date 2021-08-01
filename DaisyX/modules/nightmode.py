@@ -131,7 +131,7 @@ async def job_close():
 
 
 scheduler = AsyncIOScheduler(timezone="Asia/Jakarta")
-scheduler.add_job(job_close, trigger="cron", hour=23, minute=55)
+scheduler.add_job(job_close, trigger="cron", hour=23, minute=59)
 scheduler.start()
 
 
@@ -156,10 +156,10 @@ async def job_open():
 
 # Run everyday at 06
 scheduler = AsyncIOScheduler(timezone="Asia/Jakarta")
-scheduler.add_job(job_open, trigger="cron", hour=6, minute=10)
+scheduler.add_job(job_open, trigger="cron", hour=5, minute=59)
 scheduler.start()
 
-__mod_name__ = "Md.Malam🌒"
+__mod_name__ = "Malam🌒"
 
 __help__ = """
 <b> Mode Malam </b>
